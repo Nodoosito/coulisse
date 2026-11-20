@@ -390,3 +390,9 @@
 "Tint" = "色調";
 "Draws a color behind the menu bar, on every display." = "在每部顯示器的選單列後方繪製一種顏色。";
 "Intensity" = "強度";
+
+/* Coulisse: search */
+"Also find shown icons" = "也尋找顯示中的圖示";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "列出選單列中的所有圖示，顯示中的排在隱藏的之後。Command-1 至 Command-9 可打開結果。";
+"Click an icon to open its menu, or type a few letters to find one." = "點按圖示以打開其選單，或輸入幾個字母來尋找。";
+"No hidden icon matches “%@”" = "沒有與「%@」相符的隱藏圖示";

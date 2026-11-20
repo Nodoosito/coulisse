@@ -64,8 +64,17 @@ enum PaletteRanking {
         }
     }
 
+    /// Hidden, then always hidden, then (Coulisse) shown icons.
+    static func listRank(_ section: MenuBarSection) -> Int {
+        switch section {
+        case .hidden: return 0
+        case .alwaysHidden: return 1
+        case .visible: return 2
+        }
+    }
+
     private static func order(_ lhs: PaletteMatch, _ rhs: PaletteMatch) -> Bool {
-        if lhs.candidate.section != rhs.candidate.section { return lhs.candidate.section < rhs.candidate.section }
+        if lhs.candidate.section != rhs.candidate.section { return listRank(lhs.candidate.section) < listRank(rhs.candidate.section) }
         let byName = lhs.candidate.name.localizedCaseInsensitiveCompare(rhs.candidate.name)
         if byName != .orderedSame { return byName == .orderedAscending }
         return lhs.candidate.bundleIdentifier < rhs.candidate.bundleIdentifier

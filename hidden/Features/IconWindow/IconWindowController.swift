@@ -41,6 +41,8 @@ final class IconWindowController {
     private(set) var content: IconWindowContent = .nothingHidden
     private(set) var openingBundle: String?
     private(set) var failure: String?
+    /// Letters typed into the window to filter the tiles.
+    private(set) var query = ""
     private(set) var panel: PalettePanel?
     private(set) var contentView: IconWindowView?
     private var catalogObserver: NSObjectProtocol?
@@ -82,6 +84,7 @@ final class IconWindowController {
         closedAt = -.infinity
         openingBundle = nil
         failure = nil
+        query = ""
         refreshContent()
         let view = IconWindowView()
         view.onTileClick = { [weak self] in self?.open($0) }
@@ -99,9 +102,8 @@ final class IconWindowController {
             self?.host.openAccessibilitySettings()
         }
         let panel = PalettePanel(content: view)
-        panel.onKey = { [weak self] action in
-            if action == .close { self?.close() }
-        }
+        panel.onKey = { [weak self] in self?.perform($0) }
+        panel.onOtherKey = { [weak self] event in self?.typed(event) ?? false }
         panel.onResignKey = { [weak self] in self?.close() }
         self.panel = panel
         contentView = view
@@ -127,6 +129,41 @@ final class IconWindowController {
     }
 
     // MARK: Actions
+
+    /// Return opens the first tile, Command-1 to 9 the one at that place, Escape
+    /// clears the letters typed, then closes.
+    func perform(_ action: PaletteKeyAction) {
+        let tiles = IconWindowModel.orderedTiles(content)
+        switch action {
+        case .open:
+            if let first = tiles.first { open(first.bundleIdentifier) }
+        case .openRow(let index):
+            if tiles.indices.contains(index) { open(tiles[index].bundleIdentifier) }
+        case .close:
+            if query.isEmpty { close() } else { setQuery("") }
+        case .moveUp, .moveDown, .keepShown, .alwaysHide:
+            break
+        }
+    }
+
+    func setQuery(_ newValue: String) {
+        guard newValue != query else { return }
+        query = newValue
+        failure = nil
+        refreshContent()
+        render()
+    }
+
+    private func typed(_ event: NSEvent) -> Bool {
+        if event.keyCode == 51 {
+            if !query.isEmpty { setQuery(String(query.dropLast())) }
+            return true
+        }
+        let commandOrControl = !event.modifierFlags.intersection([.command, .control]).isEmpty
+        guard let text = IconWindowModel.typedText(characters: event.characters, commandOrControl: commandOrControl) else { return false }
+        setQuery(query + text)
+        return true
+    }
 
     /// A tile was clicked: open that app's own menu.
     func open(_ bundle: String) {
@@ -167,12 +204,12 @@ final class IconWindowController {
 
     private func refreshContent() {
         content = IconWindowModel.content(candidates: PaletteController.candidates(from: catalog.entries),
-                                          environment: host.environment())
+                                          environment: host.environment(), query: query)
     }
 
     private func render() {
         guard let panel, let contentView else { return }
-        contentView.apply(content: content, openingBundle: openingBundle, failure: failure,
+        contentView.apply(content: content, query: query, openingBundle: openingBundle, failure: failure,
                           pinsSections: host.environment().pinsSections,
                           icon: { [catalog] in catalog.entry(for: $0)?.icon })
         contentView.layoutSubtreeIfNeeded()
@@ -250,14 +287,14 @@ final class IconWindowView: NSView {
         return max(minWidth, grid)
     }
 
-    func apply(content: IconWindowContent, openingBundle: String?, failure: String?, pinsSections: Bool,
+    func apply(content: IconWindowContent, query: String = "", openingBundle: String?, failure: String?, pinsSections: Bool,
                icon: (String) -> NSImage?) {
         stack.arrangedSubviews.forEach { $0.removeFromSuperview() }
         let width = Self.width(columns: IconWindowModel.columns(for: content))
         widthConstraint?.constant = width
         let inner = width - 2 * Self.padding
 
-        add(header(count: content.tileCount, showsExpand: content.tileCount > 0), width: inner)
+        add(header(count: content.tileCount, query: query, showsExpand: content.tileCount > 0 || !query.isEmpty), width: inner)
         switch content {
         case .tiles(let hidden, let alwaysHidden):
             let both = !hidden.isEmpty && !alwaysHidden.isEmpty
@@ -281,10 +318,12 @@ final class IconWindowView: NSView {
             if let failure {
                 add(wrapping(failure, color: .systemOrange), width: inner)
             } else {
-                add(wrapping("Click an icon to open its menu.".localized, color: .secondaryLabelColor), width: inner)
+                add(wrapping("Click an icon to open its menu, or type a few letters to find one.".localized, color: .secondaryLabelColor), width: inner)
             }
         case .nothingHidden:
             add(wrapping("Nothing is hidden right now".localized, color: .secondaryLabelColor), width: inner)
+        case .noMatch(let typed):
+            add(wrapping(String(format: "No hidden icon matches “%@”".localized, typed), color: .secondaryLabelColor), width: inner)
         case .engineUnavailable:
             add(wrapping("Coulisse is not hiding icons right now".localized, color: .secondaryLabelColor), width: inner)
         case .accessibilityOff:
@@ -302,8 +341,8 @@ final class IconWindowView: NSView {
         view.widthAnchor.constraint(equalToConstant: width).isActive = true
     }
 
-    private func header(count: Int, showsExpand: Bool) -> NSView {
-        let title = NSTextField(labelWithString: "Hidden icons".localized)
+    private func header(count: Int, query: String, showsExpand: Bool) -> NSView {
+        let title = NSTextField(labelWithString: query.isEmpty ? "Hidden icons".localized : "“\(query)”")
         title.font = .systemFont(ofSize: 13, weight: .semibold)
         let badge = NSTextField(labelWithString: count > 0 ? "\(count)" : "")
         badge.font = .systemFont(ofSize: 12, weight: .medium)

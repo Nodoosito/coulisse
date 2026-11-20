@@ -935,7 +935,8 @@ extension StatusBarController {
         return PaletteEnvironment(accessibilityTrusted: !AccessibilityPermission.shared.isMissing,
                                   engineAvailable: menuBarEngine.state != .unavailable,
                                   pinsSections: Preferences.pinnedSectionsEnabled,
-                                  hiddenWhilePresenting: isPresenting ? Preferences.presentationSensitiveApps : [])
+                                  hiddenWhilePresenting: isPresenting ? Preferences.presentationSensitiveApps : [],
+                                  includesVisible: Preferences.paletteIncludesVisible)
     }
 
     // One session for the palette and the icon window: the engine allows one app

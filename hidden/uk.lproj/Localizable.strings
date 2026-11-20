@@ -375,3 +375,9 @@
 "Tint" = "Відтінок";
 "Draws a color behind the menu bar, on every display." = "Малює колір позаду смуги меню на кожному дисплеї.";
 "Intensity" = "Інтенсивність";
+
+/* Coulisse: search */
+"Also find shown icons" = "Знаходити й видимі значки";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Показує всі значки смуги меню, видимі після прихованих. Command-1 … Command-9 відкривають результат.";
+"Click an icon to open its menu, or type a few letters to find one." = "Клацніть значок, щоб відкрити його меню, або введіть кілька літер, щоб знайти його.";
+"No hidden icon matches “%@”" = "Жоден прихований значок не відповідає «%@»";

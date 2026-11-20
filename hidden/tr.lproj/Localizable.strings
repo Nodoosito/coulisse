@@ -376,3 +376,9 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "Tint" = "Renk tonu";
 "Draws a color behind the menu bar, on every display." = "Her ekranda menü çubuğunun arkasına bir renk çizer.";
 "Intensity" = "Yoğunluk";
+
+/* Coulisse: search */
+"Also find shown icons" = "Görünen simgeleri de bul";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Tüm menü çubuğu simgelerini listeler; görünenler gizlilerden sonra gelir. Command-1 ile Command-9 bir sonucu açar.";
+"Click an icon to open its menu, or type a few letters to find one." = "Menüsünü açmak için bir simgeye tıklayın veya bulmak için birkaç harf yazın.";
+"No hidden icon matches “%@”" = "“%@” ile eşleşen gizli simge yok";

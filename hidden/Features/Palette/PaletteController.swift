@@ -14,6 +14,8 @@ import AppKit
 final class PalettePanel: NSPanel {
     var onKey: ((PaletteKeyAction) -> Void)?
     var onResignKey: (() -> Void)?
+    /// Coulisse: other key presses, for panels with no text field. True: handled.
+    var onOtherKey: ((NSEvent) -> Bool)?
 
     init(content: NSView) {
         super.init(contentRect: NSRect(origin: .zero, size: content.fittingSize),
@@ -39,6 +41,7 @@ final class PalettePanel: NSPanel {
             onKey?(action)
             return
         }
+        if event.type == .keyDown, onOtherKey?(event) == true { return }
         super.sendEvent(event)
     }
 
@@ -200,6 +203,10 @@ final class PaletteController {
         case .close:
             close()
         case .open:
+            open()
+        case .openRow(let index):
+            model.select(index: index)
+            render()
             open()
         case .keepShown:
             guard host.environment().pinsSections else { return }

@@ -377,3 +377,9 @@ Passi per mostrare le icone sempre nascoste:
 "Tint" = "Tinta";
 "Draws a color behind the menu bar, on every display." = "Disegna un colore dietro la barra dei menu, su ogni monitor.";
 "Intensity" = "Intensità";
+
+/* Coulisse: search */
+"Also find shown icons" = "Trova anche le icone visibili";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Elenca tutte le icone della barra dei menu, le visibili dopo le nascoste. Comando-1 … Comando-9 aprono un risultato.";
+"Click an icon to open its menu, or type a few letters to find one." = "Fai clic su un’icona per aprirne il menu, oppure digita qualche lettera per trovarne una.";
+"No hidden icon matches “%@”" = "Nessuna icona nascosta corrisponde a “%@”";

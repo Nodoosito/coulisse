@@ -71,6 +71,7 @@ enum AppStoreSettingsImport {
         UserDefaults.Key.menuBarTintEnabled: .number,
         UserDefaults.Key.menuBarTintColor: .string,
         UserDefaults.Key.menuBarTintOpacity: .number,
+        UserDefaults.Key.paletteIncludesVisible: .number,
     ]
 
     /// Importable keys the direct build writes by itself on its first collapse:

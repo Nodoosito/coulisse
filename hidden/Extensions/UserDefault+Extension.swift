@@ -41,6 +41,7 @@ extension UserDefaults {
         static let menuBarTintEnabled = "menuBarTintEnabled"
         static let menuBarTintColor = "menuBarTintColor"
         static let menuBarTintOpacity = "menuBarTintOpacity"
+        static let paletteIncludesVisible = "paletteIncludesVisible"
         // Internal: not user-facing, so not in the App Store import whitelist.
         static let menuBarCatalogFirstSeen = "menuBarCatalogFirstSeen"
         static let arrivalsPending = "arrivalsPending"

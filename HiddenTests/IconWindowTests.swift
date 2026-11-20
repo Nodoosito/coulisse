@@ -250,3 +250,37 @@ final class IconWindowControllerTests: XCTestCase {
 }
 
 #endif
+
+/// Coulisse search: the palette can list shown icons after the hidden ones,
+/// Command-digits pick a row, and the icon window filters as you type.
+final class CoulisseSearchTests: XCTestCase {
+    private func app(_ name: String, _ section: MenuBarSection) -> PaletteCandidate {
+        PaletteCandidate(bundleIdentifier: "com.\(name.lowercased())", name: name, section: section, isRunning: true)
+    }
+
+    func test_palette_listsShownIconsLast_whenAsked() {
+        let candidates = [app("Zoom", .visible), app("Paste", .hidden), app("Amphetamine", .alwaysHidden)]
+        var environment = PaletteEnvironment(accessibilityTrusted: true, engineAvailable: true)
+        XCTAssertEqual(PaletteModel(candidates: candidates, environment: environment).rows.map(\.candidate.name), ["Paste", "Amphetamine"])
+        environment.includesVisible = true
+        XCTAssertEqual(PaletteModel(candidates: candidates, environment: environment).rows.map(\.candidate.name),
+                       ["Paste", "Amphetamine", "Zoom"])
+    }
+
+    func test_commandDigit_opensARow() {
+        XCTAssertEqual(PaletteKeyAction.resolve(keyCode: 18, modifiers: .command), .openRow(0))
+        XCTAssertEqual(PaletteKeyAction.resolve(keyCode: 25, modifiers: .command), .openRow(8))
+        XCTAssertNil(PaletteKeyAction.resolve(keyCode: 18, modifiers: []), "a plain 1 is typed into the search")
+    }
+
+    func test_iconWindow_filtersByTypedLetters() {
+        let candidates = [app("Paste", .hidden), app("1Password", .hidden), app("Amphetamine", .alwaysHidden)]
+        let environment = PaletteEnvironment(accessibilityTrusted: true, engineAvailable: true)
+        let content = IconWindowModel.content(candidates: candidates, environment: environment, query: "pas")
+        XCTAssertEqual(IconWindowModel.orderedTiles(content).map(\.name), ["Paste", "1Password"], "a name start ranks first")
+        XCTAssertEqual(IconWindowModel.content(candidates: candidates, environment: environment, query: "zz"), .noMatch("zz"))
+        XCTAssertEqual(IconWindowModel.typedText(characters: "a", commandOrControl: false), "a")
+        XCTAssertNil(IconWindowModel.typedText(characters: "a", commandOrControl: true))
+        XCTAssertNil(IconWindowModel.typedText(characters: "\r", commandOrControl: false))
+    }
+}

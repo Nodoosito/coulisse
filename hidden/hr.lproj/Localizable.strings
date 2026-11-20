@@ -375,3 +375,9 @@
 "Tint" = "Nijansa";
 "Draws a color behind the menu bar, on every display." = "Iscrtava boju iza trake izbornika na svakom zaslonu.";
 "Intensity" = "Intenzitet";
+
+/* Coulisse: search */
+"Also find shown icons" = "Pronađi i vidljive ikone";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Prikazuje sve ikone trake izbornika, vidljive nakon skrivenih. Command-1 do Command-9 otvaraju rezultat.";
+"Click an icon to open its menu, or type a few letters to find one." = "Kliknite ikonu da otvorite njezin izbornik ili upišite nekoliko slova da je pronađete.";
+"No hidden icon matches “%@”" = "Nijedna skrivena ikona ne odgovara „%@”";

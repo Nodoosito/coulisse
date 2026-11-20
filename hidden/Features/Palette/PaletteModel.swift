@@ -20,6 +20,8 @@ struct PaletteEnvironment: Equatable {
     /// out of the list, and out of every hint that names an app, so the room
     /// never learns they are there.
     var hiddenWhilePresenting: Set<String> = []
+    /// Coulisse: shown icons are listed too, after the hidden ones.
+    var includesVisible = false
 }
 
 /// A line in the result list.
@@ -108,6 +110,11 @@ struct PaletteModel: Equatable {
         selectedIndex = min(max(selectedIndex + step, 0), rows.count - 1)
     }
 
+    /// Coulisse: Command-1 to 9 pick a row by its place in the list.
+    mutating func select(index: Int) {
+        if rows.indices.contains(index) { selectedIndex = index }
+    }
+
     mutating func select(bundle: String) {
         if let index = rows.firstIndex(where: { $0.candidate.bundleIdentifier == bundle }) {
             selectedIndex = index
@@ -127,7 +134,7 @@ struct PaletteModel: Equatable {
         if let failure { return .cannotOpen(appName: failure) }
 
         let candidates = allCandidates.filter { !environment.hiddenWhilePresenting.contains($0.bundleIdentifier) }
-        let findable = candidates.filter(\.isFindable)
+        let findable = candidates.filter { $0.isFindable || (environment.includesVisible && $0.section == .visible && $0.isRunning) }
         guard !findable.isEmpty else { return .nothingHidden }
 
         let matches = PaletteRanking.rank(query: query, in: findable)
@@ -135,7 +142,7 @@ struct PaletteModel: Equatable {
 
         let typed = query.trimmingCharacters(in: .whitespacesAndNewlines)
         if let system = systemItemName(matching: typed) { return .systemItem(name: system) }
-        let others = candidates.filter { !$0.isFindable }
+        let others = candidates.filter { candidate in !findable.contains { $0.bundleIdentifier == candidate.bundleIdentifier } }
         let shown = PaletteRanking.rank(query: typed, in: others.filter { $0.section == .visible && $0.isRunning }).first
         let quit = PaletteRanking.rank(query: typed, in: others.filter { $0.section != .visible && !$0.isRunning }).first
         return .noMatch(query: typed, shownApp: shown?.candidate.name, quitApp: quit?.candidate.name)

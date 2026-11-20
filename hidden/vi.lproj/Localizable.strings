@@ -375,3 +375,9 @@ Các bước xem biểu tượng luôn ẩn:
 "Tint" = "Tông màu";
 "Draws a color behind the menu bar, on every display." = "Vẽ một màu phía sau thanh menu, trên mọi màn hình.";
 "Intensity" = "Cường độ";
+
+/* Coulisse: search */
+"Also find shown icons" = "Tìm cả biểu tượng đang hiện";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Liệt kê mọi biểu tượng trên thanh menu, biểu tượng đang hiện xếp sau biểu tượng ẩn. Command-1 đến Command-9 mở một kết quả.";
+"Click an icon to open its menu, or type a few letters to find one." = "Nhấp vào một biểu tượng để mở menu, hoặc gõ vài chữ cái để tìm.";
+"No hidden icon matches “%@”" = "Không có biểu tượng ẩn nào khớp với “%@”";

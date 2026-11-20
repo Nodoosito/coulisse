@@ -374,3 +374,9 @@
 "Tint" = "色合い";
 "Draws a color behind the menu bar, on every display." = "すべてのディスプレイでメニューバーの背後に色を描きます。";
 "Intensity" = "強さ";
+
+/* Coulisse: search */
+"Also find shown icons" = "表示中のアイコンも検索";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "メニューバーのすべてのアイコンを、隠したアイコンの後に表示中のものを並べて一覧表示します。Command-1〜Command-9で結果を開きます。";
+"Click an icon to open its menu, or type a few letters to find one." = "アイコンをクリックしてメニューを開くか、数文字入力して探します。";
+"No hidden icon matches “%@”" = "「%@」に一致する隠したアイコンはありません";

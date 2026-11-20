@@ -377,3 +377,9 @@
 "Tint" = "色调";
 "Draws a color behind the menu bar, on every display." = "在每个显示器的菜单栏后方绘制一种颜色。";
 "Intensity" = "强度";
+
+/* Coulisse: search */
+"Also find shown icons" = "也查找显示中的图标";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "列出菜单栏中的所有图标，显示中的排在隐藏的之后。Command-1 至 Command-9 可打开结果。";
+"Click an icon to open its menu, or type a few letters to find one." = "点按图标以打开其菜单，或输入几个字母来查找。";
+"No hidden icon matches “%@”" = "没有与“%@”匹配的隐藏图标";

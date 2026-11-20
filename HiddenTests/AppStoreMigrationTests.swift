@@ -102,7 +102,7 @@ final class AppStoreMigrationTests: XCTestCase {
             UserDefaults.Key.presentationShortcut, UserDefaults.Key.rightClickAction,
             UserDefaults.Key.arrowClickMode, UserDefaults.Key.autoHideCountsFromPointer, UserDefaults.Key.autoHideOnAppSwitch,
             UserDefaults.Key.displayShowAll, UserDefaults.Key.menuBarTintEnabled, UserDefaults.Key.menuBarTintColor,
-            UserDefaults.Key.menuBarTintOpacity,
+            UserDefaults.Key.menuBarTintOpacity, UserDefaults.Key.paletteIncludesVisible,
         ]
         XCTAssertEqual(Set(AppStoreSettingsImport.importableKeys.keys), appKeys)
     }

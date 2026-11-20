@@ -377,3 +377,9 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Tint" = "Teinte";
 "Draws a color behind the menu bar, on every display." = "Dessine une couleur derrière la barre des menus, sur chaque écran.";
 "Intensity" = "Intensité";
+
+/* Coulisse: search */
+"Also find shown icons" = "Trouver aussi les icônes visibles";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Liste toutes les icônes de la barre des menus, les visibles après les masquées. ⌘1 à ⌘9 ouvrent un résultat.";
+"Click an icon to open its menu, or type a few letters to find one." = "Cliquez sur une icône pour ouvrir son menu, ou tapez quelques lettres pour en trouver une.";
+"No hidden icon matches “%@”" = "Aucune icône masquée ne correspond à « %@ »";

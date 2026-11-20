@@ -329,6 +329,12 @@ enum Preferences {
         }
     }
 
+    // Coulisse: the palette lists shown icons too. On until turned off.
+    static var paletteIncludesVisible: Bool {
+        get { AppDefaults.store.object(forKey: UserDefaults.Key.paletteIncludesVisible) as? Bool ?? true }
+        set { AppDefaults.store.set(newValue, forKey: UserDefaults.Key.paletteIncludesVisible) }
+    }
+
     static var notchOverflowEnabled: Bool {
         get {
             AppDefaults.store.bool(forKey: UserDefaults.Key.notchOverflowEnabled)

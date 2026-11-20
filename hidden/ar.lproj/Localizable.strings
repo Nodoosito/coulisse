@@ -376,3 +376,9 @@
 "Tint" = "تلوين";
 "Draws a color behind the menu bar, on every display." = "يرسم لونًا خلف شريط القوائم على كل شاشة.";
 "Intensity" = "الشدة";
+
+/* Coulisse: search */
+"Also find shown icons" = "البحث أيضًا في الأيقونات الظاهرة";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "يعرض كل أيقونات شريط القوائم، الظاهرة بعد المخفية. يفتح Command-1 إلى Command-9 نتيجة.";
+"Click an icon to open its menu, or type a few letters to find one." = "انقر على أيقونة لفتح قائمتها، أو اكتب بضعة أحرف للعثور عليها.";
+"No hidden icon matches “%@”" = "لا توجد أيقونة مخفية تطابق «%@»";

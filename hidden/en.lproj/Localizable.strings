@@ -374,3 +374,9 @@ Steps to view always hidden icons:
 "Tint" = "Tint";
 "Draws a color behind the menu bar, on every display." = "Draws a color behind the menu bar, on every display.";
 "Intensity" = "Intensity";
+
+/* Coulisse: search */
+"Also find shown icons" = "Also find shown icons";
+"Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result.";
+"Click an icon to open its menu, or type a few letters to find one." = "Click an icon to open its menu, or type a few letters to find one.";
+"No hidden icon matches “%@”" = "No hidden icon matches “%@”";

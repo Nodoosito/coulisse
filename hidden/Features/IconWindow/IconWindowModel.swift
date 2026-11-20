@@ -20,6 +20,8 @@ enum IconWindowContent: Equatable {
     case nothingHidden
     case accessibilityOff
     case engineUnavailable
+    /// Typed letters that match no hidden app.
+    case noMatch(String)
 
     var tileCount: Int {
         guard case .tiles(let hidden, let alwaysHidden) = self else { return 0 }
@@ -33,12 +35,23 @@ enum IconWindowContent: Equatable {
 enum IconWindowModel {
     static let maxColumns = 6
 
-    static func content(candidates: [PaletteCandidate], environment: PaletteEnvironment) -> IconWindowContent {
+    /// `query`: letters typed into the window; the tiles keep the palette's ranking.
+    static func content(candidates: [PaletteCandidate], environment: PaletteEnvironment, query: String = "") -> IconWindowContent {
         // The permission comes first: without it nothing can be read or pressed.
         guard environment.accessibilityTrusted else { return .accessibilityOff }
         guard environment.engineAvailable else { return .engineUnavailable }
         let shown = candidates.filter { $0.isFindable && !environment.hiddenWhilePresenting.contains($0.bundleIdentifier) }
         guard !shown.isEmpty else { return .nothingHidden }
+        let typed = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        if !typed.isEmpty {
+            let matches = PaletteRanking.rank(query: typed, in: shown).map(\.candidate)
+            guard !matches.isEmpty else { return .noMatch(typed) }
+            func ranked(_ section: MenuBarSection) -> [IconWindowTile] {
+                matches.filter { $0.section == section }
+                    .map { IconWindowTile(bundleIdentifier: $0.bundleIdentifier, name: $0.name, section: $0.section) }
+            }
+            return .tiles(hidden: ranked(.hidden), alwaysHidden: ranked(.alwaysHidden))
+        }
         func tiles(_ section: MenuBarSection) -> [IconWindowTile] {
             shown.filter { $0.section == section }
                 .sorted { $0.name.localizedStandardCompare($1.name) == .orderedAscending }
@@ -54,6 +67,20 @@ enum IconWindowModel {
     }
 
     /// How many columns the grid uses: as many as the longest section needs, up to the maximum.
+    /// The tiles in the order the window draws them.
+    static func orderedTiles(_ content: IconWindowContent) -> [IconWindowTile] {
+        guard case .tiles(let hidden, let alwaysHidden) = content else { return [] }
+        return hidden + alwaysHidden
+    }
+
+    /// The text a key press adds to the query, nil when the key is not for typing.
+    static func typedText(characters: String?, commandOrControl: Bool) -> String? {
+        guard !commandOrControl, let characters, !characters.isEmpty,
+              characters.unicodeScalars.allSatisfy({ CharacterSet.alphanumerics.union(.punctuationCharacters).union([" "]).contains($0) })
+        else { return nil }
+        return characters
+    }
+
     static func columns(for content: IconWindowContent) -> Int {
         guard case .tiles(let hidden, let alwaysHidden) = content else { return maxColumns }
         return max(1, min(maxColumns, max(hidden.count, alwaysHidden.count)))

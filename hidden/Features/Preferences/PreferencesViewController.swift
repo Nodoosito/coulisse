@@ -189,9 +189,14 @@ class PreferencesViewController: SettingsPaneController {
         }
         findShortcutRecorder = recorder
         onRefresh { recorder.refresh() }
+        let visible = boundSwitch(UserDefaults.Key.paletteIncludesVisible, read: { Preferences.paletteIncludesVisible },
+                                  write: { Preferences.paletteIncludesVisible = $0 })
         return [SettingsForm.row("Find a hidden icon".localized,
                                  caption: "Opens a search under the arrow. Type a few letters, then press Return to open that app's menu.".localized,
-                                 control: recorder)]
+                                 control: recorder),
+                SettingsForm.row("Also find shown icons".localized,
+                                 caption: "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result.".localized,
+                                 control: visible)]
     }
 
     // The ways to show hidden icons without aiming at the arrow. Scroll and
