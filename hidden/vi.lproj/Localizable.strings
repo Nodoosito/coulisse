@@ -343,3 +343,11 @@ Các bước xem biểu tượng luôn ẩn:
 "Active" = "Đang dùng";
 "Profile" = "Hồ sơ";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Danh sách bên dưới chỉnh hồ sơ đang dùng. Coulisse chọn hồ sơ có quy tắc phù hợp nhất; nếu không có, chọn hồ sơ bạn chọn tay gần nhất.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Quy tắc theo ứng dụng";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Hiện một biểu tượng ẩn khi bạn dùng một ứng dụng. Khi bạn chuyển sang ứng dụng khác, nó lại ẩn đi.";
+"Hide an icon first to add a rule for it." = "Hãy ẩn một biểu tượng trước để thêm quy tắc cho nó.";
+"Add a Rule" = "Thêm quy tắc";
+"when it is in front" = "khi nó ở phía trước";
+"when %@ is in front" = "khi %@ ở phía trước";

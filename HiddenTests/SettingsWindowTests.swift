@@ -670,7 +670,7 @@ final class SettingsWindowTests: XCTestCase {
         // Every frame the pane draws: a group that draws its own, or a scrolling card.
         let drawn = Self.subviews(of: pane.view).filter { ($0 as? SettingsGroupView)?.drawsFrame == true || $0 is SettingsScrollCard }
         let frames = drawn.map { $0.convert($0.bounds, to: host) }
-        XCTAssertEqual(frames.count, 4, "the profiles card (Coulisse), the new-icon card, the list card and the reset card")
+        XCTAssertEqual(frames.count, 5, "the profiles and per-app rules cards (Coulisse), the new-icon card, the list card and the reset card")
         for frame in frames {
             XCTAssertEqual(frame.minX, SettingsMetrics.sideInset, accuracy: 0.5)
             XCTAssertEqual(frame.width, SettingsMetrics.contentWidth, accuracy: 0.5, "every card is as wide as the others")

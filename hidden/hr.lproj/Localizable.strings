@@ -343,3 +343,11 @@
 "Active" = "Aktivan";
 "Profile" = "Profil";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Popis ispod uređuje aktivni profil. Coulisse bira profil čije pravilo najbolje odgovara; ako nijedno, onaj koji ste zadnji odabrali ručno.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Pravila po aplikaciji";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Prikažite skrivenu ikonu dok koristite aplikaciju. Kad prijeđete na drugu aplikaciju, ponovno se skriva.";
+"Hide an icon first to add a rule for it." = "Najprije sakrijte ikonu da biste za nju dodali pravilo.";
+"Add a Rule" = "Dodaj pravilo";
+"when it is in front" = "kad je u prvom planu";
+"when %@ is in front" = "kad je %@ u prvom planu";

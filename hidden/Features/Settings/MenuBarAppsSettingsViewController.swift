@@ -127,6 +127,7 @@ final class MenuBarAppsSettingsViewController: SettingsPaneController {
         #if HIDDENBAR_NATIVE_VISIBILITY
         // Coulisse: profiles keep one copy of this list each.
         addFullWidth(IconProfilesSettingsView())
+        addFullWidth(AppRulesSettingsView())
         #endif
         addNewAppDefaultRow()
         content.orientation = .vertical

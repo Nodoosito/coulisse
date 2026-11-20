@@ -130,6 +130,8 @@ final class NativeVisibilityEngine: MenuBarEngine {
     private var isCaptureActive: Bool
     private let expandsWhenCaptureStarts: () -> Bool
     private let sensitiveApps: () -> Set<String>
+    // Coulisse: hidden apps that per-app rules show right now (their front app is active).
+    private let ruleShownApps: () -> Set<String>
     private var presentation = PresentationState()
     private var seenPhase: PresentationPhase = .off
     private var terminationObserver: (NotificationCenter, NSObjectProtocol)?
@@ -187,6 +189,7 @@ final class NativeVisibilityEngine: MenuBarEngine {
          pausesHidingForUnkeepableItems: @escaping () -> Bool = { false },
          expandsWhenCaptureStarts: @escaping () -> Bool = { true },
          sensitiveApps: @escaping () -> Set<String> = { [] },
+         ruleShownApps: @escaping () -> Set<String> = { [] },
          terminationNotifications: NotificationCenter = .default,
          sectionMemory: MenuBarSectionMemory = InMemorySectionMemory(),
          workspaceNotifications: NotificationCenter? = nil,
@@ -207,6 +210,7 @@ final class NativeVisibilityEngine: MenuBarEngine {
         isCaptureActive = captureActivity.isActive
         self.expandsWhenCaptureStarts = expandsWhenCaptureStarts
         self.sensitiveApps = sensitiveApps
+        self.ruleShownApps = ruleShownApps
         self.ownBundleIdentifier = ownBundleIdentifier
         self.itemFrame = itemFrame
         self.displays = displays
@@ -955,7 +959,12 @@ final class NativeVisibilityEngine: MenuBarEngine {
             if presenting {
                 return NativeHold(systemItems: Self.presentationSystemItems, bundles: [])
             }
-            return layout.map { NativeHold(systemItems: Self.systemItemsToKeep, bundles: $0.bundles(in: [.visible])) }
+            return layout.map { layout in
+                let visible = layout.bundles(in: [.visible])
+                // Coulisse: an app a rule shows now joins the visible ones while collapsed.
+                let shown = ruleShownApps().filter { layout.sections[$0] != nil && !visible.contains($0) }.sorted()
+                return NativeHold(systemItems: Self.systemItemsToKeep, bundles: visible + shown)
+            }
         case .expanded:
             let shown = layout?.bundles(in: [.visible, .hidden])
             if presenting {
@@ -1009,6 +1018,12 @@ final class NativeVisibilityEngine: MenuBarEngine {
         guard mirror != presentation.mirror else { return }
         presentation.mirrorChanged(mirror)
         presentationInputsChanged()
+    }
+
+    // Coulisse: the apps per-app rules show changed (another app came to the front).
+    func appRulesDidChange() {
+        guard state == .collapsed, !holdsPresentationList else { return }
+        reconcileHold(superseding: true)
     }
 
     // The sensitive set changed in Preferences: apply it to the held list.

@@ -342,3 +342,11 @@
 "Active" = "使用中";
 "Profile" = "プロファイル";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "下のリストは使用中のプロファイルを編集します。Coulisseはルールが最も合うプロファイルを選び、合うものがなければ最後に手動で選んだものを使います。";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "アプリごとのルール";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "アプリを使っている間、隠したアイコンを表示します。別のアプリに切り替えると再び隠れます。";
+"Hide an icon first to add a rule for it." = "ルールを追加するには、まずアイコンを隠してください。";
+"Add a Rule" = "ルールを追加";
+"when it is in front" = "そのアプリが前面のとき";
+"when %@ is in front" = "%@が前面のとき";

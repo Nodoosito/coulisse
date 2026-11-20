@@ -343,3 +343,11 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "Active" = "Aktiv";
 "Profile" = "Profil";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Die Liste unten bearbeitet das aktive Profil. Coulisse wählt das Profil, dessen Regel am besten passt; sonst das zuletzt von Hand gewählte.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Regeln pro App";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Zeige ein ausgeblendetes Symbol, während du eine App benutzt. Wechselst du zu einer anderen App, wird es wieder ausgeblendet.";
+"Hide an icon first to add a rule for it." = "Blende zuerst ein Symbol aus, um eine Regel dafür hinzuzufügen.";
+"Add a Rule" = "Regel hinzufügen";
+"when it is in front" = "wenn sie im Vordergrund ist";
+"when %@ is in front" = "wenn %@ im Vordergrund ist";

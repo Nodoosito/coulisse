@@ -344,3 +344,11 @@
 "Active" = "نشط";
 "Profile" = "الملف الشخصي";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "تعدّل القائمة أدناه الملف الشخصي النشط. يختار Coulisse الملف الذي تناسبه قاعدته أكثر؛ وإن لم يوجد، فآخر ملف اخترته يدويًا.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "قواعد لكل تطبيق";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "أظهِر أيقونة مخفية أثناء استخدامك تطبيقًا. عند الانتقال إلى تطبيق آخر، تختفي من جديد.";
+"Hide an icon first to add a rule for it." = "أخفِ أيقونة أولًا لإضافة قاعدة لها.";
+"Add a Rule" = "إضافة قاعدة";
+"when it is in front" = "عندما يكون في المقدمة";
+"when %@ is in front" = "عندما يكون %@ في المقدمة";

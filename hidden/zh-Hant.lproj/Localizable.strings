@@ -358,3 +358,11 @@
 "Active" = "使用中";
 "Profile" = "描述檔";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "下方列表編輯目前使用的描述檔。Coulisse 會選擇規則最符合的描述檔；若無符合，則使用你最後手動選擇的。";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "依 App 規則";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "在你使用某個 App 時顯示一個隱藏的圖示。切換到其他 App 後，它會再次隱藏。";
+"Hide an icon first to add a rule for it." = "請先隱藏一個圖示，才能為它加入規則。";
+"Add a Rule" = "加入規則";
+"when it is in front" = "當它在最前面時";
+"when %@ is in front" = "當 %@ 在最前面時";

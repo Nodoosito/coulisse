@@ -345,3 +345,11 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Active" = "Actif";
 "Profile" = "Profil";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "La liste ci-dessous modifie le profil actif. Coulisse choisit le profil dont la règle correspond le mieux ; sinon, celui que vous avez choisi en dernier à la main.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Règles par app";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Affichez une icône masquée pendant que vous utilisez une app. Quand vous passez à une autre app, elle se masque à nouveau.";
+"Hide an icon first to add a rule for it." = "Masquez d’abord une icône pour lui ajouter une règle.";
+"Add a Rule" = "Ajouter une règle";
+"when it is in front" = "quand elle est au premier plan";
+"when %@ is in front" = "quand %@ est au premier plan";

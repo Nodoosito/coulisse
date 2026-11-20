@@ -4041,3 +4041,50 @@ final class CaptureActivityMonitorTests: XCTestCase {
         return count
     }
 }
+
+// Coulisse: per-app rules add the apps they show now to the collapsed hold.
+final class AppRuleHoldTests: XCTestCase {
+    private var items: FakeItems!
+    private var inventory: FakeInventory!
+    private var visibility: FakeVisibility!
+    private var shown: Set<String> = []
+
+    override func setUp() {
+        super.setUp()
+        items = FakeItems()
+        inventory = FakeInventory()
+        visibility = FakeVisibility()
+    }
+
+    private func makeEngine() -> NativeVisibilityEngine {
+        let items = self.items!
+        let engine = NativeVisibilityEngine(items: items, inventory: inventory, visibility: visibility,
+                                            ownBundleIdentifier: "com.lucasminelli.coulisse",
+                                            itemFrame: { $0 === items.toggleItem ? separator : alwaysHiddenSeparator },
+                                            displays: { [mainDisplay] },
+                                            isLTR: { true },
+                                            ruleShownApps: { [unowned self] in shown })
+        engine.scheduleVisibilityCheck = { $0() }
+        return engine
+    }
+
+    // Given a hidden app a rule shows (its front app is active)
+    // When the bar collapses, then the front app changes
+    // Then the app is held visible, then hidden again; an app the bar never read is not added
+    func testRuleShownAppJoinsTheCollapsedHoldUntilItsAppLeavesTheFront() {
+        inventory.items = [item("com.hidden", x: 1100), item("com.other", x: 1050)]
+        shown = ["com.hidden", "com.not.in.bar"]
+        let engine = makeEngine()
+        engine.collapse { _ in }
+        XCTAssertEqual(visibility.requests.first?.bundles.contains("com.hidden"), true)
+        XCTAssertEqual(visibility.requests.first?.bundles.contains("com.other"), false)
+        XCTAssertEqual(visibility.requests.first?.bundles.contains("com.not.in.bar"), false)
+        _ = visibility.succeed(0)
+        XCTAssertEqual(engine.state, .collapsed)
+
+        shown = []
+        engine.appRulesDidChange()
+        XCTAssertEqual(visibility.requests.count, 2)
+        XCTAssertEqual(visibility.requests.last?.bundles.contains("com.hidden"), false)
+    }
+}

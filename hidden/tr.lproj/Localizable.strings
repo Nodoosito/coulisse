@@ -344,3 +344,11 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "Active" = "Etkin";
 "Profile" = "Profil";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Aşağıdaki liste etkin profili düzenler. Coulisse kuralı en iyi uyan profili seçer; hiçbiri uymazsa en son elle seçtiğinizi.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Uygulama kuralları";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Bir uygulamayı kullanırken gizli bir simgeyi gösterin. Başka bir uygulamaya geçtiğinizde yeniden gizlenir.";
+"Hide an icon first to add a rule for it." = "Kural eklemek için önce bir simgeyi gizleyin.";
+"Add a Rule" = "Kural ekle";
+"when it is in front" = "öndeyken";
+"when %@ is in front" = "%@ öndeyken";

@@ -345,3 +345,11 @@ Passi per mostrare le icone sempre nascoste:
 "Active" = "Attivo";
 "Profile" = "Profilo";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "L’elenco qui sotto modifica il profilo attivo. Coulisse sceglie il profilo la cui regola corrisponde meglio; altrimenti, l’ultimo scelto a mano.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Regole per app";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Mostra un’icona nascosta mentre usi un’app. Quando passi a un’altra app, si nasconde di nuovo.";
+"Hide an icon first to add a rule for it." = "Nascondi prima un’icona per aggiungere una regola.";
+"Add a Rule" = "Aggiungi una regola";
+"when it is in front" = "quando è in primo piano";
+"when %@ is in front" = "quando %@ è in primo piano";

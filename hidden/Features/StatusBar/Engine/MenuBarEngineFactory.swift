@@ -37,12 +37,16 @@ enum MenuBarEngineFactory {
                                                 pausesHidingForUnkeepableItems: { Preferences.pauseHidingForUnkeepableItems },
                                                 expandsWhenCaptureStarts: { Preferences.showWholeBarWhenCaptureStarts },
                                                 sensitiveApps: { Preferences.presentationSensitiveApps },
+                                                ruleShownApps: { AppRuleManager.shared.shownNow },
                                                 sectionMemory: UserDefaultsSectionMemory(),
                                                 workspaceNotifications: NSWorkspace.shared.notificationCenter,
                                                 pinnedSections: UserDefaultsPinnedSections(),
                                                 pinsSections: { Preferences.pinnedSectionsEnabled },
                                                 ignoredDrags: { UserDefaultsDragLocks().bundles },
                                                 agentLaunches: agentLaunches)
+            // Coulisse: per-app rules re-apply the hold when the front app changes.
+            AppRuleManager.shared.onChange = { [weak engine] in engine?.appRulesDidChange() }
+            AppRuleManager.shared.start()
             let catalog = MenuBarItemCatalog.shared
             engine.onUnrestrictedRead = { layout, inventory in
                 ArrivalsController.shared.noteInventory(inventory)

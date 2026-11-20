@@ -268,6 +268,11 @@
 		A37343205B7469FBDEDC8BEF /* IconProfilesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DDDBD017EEA10B8C33DF3 /* IconProfilesSettingsView.swift */; };
 		00FFE07410E7064F72B859D7 /* IconProfilesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776DDDBD017EEA10B8C33DF3 /* IconProfilesSettingsView.swift */; };
 		AA388FF90F0AAF7447D47545 /* IconProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6491E12287EE645A7EB9CB2 /* IconProfileTests.swift */; };
+		BD513D5ACD3A7AB21C39FBEE /* AppRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939322BCA5D12B7860B08A4 /* AppRule.swift */; };
+		EA2644C5521C10BE23402E30 /* AppRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0939322BCA5D12B7860B08A4 /* AppRule.swift */; };
+		C3D81FD47A7813888864871A /* AppRulesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */; };
+		594A9B0DD52BEAE14476595E /* AppRulesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */; };
+		4DE9B95CFAD2C9139854CA08 /* AppRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122826261F0994769B3F28A /* AppRuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -456,6 +461,9 @@
 		F4949A8D5D97425C5A1B1CD0 /* IconProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProfileManager.swift; sourceTree = "<group>"; };
 		776DDDBD017EEA10B8C33DF3 /* IconProfilesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProfilesSettingsView.swift; sourceTree = "<group>"; };
 		B6491E12287EE645A7EB9CB2 /* IconProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProfileTests.swift; sourceTree = "<group>"; };
+		0939322BCA5D12B7860B08A4 /* AppRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRule.swift; sourceTree = "<group>"; };
+		1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRulesSettingsView.swift; sourceTree = "<group>"; };
+		9122826261F0994769B3F28A /* AppRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -526,6 +534,7 @@
 				A9E70DE0000000000000D004 /* Palette */,
 				CF69FAC7D4BC32410FDD18D3 /* IconWindow */,
 				AD53B3E18CA60C627D907979 /* Profiles */,
+				A0BB68C0B1F5461F38F52853 /* AppRules */,
 				B7E40DE0000000000000F006 /* Presentation */,
 			);
 			path = Features;
@@ -619,6 +628,7 @@
 		82028E09AB3D6FF759D8044C /* HiddenTests */ = {
 			isa = PBXGroup;
 			children = (
+				9122826261F0994769B3F28A /* AppRuleTests.swift */,
 				B6491E12287EE645A7EB9CB2 /* IconProfileTests.swift */,
 				47FC3F05CB5B60F7EAF7ADB0 /* IconWindowTests.swift */,
 				9B44EDBC1C09AEF89C472D74 /* NotchGeometryTests.swift */,
@@ -884,6 +894,15 @@
 			path = Profiles;
 			sourceTree = "<group>";
 		};
+		A0BB68C0B1F5461F38F52853 /* AppRules */ = {
+			isa = PBXGroup;
+			children = (
+				1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */,
+				0939322BCA5D12B7860B08A4 /* AppRule.swift */,
+			);
+			path = AppRules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1131,6 +1150,8 @@
 				1AC7507A4828F7C4F978FA75 /* PalettePlacement.swift in Sources */,
 				5E8A16F800637DA48B25A540 /* PaletteContentView.swift in Sources */,
 				FF12D2A950C4CF2C063CE168 /* PaletteController.swift in Sources */,
+				C3D81FD47A7813888864871A /* AppRulesSettingsView.swift in Sources */,
+				BD513D5ACD3A7AB21C39FBEE /* AppRule.swift in Sources */,
 				A37343205B7469FBDEDC8BEF /* IconProfilesSettingsView.swift in Sources */,
 				47F31482389DA79CB2526CBA /* IconProfileManager.swift in Sources */,
 				338B7BC7EF78D6DFE4FE5CD8 /* IconWindowController.swift in Sources */,
@@ -1171,6 +1192,7 @@
 				08CD9158FCFA204A9A30E774 /* ArrivalsControllerTests.swift in Sources */,
 				66DF0349C38E0ED5CAC21540 /* PaletteSettingsTests.swift in Sources */,
 				794F7B411F8E4C7290BCA1DF /* PalettePanelTests.swift in Sources */,
+				4DE9B95CFAD2C9139854CA08 /* AppRuleTests.swift in Sources */,
 				AA388FF90F0AAF7447D47545 /* IconProfileTests.swift in Sources */,
 				E58AAA5F32514D4F642BB6DE /* IconWindowTests.swift in Sources */,
 				6FF33615EA4F54ABD7CF2571 /* PresentationViewsTests.swift in Sources */,
@@ -1252,6 +1274,8 @@
 				53037AF392CAEEBFA8F60B1A /* PalettePlacement.swift in Sources */,
 				A2AD6DBDA644768ED4A8582F /* PaletteContentView.swift in Sources */,
 				10FD5783E1F35450DBAF8F2F /* PaletteController.swift in Sources */,
+				594A9B0DD52BEAE14476595E /* AppRulesSettingsView.swift in Sources */,
+				EA2644C5521C10BE23402E30 /* AppRule.swift in Sources */,
 				00FFE07410E7064F72B859D7 /* IconProfilesSettingsView.swift in Sources */,
 				FE144F63193DCD065CEBDC7F /* IconProfileManager.swift in Sources */,
 				5949596A796C947ADF1B56FE /* IconWindowController.swift in Sources */,

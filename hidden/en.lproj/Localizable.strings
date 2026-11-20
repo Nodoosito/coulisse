@@ -342,3 +342,11 @@ Steps to view always hidden icons:
 "Active" = "Active";
 "Profile" = "Profile";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Per-app rules";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Show a hidden icon while you use an app. When you switch to another app, it hides again.";
+"Hide an icon first to add a rule for it." = "Hide an icon first to add a rule for it.";
+"Add a Rule" = "Add a Rule";
+"when it is in front" = "when it is in front";
+"when %@ is in front" = "when %@ is in front";

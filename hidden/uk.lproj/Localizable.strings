@@ -343,3 +343,11 @@
 "Active" = "Активний";
 "Profile" = "Профіль";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Список нижче змінює активний профіль. Coulisse вибирає профіль, правило якого підходить найкраще; якщо жодне, — той, що ви вибрали вручну останнім.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Правила для програм";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Показуйте прихований значок, поки використовуєте програму. Коли перейдете до іншої програми, він знову сховається.";
+"Hide an icon first to add a rule for it." = "Спочатку приховайте значок, щоб додати для нього правило.";
+"Add a Rule" = "Додати правило";
+"when it is in front" = "коли вона на передньому плані";
+"when %@ is in front" = "коли %@ на передньому плані";

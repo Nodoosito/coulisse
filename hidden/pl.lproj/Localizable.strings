@@ -343,3 +343,11 @@ Jak wyświetlić ikony „Zawsze ukryte”:
 "Active" = "Aktywny";
 "Profile" = "Profil";
 "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Lista poniżej zmienia aktywny profil. Coulisse wybiera profil, którego reguła pasuje najlepiej; jeśli żadna, ostatnio wybrany ręcznie.";
+
+/* Coulisse: per-app rules */
+"Per-app rules" = "Reguły dla aplikacji";
+"Show a hidden icon while you use an app. When you switch to another app, it hides again." = "Pokazuj ukrytą ikonę, gdy używasz aplikacji. Po przełączeniu na inną aplikację ikona znów się ukrywa.";
+"Hide an icon first to add a rule for it." = "Najpierw ukryj ikonę, aby dodać dla niej regułę.";
+"Add a Rule" = "Dodaj regułę";
+"when it is in front" = "gdy jest na pierwszym planie";
+"when %@ is in front" = "gdy %@ jest na pierwszym planie";
