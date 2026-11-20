@@ -281,6 +281,9 @@
 		5EB2AAD741AB6AE2B719FF06 /* BarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */; };
 		EB4C0F5E0C0179382BDDD6F7 /* MenuBarTintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */; };
 		13CB66861F1F2E297C7A5531 /* MenuBarTintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */; };
+		13AD65328FE9E95FC6B69C2A /* SettingsBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E32082C4EFE9583E25EFBA /* SettingsBackup.swift */; };
+		BEE47DE5588DF3C718CF6DAE /* SettingsBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E32082C4EFE9583E25EFBA /* SettingsBackup.swift */; };
+		265275BD7E8E49D201D29504 /* SettingsBackupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8A8D8318A43FBA2A0106E8 /* SettingsBackupTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -475,6 +478,8 @@
 		02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayShowAll.swift; sourceTree = "<group>"; };
 		CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarAppearance.swift; sourceTree = "<group>"; };
 		478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTintController.swift; sourceTree = "<group>"; };
+		D0E32082C4EFE9583E25EFBA /* SettingsBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBackup.swift; sourceTree = "<group>"; };
+		8A8A8D8318A43FBA2A0106E8 /* SettingsBackupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBackupTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,6 +553,7 @@
 				A0BB68C0B1F5461F38F52853 /* AppRules */,
 				09F90C616741B2205B1A526B /* Displays */,
 				282635FDE735789EF0ED567A /* BarAppearance */,
+				5606C4A174839D6F1C680105 /* SettingsBackup */,
 				B7E40DE0000000000000F006 /* Presentation */,
 			);
 			path = Features;
@@ -641,6 +647,7 @@
 		82028E09AB3D6FF759D8044C /* HiddenTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A8A8D8318A43FBA2A0106E8 /* SettingsBackupTests.swift */,
 				9122826261F0994769B3F28A /* AppRuleTests.swift */,
 				B6491E12287EE645A7EB9CB2 /* IconProfileTests.swift */,
 				47FC3F05CB5B60F7EAF7ADB0 /* IconWindowTests.swift */,
@@ -933,6 +940,14 @@
 			path = BarAppearance;
 			sourceTree = "<group>";
 		};
+		5606C4A174839D6F1C680105 /* SettingsBackup */ = {
+			isa = PBXGroup;
+			children = (
+				D0E32082C4EFE9583E25EFBA /* SettingsBackup.swift */,
+			);
+			path = SettingsBackup;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1182,6 +1197,7 @@
 				1AC7507A4828F7C4F978FA75 /* PalettePlacement.swift in Sources */,
 				5E8A16F800637DA48B25A540 /* PaletteContentView.swift in Sources */,
 				FF12D2A950C4CF2C063CE168 /* PaletteController.swift in Sources */,
+				13AD65328FE9E95FC6B69C2A /* SettingsBackup.swift in Sources */,
 				EB4C0F5E0C0179382BDDD6F7 /* MenuBarTintController.swift in Sources */,
 				C3D81FD47A7813888864871A /* AppRulesSettingsView.swift in Sources */,
 				BD513D5ACD3A7AB21C39FBEE /* AppRule.swift in Sources */,
@@ -1225,6 +1241,7 @@
 				08CD9158FCFA204A9A30E774 /* ArrivalsControllerTests.swift in Sources */,
 				66DF0349C38E0ED5CAC21540 /* PaletteSettingsTests.swift in Sources */,
 				794F7B411F8E4C7290BCA1DF /* PalettePanelTests.swift in Sources */,
+				265275BD7E8E49D201D29504 /* SettingsBackupTests.swift in Sources */,
 				4DE9B95CFAD2C9139854CA08 /* AppRuleTests.swift in Sources */,
 				AA388FF90F0AAF7447D47545 /* IconProfileTests.swift in Sources */,
 				E58AAA5F32514D4F642BB6DE /* IconWindowTests.swift in Sources */,
@@ -1309,6 +1326,7 @@
 				53037AF392CAEEBFA8F60B1A /* PalettePlacement.swift in Sources */,
 				A2AD6DBDA644768ED4A8582F /* PaletteContentView.swift in Sources */,
 				10FD5783E1F35450DBAF8F2F /* PaletteController.swift in Sources */,
+				BEE47DE5588DF3C718CF6DAE /* SettingsBackup.swift in Sources */,
 				13CB66861F1F2E297C7A5531 /* MenuBarTintController.swift in Sources */,
 				594A9B0DD52BEAE14476595E /* AppRulesSettingsView.swift in Sources */,
 				EA2644C5521C10BE23402E30 /* AppRule.swift in Sources */,

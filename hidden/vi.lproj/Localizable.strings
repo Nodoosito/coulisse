@@ -381,3 +381,12 @@ Các bước xem biểu tượng luôn ẩn:
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Liệt kê mọi biểu tượng trên thanh menu, biểu tượng đang hiện xếp sau biểu tượng ẩn. Command-1 đến Command-9 mở một kết quả.";
 "Click an icon to open its menu, or type a few letters to find one." = "Nhấp vào một biểu tượng để mở menu, hoặc gõ vài chữ cái để tìm.";
 "No hidden icon matches “%@”" = "Không có biểu tượng ẩn nào khớp với “%@”";
+
+/* Coulisse: settings file */
+"Settings file" = "Tệp cài đặt";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Lưu cài đặt, hồ sơ và quy tắc theo ứng dụng vào một tệp, cho máy Mac khác hoặc sau khi cài lại.";
+"Export…" = "Xuất…";
+"Import…" = "Nhập…";
+"Import these settings?" = "Nhập các cài đặt này?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Chúng sẽ thay thế cài đặt, hồ sơ và quy tắc hiện tại. Sau đó Coulisse khởi động lại.";
+"This file does not hold Coulisse settings." = "Tệp này không chứa cài đặt của Coulisse.";

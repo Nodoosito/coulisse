@@ -383,3 +383,12 @@ Passi per mostrare le icone sempre nascoste:
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Elenca tutte le icone della barra dei menu, le visibili dopo le nascoste. Comando-1 … Comando-9 aprono un risultato.";
 "Click an icon to open its menu, or type a few letters to find one." = "Fai clic su un’icona per aprirne il menu, oppure digita qualche lettera per trovarne una.";
 "No hidden icon matches “%@”" = "Nessuna icona nascosta corrisponde a “%@”";
+
+/* Coulisse: settings file */
+"Settings file" = "File delle impostazioni";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Salva impostazioni, profili e regole per app in un file, per un altro Mac o dopo una reinstallazione.";
+"Export…" = "Esporta…";
+"Import…" = "Importa…";
+"Import these settings?" = "Importare queste impostazioni?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Sostituiscono le impostazioni, i profili e le regole attuali. Poi Coulisse si riavvia.";
+"This file does not hold Coulisse settings." = "Questo file non contiene impostazioni di Coulisse.";

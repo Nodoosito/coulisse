@@ -396,3 +396,12 @@
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "列出選單列中的所有圖示，顯示中的排在隱藏的之後。Command-1 至 Command-9 可打開結果。";
 "Click an icon to open its menu, or type a few letters to find one." = "點按圖示以打開其選單，或輸入幾個字母來尋找。";
 "No hidden icon matches “%@”" = "沒有與「%@」相符的隱藏圖示";
+
+/* Coulisse: settings file */
+"Settings file" = "設定檔案";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "將設定、描述檔和依 App 規則儲存到檔案中，供另一部 Mac 或重新安裝後使用。";
+"Export…" = "輸出…";
+"Import…" = "輸入…";
+"Import these settings?" = "要輸入這些設定嗎？";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "它們會取代目前的設定、描述檔和規則。之後 Coulisse 會重新啟動。";
+"This file does not hold Coulisse settings." = "此檔案不包含 Coulisse 設定。";

@@ -381,3 +381,12 @@
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Показує всі значки смуги меню, видимі після прихованих. Command-1 … Command-9 відкривають результат.";
 "Click an icon to open its menu, or type a few letters to find one." = "Клацніть значок, щоб відкрити його меню, або введіть кілька літер, щоб знайти його.";
 "No hidden icon matches “%@”" = "Жоден прихований значок не відповідає «%@»";
+
+/* Coulisse: settings file */
+"Settings file" = "Файл параметрів";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Зберігає параметри, профілі й правила для програм у файлі — для іншого Mac або після перевстановлення.";
+"Export…" = "Експортувати…";
+"Import…" = "Імпортувати…";
+"Import these settings?" = "Імпортувати ці параметри?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Вони замінять поточні параметри, профілі й правила. Потім Coulisse перезапуститься.";
+"This file does not hold Coulisse settings." = "Цей файл не містить параметрів Coulisse.";

@@ -382,3 +382,12 @@
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "يعرض كل أيقونات شريط القوائم، الظاهرة بعد المخفية. يفتح Command-1 إلى Command-9 نتيجة.";
 "Click an icon to open its menu, or type a few letters to find one." = "انقر على أيقونة لفتح قائمتها، أو اكتب بضعة أحرف للعثور عليها.";
 "No hidden icon matches “%@”" = "لا توجد أيقونة مخفية تطابق «%@»";
+
+/* Coulisse: settings file */
+"Settings file" = "ملف الإعدادات";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "يحفظ إعداداتك وملفاتك الشخصية وقواعد التطبيقات في ملف، لاستخدامها على Mac آخر أو بعد إعادة التثبيت.";
+"Export…" = "تصدير…";
+"Import…" = "استيراد…";
+"Import these settings?" = "استيراد هذه الإعدادات؟";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "ستحلّ محل إعداداتك وملفاتك الشخصية وقواعدك الحالية. ثم يُعاد تشغيل Coulisse.";
+"This file does not hold Coulisse settings." = "لا يحتوي هذا الملف على إعدادات Coulisse.";

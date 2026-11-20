@@ -382,3 +382,12 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Tüm menü çubuğu simgelerini listeler; görünenler gizlilerden sonra gelir. Command-1 ile Command-9 bir sonucu açar.";
 "Click an icon to open its menu, or type a few letters to find one." = "Menüsünü açmak için bir simgeye tıklayın veya bulmak için birkaç harf yazın.";
 "No hidden icon matches “%@”" = "“%@” ile eşleşen gizli simge yok";
+
+/* Coulisse: settings file */
+"Settings file" = "Ayar dosyası";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Ayarlarınızı, profillerinizi ve uygulama kurallarınızı başka bir Mac için veya yeniden kurulumdan sonra kullanmak üzere bir dosyada saklar.";
+"Export…" = "Dışa aktar…";
+"Import…" = "İçe aktar…";
+"Import these settings?" = "Bu ayarlar içe aktarılsın mı?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Geçerli ayarlarınızın, profillerinizin ve kurallarınızın yerini alır. Ardından Coulisse yeniden başlar.";
+"This file does not hold Coulisse settings." = "Bu dosya Coulisse ayarları içermiyor.";

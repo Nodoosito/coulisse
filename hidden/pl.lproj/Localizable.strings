@@ -381,3 +381,12 @@ Jak wyświetlić ikony „Zawsze ukryte”:
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Wyświetla wszystkie ikony paska menu, widoczne po ukrytych. Command-1 do Command-9 otwierają wynik.";
 "Click an icon to open its menu, or type a few letters to find one." = "Kliknij ikonę, aby otworzyć jej menu, albo wpisz kilka liter, aby ją znaleźć.";
 "No hidden icon matches “%@”" = "Żadna ukryta ikona nie pasuje do „%@”";
+
+/* Coulisse: settings file */
+"Settings file" = "Plik ustawień";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Zapisuje ustawienia, profile i reguły dla aplikacji w pliku, dla innego Maca lub po ponownej instalacji.";
+"Export…" = "Eksportuj…";
+"Import…" = "Importuj…";
+"Import these settings?" = "Zaimportować te ustawienia?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Zastąpią obecne ustawienia, profile i reguły. Następnie Coulisse uruchomi się ponownie.";
+"This file does not hold Coulisse settings." = "Ten plik nie zawiera ustawień Coulisse.";

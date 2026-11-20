@@ -75,6 +75,19 @@ final class AdvancedSettingsViewController: SettingsPaneController {
                                        ? "The arrow is the edge. Picked for your macOS version."
                                        : "The | separator is the edge. Picked for your macOS version.").localized,
                              control: method))
+        #if HIDDENBAR_NATIVE_VISIBILITY
+        if context.usesNativeEngine {
+            let export = NSButton(title: "Export…".localized, target: self, action: #selector(exportSettings))
+            let importButton = NSButton(title: "Import…".localized, target: self, action: #selector(importSettings))
+            export.controlSize = .small
+            importButton.controlSize = .small
+            let buttons = NSStackView(views: [export, importButton])
+            buttons.spacing = 6
+            rows.append(SettingsForm.row("Settings file".localized,
+                                         caption: "Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall.".localized,
+                                         control: buttons))
+        }
+        #endif
         // One group: every row here is set once, if ever.
         addSection(nil, rows: rows)
         refreshAll()
@@ -101,6 +114,11 @@ final class AdvancedSettingsViewController: SettingsPaneController {
                                 caption: "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone.".localized,
                                 control: popup)
     }
+
+    #if HIDDENBAR_NATIVE_VISIBILITY
+    @objc private func exportSettings() { SettingsBackup.runExport(from: view.window) }
+    @objc private func importSettings() { SettingsBackup.runImport(from: view.window) }
+    #endif
 
     @objc private func displayShowAllPicked(_ sender: NSPopUpButton) {
         guard Self.displayShowAllChoices.indices.contains(sender.indexOfSelectedItem) else { return }

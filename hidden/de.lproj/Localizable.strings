@@ -381,3 +381,12 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Listet alle Symbole der Menüleiste, sichtbare nach den ausgeblendeten. Befehl-1 bis Befehl-9 öffnen ein Ergebnis.";
 "Click an icon to open its menu, or type a few letters to find one." = "Klicke auf ein Symbol, um sein Menü zu öffnen, oder tippe ein paar Buchstaben, um eines zu finden.";
 "No hidden icon matches “%@”" = "Kein ausgeblendetes Symbol passt zu „%@“";
+
+/* Coulisse: settings file */
+"Settings file" = "Einstellungsdatei";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Sichert Einstellungen, Profile und Regeln pro App in einer Datei, für einen anderen Mac oder nach einer Neuinstallation.";
+"Export…" = "Exportieren …";
+"Import…" = "Importieren …";
+"Import these settings?" = "Diese Einstellungen importieren?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Sie ersetzen deine aktuellen Einstellungen, Profile und Regeln. Coulisse startet danach neu.";
+"This file does not hold Coulisse settings." = "Diese Datei enthält keine Coulisse-Einstellungen.";

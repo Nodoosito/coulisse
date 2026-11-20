@@ -380,3 +380,12 @@ Steps to view always hidden icons:
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result.";
 "Click an icon to open its menu, or type a few letters to find one." = "Click an icon to open its menu, or type a few letters to find one.";
 "No hidden icon matches “%@”" = "No hidden icon matches “%@”";
+
+/* Coulisse: settings file */
+"Settings file" = "Settings file";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall.";
+"Export…" = "Export…";
+"Import…" = "Import…";
+"Import these settings?" = "Import these settings?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "They replace your current settings, profiles and rules. Coulisse then restarts.";
+"This file does not hold Coulisse settings." = "This file does not hold Coulisse settings.";

@@ -276,9 +276,9 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Show menu" = "Afficher le menu";
 "Show always-hidden icons" = "Afficher les icônes toujours masquées";
 "Option-right-click the arrow to open the menu." = "Option + clic droit sur la flèche pour ouvrir le menu.";
-"Coulisse from the App Store is running. Quit it and switch to this version?" = "Coulisse de l’App Store est en cours d’exécution. Le quitter et passer à cette version ?";
+"Coulisse from the App Store is running. Quit it and switch to this version?" = "Coulisse de l’App Store est en cours d’exécution. La quitter et passer à cette version ?";
 "Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise." = "Une seule instance de Coulisse peut être ouverte à la fois. La version de l’App Store reste installée tant que vous n’en décidez pas autrement.";
-"Coulisse %@ is running. Quit it and switch to this version?" = "Coulisse %@ est en cours d’exécution. Le quitter et passer à cette version ?";
+"Coulisse %@ is running. Quit it and switch to this version?" = "Coulisse %@ est en cours d’exécution. La quitter et passer à cette version ?";
 "Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise." = "Une seule instance de Coulisse peut être ouverte à la fois. L’ancienne version reste où elle est tant que vous n’en décidez pas autrement.";
 "Quit and Switch" = "Quitter et basculer";
 "Cancel" = "Annuler";
@@ -383,3 +383,12 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "Liste toutes les icônes de la barre des menus, les visibles après les masquées. ⌘1 à ⌘9 ouvrent un résultat.";
 "Click an icon to open its menu, or type a few letters to find one." = "Cliquez sur une icône pour ouvrir son menu, ou tapez quelques lettres pour en trouver une.";
 "No hidden icon matches “%@”" = "Aucune icône masquée ne correspond à « %@ »";
+
+/* Coulisse: settings file */
+"Settings file" = "Fichier de réglages";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "Enregistre vos réglages, profils et règles par app dans un fichier, pour un autre Mac ou après une réinstallation.";
+"Export…" = "Exporter…";
+"Import…" = "Importer…";
+"Import these settings?" = "Importer ces réglages ?";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "Ils remplacent vos réglages, profils et règles actuels. Coulisse redémarre ensuite.";
+"This file does not hold Coulisse settings." = "Ce fichier ne contient pas de réglages Coulisse.";

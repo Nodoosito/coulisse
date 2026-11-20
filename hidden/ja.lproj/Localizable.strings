@@ -380,3 +380,12 @@
 "Lists every menu bar icon, shown ones after the hidden ones. Command-1 to Command-9 open a result." = "メニューバーのすべてのアイコンを、隠したアイコンの後に表示中のものを並べて一覧表示します。Command-1〜Command-9で結果を開きます。";
 "Click an icon to open its menu, or type a few letters to find one." = "アイコンをクリックしてメニューを開くか、数文字入力して探します。";
 "No hidden icon matches “%@”" = "「%@」に一致する隠したアイコンはありません";
+
+/* Coulisse: settings file */
+"Settings file" = "設定ファイル";
+"Keeps your settings, profiles and per-app rules in a file, for another Mac or after a reinstall." = "設定、プロファイル、アプリごとのルールをファイルに保存します。別のMacや再インストール後に使えます。";
+"Export…" = "書き出す…";
+"Import…" = "読み込む…";
+"Import these settings?" = "これらの設定を読み込みますか？";
+"They replace your current settings, profiles and rules. Coulisse then restarts." = "現在の設定、プロファイル、ルールが置き換えられます。その後Coulisseが再起動します。";
+"This file does not hold Coulisse settings." = "このファイルにはCoulisseの設定が含まれていません。";
