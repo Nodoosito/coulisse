@@ -311,3 +311,16 @@ Steps to view always hidden icons:
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide.";
 
 "Based on Hidden Bar" = "Based on Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Click on the arrow";
+"Automatic" = "Automatic";
+"Open the icon window" = "Open the icon window";
+"Expand the bar" = "Expand the bar";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Opens the icon window when the menu bar has no room for every icon, else expands the bar.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Hidden icons come back in the menu bar. Right-click the arrow for the icon window.";
+"Show Icon Window" = "Show Icon Window";
+"Hidden icons" = "Hidden icons";
+"Click an icon to open its menu." = "Click an icon to open its menu.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden.";

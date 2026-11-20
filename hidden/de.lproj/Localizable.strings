@@ -312,3 +312,16 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Alle Symbole liegen rechts vom Pfeil, daher gibt es nichts auszublenden. Halte die Befehlstaste gedrückt und ziehe den Pfeil rechts neben die Symbole, die du ausblenden möchtest.";
 
 "Based on Hidden Bar" = "Basiert auf Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Klick auf den Pfeil";
+"Automatic" = "Automatisch";
+"Open the icon window" = "Symbolfenster öffnen";
+"Expand the bar" = "Leiste ausklappen";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Öffnet das Symbolfenster, wenn die Menüleiste nicht für alle Symbole Platz hat, sonst wird die Leiste ausgeklappt.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Ausgeblendete Symbole öffnen sich in einem kleinen Fenster unter dem Pfeil. Umschalt-Klick auf den Pfeil klappt die Leiste aus.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Ausgeblendete Symbole kehren in die Menüleiste zurück. Rechtsklick auf den Pfeil öffnet das Symbolfenster.";
+"Show Icon Window" = "Symbolfenster anzeigen";
+"Hidden icons" = "Ausgeblendete Symbole";
+"Click an icon to open its menu." = "Klicke auf ein Symbol, um sein Menü zu öffnen.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS hat in der Menüleiste keinen Platz für %@ gefunden. Klappe die Leiste aus oder verschiebe ein selten genutztes Symbol nach „Immer ausgeblendet“.";

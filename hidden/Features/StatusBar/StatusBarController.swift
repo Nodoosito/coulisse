@@ -115,7 +115,15 @@ class StatusBarController: MenuBarItemProvider {
     // The type-to-find palette (direct build, native engine). Built on first use.
     private var paletteSession: PaletteRevealSession?
     private lazy var palette: PaletteController = makePalette()
+    // Coulisse: the icon window under the arrow. Built on first use.
+    private var iconWindowStorage: IconWindowController?
+    private var iconWindowOverflow = IconWindowOverflowMemory()
+    private var isReadingOverflowForClick = false
+    private var displaysObserver: NSObjectProtocol?
     #endif
+    // The expand now running came from a click on the arrow: automatic mode may
+    // fold it into the icon window when the icons do not fit.
+    private var expandFromArrowClick = false
 
     private var hoverMonitor: Any?
     private var pinnedSectionsObserver: NSObjectProtocol?
@@ -340,12 +348,16 @@ class StatusBarController: MenuBarItemProvider {
         case .ignore:
             break
         case .toggle:
-            let wasCollapsed = isCollapsed
-            self.expandCollapseIfNeeded()
-            if wasCollapsed && action.mayShowArrivalsPrompt { showArrivalsIfWaiting() }
+            #if HIDDENBAR_NATIVE_VISIBILITY
+            if arrowClickGoesToIconWindow(action) { break }
+            #endif
+            toggleFromArrowClick(action)
         case .toggleWithFullBar:
             // Shift-click expands with the full menu bar for this expansion only;
             // the stored setting is untouched. Collapsing works as a plain click.
+            #if HIDDENBAR_NATIVE_VISIBILITY
+            iconWindowStorage?.close()
+            #endif
             self.expandCollapseIfNeeded(fullBarOnce: true)
         case .contextMenu:
             // Right-click opens the same context menu the separator has (#356),
@@ -358,6 +370,15 @@ class StatusBarController: MenuBarItemProvider {
             // picked "Show always-hidden icons" for it.
             self.showHideSeparatorsAndAlwayHideArea()
         }
+    }
+
+    // A plain click that expands or collapses the bar.
+    private func toggleFromArrowClick(_ action: ExpandCollapseAction) {
+        let wasCollapsed = isCollapsed
+        expandFromArrowClick = wasCollapsed
+        self.expandCollapseIfNeeded()
+        expandFromArrowClick = false
+        if wasCollapsed && action.mayShowArrivalsPrompt { showArrivalsIfWaiting() }
     }
 
     @objc private func showContextMenuFromSeparator(sender: NSStatusBarButton) {
@@ -551,9 +572,22 @@ class StatusBarController: MenuBarItemProvider {
         }
         #if HIDDENBAR_NATIVE_VISIBILITY
         presentationController?.barExpanded()
+        iconWindowStorage?.close()
         if userInitiated {
-            SystemOverflowNotice.shared.checkAfterExpand(hiddenBundles: hiddenBundles,
-                                                         isExpanded: { [weak self] in !(self?.isCollapsed ?? true) })
+            let mode = Preferences.arrowClickMode
+            if mode == .expand {
+                SystemOverflowNotice.shared.checkAfterExpand(hiddenBundles: hiddenBundles,
+                                                             isExpanded: { [weak self] in !(self?.isCollapsed ?? true) })
+            } else {
+                // Coulisse: the icon window replaces the « notice. Learn whether
+                // the icons fit, and fold a click's expand into the window if not.
+                let fromClick = expandFromArrowClick
+                SystemOverflowNotice.shared.detectOverflowAfterExpand(
+                    hiddenBundles: hiddenBundles,
+                    isExpanded: { [weak self] in !(self?.isCollapsed ?? true) }) { [weak self] moved in
+                        self?.expandSettled(movedIntoOverflow: moved, fromArrowClick: fromClick, mode: mode)
+                    }
+            }
         }
         #endif
     }
@@ -663,6 +697,11 @@ class StatusBarController: MenuBarItemProvider {
         }
 
         #if HIDDENBAR_NATIVE_VISIBILITY
+        if MenuBarEngineFactory.usesNativeEngine() {
+            let iconWindowItem = NSMenuItem(title: "Show Icon Window".localized, action: #selector(showIconWindow), keyEquivalent: "")
+            iconWindowItem.target = self
+            menu.addItem(iconWindowItem)
+        }
         if let findItem = makeFindHiddenIconMenuItem() {
             menu.addItem(findItem)
         }
@@ -785,7 +824,10 @@ extension StatusBarController {
                                   hiddenWhilePresenting: isPresenting ? Preferences.presentationSensitiveApps : [])
     }
 
-    fileprivate func makePalette() -> PaletteController {
+    // One session for the palette and the icon window: the engine allows one app
+    // at a time, and auto-collapse holds while either has a menu open.
+    fileprivate func revealSession() -> PaletteRevealSession {
+        if let paletteSession { return paletteSession }
         let session = PaletteRevealSession(
             now: { ProcessInfo.processInfo.systemUptime },
             after: { delay, step in DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: step) },
@@ -798,6 +840,11 @@ extension StatusBarController {
             appIsActive: { PaletteItemPresser.isActive(bundle: $0) },
             restore: { [weak self] in self?.menuBarEngine.endTemporaryAllow() })
         paletteSession = session
+        return session
+    }
+
+    fileprivate func makePalette() -> PaletteController {
+        let session = revealSession()
         let host = PaletteHost(
             environment: { [weak self] in self?.paletteEnvironment() ?? PaletteEnvironment(accessibilityTrusted: false, engineAvailable: false) },
             arrowFrame: { [weak self] in self?.btnExpandCollapse.button?.window?.frame },
@@ -809,6 +856,90 @@ extension StatusBarController {
                 PreferencesWindowController.shared.select(.menuBarApps)
             })
         return PaletteController(host: host)
+    }
+}
+
+//MARK: - Icon window (Coulisse)
+extension StatusBarController {
+    private var iconWindow: IconWindowController {
+        if let iconWindowStorage { return iconWindowStorage }
+        let session = revealSession()
+        let host = IconWindowHost(
+            environment: { [weak self] in self?.paletteEnvironment() ?? PaletteEnvironment(accessibilityTrusted: false, engineAvailable: false) },
+            arrowFrame: { [weak self] in self?.btnExpandCollapse.button?.window?.frame },
+            open: { bundle, done in session.open(bundle: bundle, completion: done) },
+            move: { section, bundle in PinnedSectionEdits.set(section, for: bundle, in: UserDefaultsPinnedSections()) },
+            expandBar: { [weak self] in
+                guard let self = self, self.isCollapsed else { return }
+                self.expandCollapseIfNeeded()
+            },
+            openAccessibilitySettings: { AccessibilityPermission.openSystemSettings() },
+            openSettings: { Util.showPrefWindow() })
+        let window = IconWindowController(host: host)
+        iconWindowStorage = window
+        return window
+    }
+
+    @objc fileprivate func showIconWindow() {
+        guard MenuBarEngineFactory.usesNativeEngine() else { return }
+        iconWindow.show()
+    }
+
+    /// A plain click on the arrow, before it expands or collapses: true when the
+    /// icon window took it (opened, closed, or is deciding).
+    fileprivate func arrowClickGoesToIconWindow(_ action: ExpandCollapseAction) -> Bool {
+        let native = MenuBarEngineFactory.usesNativeEngine()
+        guard native else { return false }
+        if let window = iconWindowStorage {
+            if window.isVisible { window.close(); return true }
+            // The window lost focus to this very click: it stays closed.
+            if window.justClosed { return true }
+        }
+        let mode = Preferences.arrowClickMode
+        if IconWindowPolicy.needsOverflowRead(mode: mode, isCollapsed: isCollapsed, usesNativeEngine: native,
+                                              remembersOverflow: iconWindowOverflow.overflowed) {
+            guard !isReadingOverflowForClick else { return true }
+            isReadingOverflowForClick = true
+            // Ask MenuBarAgent whether its « is up: a bar that overflows while
+            // collapsed has no room for the hidden icons either.
+            SystemOverflowNotice.shared.readOverflowButtonShown { [weak self] shown in
+                guard let self = self else { return }
+                self.isReadingOverflowForClick = false
+                if IconWindowPolicy.opensWindow(mode: mode, isCollapsed: self.isCollapsed, usesNativeEngine: native, barOverflows: shown) {
+                    self.iconWindow.show()
+                } else {
+                    self.toggleFromArrowClick(action)
+                }
+            }
+            return true
+        }
+        guard IconWindowPolicy.opensWindow(mode: mode, isCollapsed: isCollapsed, usesNativeEngine: native,
+                                           barOverflows: iconWindowOverflow.overflowed) else { return false }
+        iconWindow.show()
+        return true
+    }
+
+    /// The bar settled after an expand the user asked for. `moved`: the apps macOS
+    /// put into «, nil when that could not be read.
+    fileprivate func expandSettled(movedIntoOverflow moved: Set<String>?, fromArrowClick: Bool, mode: ArrowClickMode) {
+        guard let moved else { return }
+        iconWindowOverflow.recordExpand(movedIntoOverflow: moved)
+        observeDisplaysForIconWindow()
+        guard IconWindowPolicy.foldsIntoWindow(mode: mode, fromArrowClick: fromArrowClick, movedIntoOverflow: moved),
+              !isCollapsed else { return }
+        NSLog("IconWindow: \(moved.count) icons did not fit; showing them in the icon window")
+        menuBarEngine.userChangedBar()
+        collapseMenuBar(userInitiated: true)
+        iconWindow.show()
+    }
+
+    // A new display, or one removed or resized, changes the room in the bar.
+    private func observeDisplaysForIconWindow() {
+        guard displaysObserver == nil else { return }
+        displaysObserver = NotificationCenter.default.addObserver(
+            forName: NSApplication.didChangeScreenParametersNotification, object: nil, queue: .main) { [weak self] _ in
+                self?.iconWindowOverflow.displaysChanged()
+            }
     }
 }
 #endif

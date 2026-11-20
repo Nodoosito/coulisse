@@ -314,3 +314,16 @@ Passi per mostrare le icone sempre nascoste:
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Tutte le icone sono a destra della freccia, quindi non c’è nulla da nascondere. Tieni premuto il tasto Comando e trascina la freccia a destra delle icone che vuoi nascondere.";
 
 "Based on Hidden Bar" = "Basato su Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Clic sulla freccia";
+"Automatic" = "Automatico";
+"Open the icon window" = "Apri la finestra delle icone";
+"Expand the bar" = "Espandi la barra";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Apre la finestra delle icone quando la barra dei menu non ha spazio per tutte le icone, altrimenti espande la barra.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Le icone nascoste si aprono in una piccola finestra sotto la freccia. Maiusc-clic sulla freccia per espandere la barra.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Le icone nascoste tornano nella barra dei menu. Clic destro sulla freccia per la finestra delle icone.";
+"Show Icon Window" = "Mostra finestra delle icone";
+"Hidden icons" = "Icone nascoste";
+"Click an icon to open its menu." = "Fai clic su un’icona per aprirne il menu.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS non ha trovato spazio per %@ nella barra dei menu. Espandi la barra o sposta un’icona poco usata in Sempre nascoste.";

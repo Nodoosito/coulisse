@@ -313,3 +313,16 @@
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "كل الأيقونات إلى يسار السهم، لذا لا يوجد ما يمكن إخفاؤه. استمر بالضغط على Command واسحب السهم إلى يسار الأيقونات التي تريد إخفاءها.";
 
 "Based on Hidden Bar" = "مبني على Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "النقر على السهم";
+"Automatic" = "تلقائي";
+"Open the icon window" = "فتح نافذة الأيقونات";
+"Expand the bar" = "توسيع الشريط";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "يفتح نافذة الأيقونات عندما لا يتسع شريط القوائم لكل الأيقونات، وإلا يوسّع الشريط.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "تُفتح الأيقونات المخفية في نافذة صغيرة أسفل السهم. انقر على السهم مع Shift لتوسيع الشريط.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "تعود الأيقونات المخفية إلى شريط القوائم. انقر بزر الماوس الأيمن على السهم لنافذة الأيقونات.";
+"Show Icon Window" = "إظهار نافذة الأيقونات";
+"Hidden icons" = "الأيقونات المخفية";
+"Click an icon to open its menu." = "انقر على أيقونة لفتح قائمتها.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "لم يجد macOS مكانًا لـ %@ في شريط القوائم. وسّع الشريط، أو انقل أيقونة نادرة الاستخدام إلى «مخفية دائمًا».";

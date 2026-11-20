@@ -312,3 +312,16 @@
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Усі піктограми розташовані праворуч від стрілки, тому приховувати нічого. Утримуючи Command, перетягніть стрілку праворуч від піктограм, які потрібно приховати.";
 
 "Based on Hidden Bar" = "На основі Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Клік на стрілці";
+"Automatic" = "Автоматично";
+"Open the icon window" = "Відкрити вікно значків";
+"Expand the bar" = "Розгорнути смугу";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Відкриває вікно значків, коли на смузі меню бракує місця для всіх значків, інакше розгортає смугу.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Приховані значки відкриваються в невеликому вікні під стрілкою. Shift-клік на стрілці розгортає смугу.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Приховані значки повертаються на смугу меню. Правий клік на стрілці відкриває вікно значків.";
+"Show Icon Window" = "Показати вікно значків";
+"Hidden icons" = "Приховані значки";
+"Click an icon to open its menu." = "Клацніть значок, щоб відкрити його меню.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS не знайшла місця для %@ на смузі меню. Розгорніть смугу або перенесіть рідко вживаний значок до «Завжди приховані».";

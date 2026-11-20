@@ -141,6 +141,39 @@ final class SystemOverflowNotice {
         }
     }
 
+    /// Coulisse: which of `hiddenBundles` macOS moved into « after an expand, read
+    /// once the bar settled. `completion` runs on the main queue: an empty set when
+    /// everything fit, nil when it cannot tell (the bar collapsed meanwhile,
+    /// nothing was hidden, no permission). Unlike the notice, it runs after every
+    /// expand it is asked about.
+    func detectOverflowAfterExpand(hiddenBundles: Set<String>, isExpanded: @escaping () -> Bool,
+                                   inventory: MenuBarInventoryProviding = AccessibilityMenuBarInventory(),
+                                   completion: @escaping (Set<String>?) -> Void) {
+        guard MenuBarEngineFactory.usesNativeEngine(), !hiddenBundles.isEmpty, inventory.isAuthorized else {
+            return completion(nil)
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + Self.settleDelay) { [weak self] in
+            guard let self = self, isExpanded() else { return completion(nil) }
+            self.indicator.readButtons { buttons in
+                guard isExpanded() else { return completion(nil) }
+                // No « means nothing overflowed; the inventory walk is skipped.
+                guard !buttons.isEmpty else { return completion([]) }
+                inventory.snapshot { items in
+                    let running = Set(NSWorkspace.shared.runningApplications.compactMap { $0.bundleIdentifier })
+                    let moved = SystemOverflowExpandMatcher.bundlesInOverflow(
+                        hidden: hiddenBundles, running: running, inventory: items, indicators: buttons,
+                        displays: MenuBarDisplay.current(), primaryScreenMaxY: NSScreen.screens.first?.frame.maxY)
+                    completion(isExpanded() ? moved : nil)
+                }
+            }
+        }
+    }
+
+    /// Coulisse: whether macOS shows its « button anywhere right now. Main queue.
+    func readOverflowButtonShown(completion: @escaping (Bool) -> Void) {
+        indicator.readButtons { completion(!$0.isEmpty) }
+    }
+
     private func check(arrow: NSStatusItem, isCollapsed: @escaping () -> Bool, after delay: TimeInterval, retriesLeft: Int) {
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self, weak arrow] in
             guard let self = self else { return }

@@ -311,3 +311,16 @@
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "すべてのアイコンが矢印の右側にあるため、非表示にするものがありません。Command キーを押しながら、矢印を非表示にしたいアイコンの右側にドラッグしてください。";
 
 "Based on Hidden Bar" = "Hidden Bar がベース";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "矢印のクリック";
+"Automatic" = "自動";
+"Open the icon window" = "アイコンウインドウを開く";
+"Expand the bar" = "バーを展開";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "メニューバーにすべてのアイコンを表示する余地がないときはアイコンウインドウを開き、それ以外はバーを展開します。";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "隠したアイコンは矢印の下の小さなウインドウに表示されます。Shiftキーを押しながら矢印をクリックするとバーを展開します。";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "隠したアイコンはメニューバーに戻ります。矢印を右クリックするとアイコンウインドウを開けます。";
+"Show Icon Window" = "アイコンウインドウを表示";
+"Hidden icons" = "隠したアイコン";
+"Click an icon to open its menu." = "アイコンをクリックするとそのメニューが開きます。";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOSはメニューバーに%@を置く余地を見つけられませんでした。バーを展開するか、あまり使わないアイコンを「常に非表示」に移動してください。";

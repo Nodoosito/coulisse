@@ -266,6 +266,19 @@ enum Preferences {
         }
     }
 
+    // What a plain left-click on the collapsed arrow does (Coulisse). Stored as
+    // the choice's name; anything unreadable reads as automatic.
+    static var arrowClickMode: ArrowClickMode {
+        get {
+            ArrowClickMode(storedValue: AppDefaults.store.string(forKey: UserDefaults.Key.arrowClickMode))
+        }
+
+        set {
+            AppDefaults.store.set(newValue.rawValue, forKey: UserDefaults.Key.arrowClickMode)
+            NotificationCenter.default.post(Notification(name: .prefsChanged))
+        }
+    }
+
     static var notchOverflowEnabled: Bool {
         get {
             AppDefaults.store.bool(forKey: UserDefaults.Key.notchOverflowEnabled)

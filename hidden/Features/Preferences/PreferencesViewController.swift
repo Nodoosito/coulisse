@@ -74,6 +74,9 @@ class PreferencesViewController: SettingsPaneController {
         var everydayRows = [
             SettingsForm.row("Open Coulisse at login".localized, control: login),
             SettingsForm.row("Hide icons again".localized, control: autoHidePopup),
+        ]
+        everydayRows.append(contentsOf: arrowClickRows())
+        everydayRows += [
             SettingsForm.row("Always-hidden section".localized,
                              caption: "A second group, left of the hidden icons, that stays hidden when you click the arrow.".localized,
                              control: alwaysHiddenControls),
@@ -104,6 +107,58 @@ class PreferencesViewController: SettingsPaneController {
         }
 
         onRefresh { [weak self] in self?.refreshStatus() }
+        refreshAll()
+    }
+
+    /// English title of a "Click on the arrow" choice, also its Localizable.strings key.
+    static func arrowClickTitle(for choice: ArrowClickMode) -> String {
+        switch choice {
+        case .automatic: return "Automatic"
+        case .window: return "Open the icon window"
+        case .expand: return "Expand the bar"
+        }
+    }
+
+    static func arrowClickCaption(for choice: ArrowClickMode) -> String {
+        switch choice {
+        case .automatic:
+            return "Opens the icon window when the menu bar has no room for every icon, else expands the bar.".localized
+        case .window:
+            return "Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar.".localized
+        case .expand:
+            return "Hidden icons come back in the menu bar. Right-click the arrow for the icon window.".localized
+        }
+    }
+
+    static let arrowClickChoices: [ArrowClickMode] = [.automatic, .window, .expand]
+
+    // Coulisse: the icon window. It opens apps the way the palette does, so only
+    // the native engine has it.
+    private func arrowClickRows() -> [NSView] {
+        guard context.usesNativeEngine else { return [] }
+        let popup = NSPopUpButton(frame: .zero, pullsDown: false)
+        for choice in Self.arrowClickChoices {
+            popup.addItem(withTitle: Self.arrowClickTitle(for: choice).localized)
+        }
+        popup.identifier = NSUserInterfaceItemIdentifier(UserDefaults.Key.arrowClickMode)
+        popup.target = self
+        popup.action = #selector(arrowClickPicked(_:))
+        let row = SettingsForm.row("Click on the arrow".localized,
+                                   caption: Self.arrowClickCaption(for: Preferences.arrowClickMode), control: popup)
+        func all(_ view: NSView) -> [NSView] { view.subviews + view.subviews.flatMap(all) }
+        let caption = all(row).compactMap { $0 as? NSTextField }
+            .first { $0.stringValue == Self.arrowClickCaption(for: Preferences.arrowClickMode) }
+        onRefresh { [weak popup, weak caption] in
+            let choice = Preferences.arrowClickMode
+            popup?.selectItem(at: Self.arrowClickChoices.firstIndex(of: choice) ?? 0)
+            caption?.stringValue = Self.arrowClickCaption(for: choice)
+        }
+        return [row]
+    }
+
+    @objc private func arrowClickPicked(_ sender: NSPopUpButton) {
+        guard Self.arrowClickChoices.indices.contains(sender.indexOfSelectedItem) else { return }
+        Preferences.arrowClickMode = Self.arrowClickChoices[sender.indexOfSelectedItem]
         refreshAll()
     }
 

@@ -312,3 +312,16 @@
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Sve su ikone desno od strelice pa nema što sakriti. Drži Command i povuci strelicu desno od ikona koje želiš sakriti.";
 
 "Based on Hidden Bar" = "Temeljeno na Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Klik na strelicu";
+"Automatic" = "Automatski";
+"Open the icon window" = "Otvori prozor ikona";
+"Expand the bar" = "Proširi traku";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Otvara prozor ikona kada na traci izbornika nema mjesta za sve ikone, inače proširuje traku.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Skrivene ikone otvaraju se u malom prozoru ispod strelice. Shift-klik na strelicu proširuje traku.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Skrivene ikone vraćaju se na traku izbornika. Desni klik na strelicu za prozor ikona.";
+"Show Icon Window" = "Prikaži prozor ikona";
+"Hidden icons" = "Skrivene ikone";
+"Click an icon to open its menu." = "Kliknite ikonu da biste otvorili njezin izbornik.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS nije pronašao mjesta za %@ na traci izbornika. Proširite traku ili premjestite rijetko korištenu ikonu u Uvijek skriveno.";

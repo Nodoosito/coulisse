@@ -34,6 +34,7 @@ extension UserDefaults {
         static let presentationSensitiveApps = "presentationSensitiveApps"
         static let presentationShortcut = "presentationShortcut"
         static let rightClickAction = "rightClickAction"
+        static let arrowClickMode = "arrowClickMode"
         // Internal: not user-facing, so not in the App Store import whitelist.
         static let menuBarCatalogFirstSeen = "menuBarCatalogFirstSeen"
         static let arrivalsPending = "arrivalsPending"

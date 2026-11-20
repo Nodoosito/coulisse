@@ -313,3 +313,16 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Tüm simgeler okun sağında olduğundan gizlenecek bir şey yok. Command tuşunu basılı tutup oku, gizlemek istediğiniz simgelerin sağına sürükleyin.";
 
 "Based on Hidden Bar" = "Hidden Bar tabanlı";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Oka tıklama";
+"Automatic" = "Otomatik";
+"Open the icon window" = "Simge penceresini aç";
+"Expand the bar" = "Çubuğu genişlet";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Menü çubuğunda tüm simgelere yer olmadığında simge penceresini açar, aksi halde çubuğu genişletir.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Gizli simgeler okun altındaki küçük bir pencerede açılır. Çubuğu genişletmek için oka Shift ile tıklayın.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Gizli simgeler menü çubuğuna geri döner. Simge penceresi için oka sağ tıklayın.";
+"Show Icon Window" = "Simge Penceresini Göster";
+"Hidden icons" = "Gizli simgeler";
+"Click an icon to open its menu." = "Menüsünü açmak için bir simgeye tıklayın.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS, menü çubuğunda %@ için yer bulamadı. Çubuğu genişletin veya az kullandığınız bir simgeyi Her zaman gizli bölümüne taşıyın.";

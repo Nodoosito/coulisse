@@ -64,6 +64,7 @@ enum AppStoreSettingsImport {
         UserDefaults.Key.presentationSensitiveApps: .dictionary,
         UserDefaults.Key.presentationShortcut: .data,
         UserDefaults.Key.rightClickAction: .string,
+        UserDefaults.Key.arrowClickMode: .string,
     ]
 
     /// Importable keys the direct build writes by itself on its first collapse:

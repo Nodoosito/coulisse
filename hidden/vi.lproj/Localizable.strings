@@ -312,3 +312,16 @@ Các bước xem biểu tượng luôn ẩn:
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Mọi biểu tượng đều nằm bên phải mũi tên nên không có gì để ẩn. Giữ Command và kéo mũi tên sang bên phải các biểu tượng bạn muốn ẩn.";
 
 "Based on Hidden Bar" = "Dựa trên Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Nhấp vào mũi tên";
+"Automatic" = "Tự động";
+"Open the icon window" = "Mở cửa sổ biểu tượng";
+"Expand the bar" = "Mở rộng thanh";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Mở cửa sổ biểu tượng khi thanh menu không đủ chỗ cho mọi biểu tượng, nếu không thì mở rộng thanh.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Biểu tượng ẩn mở trong một cửa sổ nhỏ dưới mũi tên. Shift-nhấp vào mũi tên để mở rộng thanh.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Biểu tượng ẩn trở lại thanh menu. Nhấp chuột phải vào mũi tên để mở cửa sổ biểu tượng.";
+"Show Icon Window" = "Hiện cửa sổ biểu tượng";
+"Hidden icons" = "Biểu tượng ẩn";
+"Click an icon to open its menu." = "Nhấp vào một biểu tượng để mở menu của nó.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS không tìm được chỗ cho %@ trên thanh menu. Hãy mở rộng thanh, hoặc chuyển một biểu tượng ít dùng sang Luôn ẩn.";

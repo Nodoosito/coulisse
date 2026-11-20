@@ -312,3 +312,16 @@ Jak wyświetlić ikony „Zawsze ukryte”:
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Wszystkie ikony są na prawo od strzałki, więc nie ma czego ukryć. Przytrzymaj Command i przeciągnij strzałkę na prawo od ikon, które chcesz ukryć.";
 
 "Based on Hidden Bar" = "Oparte na Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Kliknięcie strzałki";
+"Automatic" = "Automatycznie";
+"Open the icon window" = "Otwórz okno ikon";
+"Expand the bar" = "Rozwiń pasek";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Otwiera okno ikon, gdy na pasku menu brakuje miejsca na wszystkie ikony, w przeciwnym razie rozwija pasek.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Ukryte ikony otwierają się w małym oknie pod strzałką. Kliknij strzałkę z Shift, aby rozwinąć pasek.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Ukryte ikony wracają na pasek menu. Kliknij strzałkę prawym przyciskiem, aby otworzyć okno ikon.";
+"Show Icon Window" = "Pokaż okno ikon";
+"Hidden icons" = "Ukryte ikony";
+"Click an icon to open its menu." = "Kliknij ikonę, aby otworzyć jej menu.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS nie znalazł miejsca dla %@ na pasku menu. Rozwiń pasek lub przenieś rzadko używaną ikonę do Zawsze ukryte.";

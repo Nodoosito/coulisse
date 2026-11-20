@@ -314,3 +314,16 @@
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "所有图标都在箭头右侧，因此没有可隐藏的内容。按住 Command 并将箭头拖到要隐藏的图标右侧。";
 
 "Based on Hidden Bar" = "基于 Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "点按箭头";
+"Automatic" = "自动";
+"Open the icon window" = "打开图标窗口";
+"Expand the bar" = "展开菜单栏";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "菜单栏放不下所有图标时打开图标窗口，否则展开菜单栏。";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "隐藏的图标会在箭头下方的小窗口中打开。按住 Shift 点按箭头可展开菜单栏。";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "隐藏的图标回到菜单栏。右键点按箭头可打开图标窗口。";
+"Show Icon Window" = "显示图标窗口";
+"Hidden icons" = "隐藏的图标";
+"Click an icon to open its menu." = "点按图标以打开其菜单。";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS 在菜单栏中找不到放置 %@ 的空间。请展开菜单栏，或将不常用的图标移到“始终隐藏”。";

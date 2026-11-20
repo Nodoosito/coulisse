@@ -314,3 +314,16 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Toutes les icônes sont à droite de la flèche, il n’y a donc rien à masquer. Maintenez la touche Commande enfoncée et faites glisser la flèche à droite des icônes que vous voulez masquer.";
 
 "Based on Hidden Bar" = "Basé sur Hidden Bar";
+
+/* Coulisse: icon window */
+"Click on the arrow" = "Clic sur la flèche";
+"Automatic" = "Automatique";
+"Open the icon window" = "Ouvrir la fenêtre des icônes";
+"Expand the bar" = "Déplier la barre";
+"Opens the icon window when the menu bar has no room for every icon, else expands the bar." = "Ouvre la fenêtre des icônes quand la barre des menus n’a pas la place pour toutes les icônes, sinon déplie la barre.";
+"Hidden icons open in a small window under the arrow. Shift-click the arrow to expand the bar." = "Les icônes masquées s’ouvrent dans une petite fenêtre sous la flèche. Maj-clic sur la flèche pour déplier la barre.";
+"Hidden icons come back in the menu bar. Right-click the arrow for the icon window." = "Les icônes masquées reviennent dans la barre des menus. Clic droit sur la flèche pour la fenêtre des icônes.";
+"Show Icon Window" = "Afficher la fenêtre des icônes";
+"Hidden icons" = "Icônes masquées";
+"Click an icon to open its menu." = "Cliquez sur une icône pour ouvrir son menu.";
+"macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS n’a pas trouvé de place pour %@ dans la barre des menus. Dépliez la barre, ou passez une icône peu utilisée en Toujours masquée.";

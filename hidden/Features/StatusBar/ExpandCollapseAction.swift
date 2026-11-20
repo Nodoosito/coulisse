@@ -42,6 +42,24 @@ enum RightClickAction: String, CaseIterable {
     }
 }
 
+// What a plain left-click on the collapsed arrow does (Coulisse, Settings ›
+// General). The raw value is what Preferences stores.
+enum ArrowClickMode: String, CaseIterable {
+    /// Hidden icons come back in the menu bar, as Hidden Bar always did.
+    case expand
+    /// Hidden icons open in the icon window under the arrow.
+    case window
+    /// The icon window when the menu bar has no room for every icon, else expand.
+    case automatic
+
+    static let `default`: ArrowClickMode = .automatic
+
+    /// Anything unknown or missing reads as the default.
+    init(storedValue: String?) {
+        self = storedValue.flatMap(ArrowClickMode.init(rawValue:)) ?? .default
+    }
+}
+
 enum ExpandCollapseActionResolver {
     // On macOS 27 the mouse-up event a status bar button hands to its action
     // carries empty modifier flags even while Option is held (#434), so the live
