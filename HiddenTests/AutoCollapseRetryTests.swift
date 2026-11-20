@@ -1,6 +1,6 @@
 import AppKit
 import XCTest
-@testable import Hidden_Bar
+@testable import Coulisse
 
 private final class RetryTestEngine: MenuBarEngine {
     var state: MenuBarEngineState = .expanded

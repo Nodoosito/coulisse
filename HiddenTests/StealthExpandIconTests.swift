@@ -1,6 +1,6 @@
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the stealth-mode preference (issue #173) fades the arrow only
 /// while the bar is collapsed, is off on a fresh install, and persists.

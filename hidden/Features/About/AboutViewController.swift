@@ -11,10 +11,8 @@ import Cocoa
 /// Version and build, updates (direct build only), and where to get help.
 final class AboutViewController: SettingsPaneController {
     static let changelogURL = URL(string: "https://github.com/consolelabs/hidden/blob/develop/CHANGELOG.md")!
-    static let sourceURL = URL(string: "https://github.com/consolelabs/hidden")!
-    static let issuesURL = URL(string: "https://github.com/consolelabs/hidden/issues")!
-    static let websiteURL = URL(string: "https://console.so")!
-    static let emailAddress = "support@console.so"
+    /// Coulisse is a fork: credit the original project, MIT license.
+    static let upstreamURL = URL(string: "https://github.com/consolelabs/hidden")!
     static let checkForUpdatesIdentifier = NSUserInterfaceItemIdentifier("checkForUpdates")
 
     /// "Version 1.12 (18) · Direct download"; support needs to know which build.
@@ -26,9 +24,19 @@ final class AboutViewController: SettingsPaneController {
 
     private var lastCheckedCaption: NSTextField?
 
+    /// Coulisse ships without an update feed for now; the Sparkle rows show only
+    /// when the build defines HIDDENBAR_SPARKLE again.
+    static func hasUpdater(_ build: SettingsBuild) -> Bool {
+        #if HIDDENBAR_SPARKLE
+        return build == .direct
+        #else
+        return false
+        #endif
+    }
+
     override func buildForm() {
         let whatsNew = SettingsForm.link("What's new".localized, url: Self.changelogURL)
-        if context.build == .direct {
+        if Self.hasUpdater(context.build) {
             let autoCheck = boundSwitch("SUEnableAutomaticChecks", read: { Self.automaticallyChecksForUpdates },
                                         write: { Self.automaticallyChecksForUpdates = $0 })
             let autoRow = SettingsForm.row("Check for updates automatically".localized, caption: Self.lastCheckedText(), control: autoCheck)
@@ -38,19 +46,12 @@ final class AboutViewController: SettingsPaneController {
             let linkRow = Self.linkRow(whatsNew, trailing: check)
             addSection(nil, rows: [header(), autoRow, linkRow])
         } else {
-            addSection(nil, rows: [header(), Self.linkRow(whatsNew, caption: "Updates come from the Mac App Store.".localized)])
+            addSection(nil, rows: [header()])
         }
 
-        let email = NSTextField(labelWithString: Self.emailAddress)
-        email.textColor = .secondaryLabelColor
-        email.isSelectable = true
-        addSection("Help and feedback".localized, rows: [
-            Self.linkRow(SettingsForm.link("Report a problem".localized, url: Self.issuesURL),
-                         caption: "On GitHub. Please say your macOS version and which Hidden Bar you use.".localized),
-            SettingsForm.row("Email".localized, control: email),
-            Self.linkRow(SettingsForm.link("Source code".localized, url: Self.sourceURL),
+        addSection(nil, rows: [
+            Self.linkRow(SettingsForm.link("Based on Hidden Bar".localized, url: Self.upstreamURL),
                          caption: "Free and open source, MIT license.".localized),
-            Self.linkRow(SettingsForm.link("Made by Console Labs".localized, url: Self.websiteURL)),
         ])
     }
 
@@ -59,7 +60,7 @@ final class AboutViewController: SettingsPaneController {
         icon.translatesAutoresizingMaskIntoConstraints = false
         icon.widthAnchor.constraint(equalToConstant: 72).isActive = true
         icon.heightAnchor.constraint(equalToConstant: 72).isActive = true
-        let name = NSTextField(labelWithString: "Hidden Bar")
+        let name = NSTextField(labelWithString: "Coulisse")
         name.font = .systemFont(ofSize: 20, weight: .bold)
         let tagline = NSTextField(labelWithString: "Keeps your menu bar tidy.".localized)
         tagline.textColor = .secondaryLabelColor

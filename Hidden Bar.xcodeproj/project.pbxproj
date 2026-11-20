@@ -325,7 +325,7 @@
 		8DDBB306F3907BFB2D9E6DCF /* MenuBarEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarEngine.swift; sourceTree = "<group>"; };
 		8E5691321C25234F8DAFC5C8 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
 		9220587D22127050008A8B03 /* Hidden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Hidden.entitlements; path = Hidden/Hidden.entitlements; sourceTree = "<group>"; };
-		929113F121F9D04100173149 /* Hidden Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hidden Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		929113F121F9D04100173149 /* Coulisse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coulisse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929113F421F9D04100173149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929113F821F9D04200173149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929113FB21F9D04200173149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -358,7 +358,7 @@
 		A57E0DE0000000000000C004 /* AppStoreMigrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreMigrationTests.swift; sourceTree = "<group>"; };
 		A6E6836C05AA33888022D2DF /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ACE30458A6074188B93CD466 /* MenuBarLayoutResolverTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuBarLayoutResolverTests.swift; sourceTree = "<group>"; };
-		AE6A3A10CB82CC16DB835F22 /* Hidden Bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Hidden Bar.app"; path = "Hidden Bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6A3A10CB82CC16DB835F22 /* Coulisse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Coulisse.app"; path = "Coulisse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1326443261D7E0200319D35 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		B1326445261D7E0200319D35 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B350A2CC23AAFB47003A04AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -694,10 +694,10 @@
 		929113F221F9D04100173149 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				929113F121F9D04100173149 /* Hidden Bar.app */,
+				929113F121F9D04100173149 /* Coulisse.app */,
 				27A530C718790900F466C145 /* HiddenBarTests.xctest */,
 				9C7BF2ECD52E3E5C0D8D7556 /* HiddenTests.xctest */,
-				AE6A3A10CB82CC16DB835F22 /* Hidden Bar.app */,
+				AE6A3A10CB82CC16DB835F22 /* Coulisse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -877,7 +877,7 @@
 				1B3FE82DF19C11F2A08CB04A /* Sparkle */,
 			);
 			productName = "Hidden Bar";
-			productReference = AE6A3A10CB82CC16DB835F22 /* Hidden Bar.app */;
+			productReference = AE6A3A10CB82CC16DB835F22 /* Coulisse.app */;
 			productType = "com.apple.product-type.application";
 		};
 		929113F021F9D04100173149 /* Hidden Bar */ = {
@@ -897,7 +897,7 @@
 				08A5F85E23AA01EE00981CA5 /* HotKey */,
 			);
 			productName = vanillaClone;
-			productReference = 929113F121F9D04100173149 /* Hidden Bar.app */;
+			productReference = 929113F121F9D04100173149 /* Coulisse.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B6ED1C7FB7AE7D98FD4143B2 /* HiddenTests */ = {
@@ -1338,15 +1338,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar.HiddenTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenTests;
 				PRODUCT_MODULE_NAME = HiddenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidden Bar.app/Contents/MacOS/Hidden Bar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coulisse.app/Contents/MacOS/Coulisse";
 			};
 			name = Release;
 		};
@@ -1356,15 +1356,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar.HiddenTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenTests;
 				PRODUCT_MODULE_NAME = HiddenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidden Bar.app/Contents/MacOS/Hidden Bar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coulisse.app/Contents/MacOS/Coulisse";
 			};
 			name = "Debug-Direct";
 		};
@@ -1373,11 +1373,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "hidden/Hidden-Direct.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "hidden/Info-Direct.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1386,10 +1386,10 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
-				PRODUCT_NAME = "Hidden Bar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
+				PRODUCT_NAME = Coulisse;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HIDDENBAR_SPARKLE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1404,7 +1404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "hidden/Info-Direct.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1413,10 +1413,10 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
-				PRODUCT_NAME = "Hidden Bar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
+				PRODUCT_NAME = Coulisse;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HIDDENBAR_SPARKLE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1433,7 +1433,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.HiddenBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1445,11 +1445,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "hidden/Hidden-Direct.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "hidden/Info-Direct.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1458,10 +1458,10 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
-				PRODUCT_NAME = "Hidden Bar (unused)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
+				PRODUCT_NAME = "Coulisse (unused)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HIDDENBAR_SPARKLE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1478,7 +1478,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.HiddenBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1494,7 +1494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = hidden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1503,8 +1503,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
-				PRODUCT_NAME = "Hidden Bar (unused)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
+				PRODUCT_NAME = "Coulisse (unused)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1517,15 +1517,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar.HiddenTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenTests;
 				PRODUCT_MODULE_NAME = HiddenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidden Bar.app/Contents/MacOS/Hidden Bar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coulisse.app/Contents/MacOS/Coulisse";
 			};
 			name = "Release-Direct";
 		};
@@ -1651,11 +1651,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hidden/Hidden.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = hidden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1664,7 +1664,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
@@ -1677,11 +1677,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Hidden/Hidden.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = hidden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1690,7 +1690,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
@@ -1709,7 +1709,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.HiddenBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1727,7 +1727,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.HiddenBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenBarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1806,7 +1806,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "hidden/Info-Direct.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1815,10 +1815,10 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
-				PRODUCT_NAME = "Hidden Bar (unused)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
+				PRODUCT_NAME = "Coulisse (unused)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HIDDENBAR_SPARKLE";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -1890,15 +1890,15 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar.HiddenTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse.HiddenTests;
 				PRODUCT_MODULE_NAME = HiddenTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hidden Bar.app/Contents/MacOS/Hidden Bar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coulisse.app/Contents/MacOS/Coulisse";
 			};
 			name = Debug;
 		};
@@ -1907,11 +1907,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "hidden/Hidden-Direct.entitlements";
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 23;
-				DEVELOPMENT_TEAM = W777S7V8TN;
+				DEVELOPMENT_TEAM = D7A5727TMX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = hidden/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1920,8 +1920,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwarvesv.minimalbar;
-				PRODUCT_NAME = "Hidden Bar (unused)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lucasminelli.coulisse;
+				PRODUCT_NAME = "Coulisse (unused)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hidden/Hidden-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

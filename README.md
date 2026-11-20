@@ -1,96 +1,29 @@
-<p align="center">
-	<img width="200" height="200" margin-right="100%" src="https://github.com/consolelabs/hidden/blob/develop/img/icon_512%402x.png?raw=true">
-</p>
-<p align="center">
-	<a href="https://webuild.community">
-		<img src="https://raw.githubusercontent.com/webuild-community/badge/master/svg/love.svg" />
-	</a>
-	<a href="https://github.com/consolelabs/hidden/actions/workflows/ci.yml">
- 		<img src="https://github.com/consolelabs/hidden/actions/workflows/ci.yml/badge.svg?branch=develop" alt="CI">
-	</a>
-	<a href="https://github.com/consolelabs/hidden/releases/latest">
- 		<img src="https://img.shields.io/badge/download-latest-brightgreen.svg" alt="download">
-	</a>
-	<a href="https://img.shields.io/badge/platform-macOS-lightgrey.svg">
- 		<img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg" alt="platform">
-	</a>
-	<a href="https://img.shields.io/badge/requirements-macOS Ventura+-ff69b4.svg">
- 		<img src="https://img.shields.io/badge/requirements-macOS Ventura+-ff69b4.svg" alt="systemrequirements">
-	</a>
-</p>
+# Coulisse
 
-## Hidden Bar
-Hidden Bar lets you hide menu bar items to give your Mac a cleaner look.
+Coulisse range les icônes de la barre des menus de macOS : ce qui ne sert pas passe en coulisse, et revient d'un clic.
 
-<p align="center">
-	<img width="400" src="img/store/1-tidy-menu-bar.png">
-	<img width="400" src="img/store/3-settings.png">
-</p>
+> **Basé sur [Hidden Bar](https://github.com/consolelabs/hidden)** de Dwarves Foundation et Console Labs, sous licence MIT.
+> Coulisse est un fork indépendant : il n'est ni affilié à Console Labs ni soutenu par eux.
+> Le README original de Hidden Bar est conservé dans [`docs/README-HiddenBar.md`](docs/README-HiddenBar.md).
 
-## 🚀 Install
+## Installation
 
-> **Official downloads.** Console Labs publishes Hidden Bar only through [GitHub Releases](https://github.com/consolelabs/hidden/releases), the Homebrew cask `hiddenbar`, and the [Mac App Store listing](https://itunes.apple.com/app/hidden-bar/id1452453066). Any other site offering Hidden Bar (for example `hiddenbar.app`) is not run by Console Labs.
+1. Téléchargez le `.zip` de la dernière version dans les Releases GitHub, puis glissez `Coulisse.app` dans **Applications**.
+2. Coulisse n'est pas notarisé par Apple. Au premier lancement, macOS le bloque : ouvrez
+   **Réglages Système → Confidentialité et sécurité** et cliquez sur **Ouvrir quand même**.
+3. Accordez l'accès **Accessibilité** quand Coulisse le demande (obligatoire sur macOS 27).
+4. Quittez Hidden Bar s'il tourne encore : deux gestionnaires de barre des menus en même temps se gênent.
 
-###  App Store
+## Compiler soi-même
 
-[![AppStore](img/appstore.svg)](https://itunes.apple.com/app/hidden-bar/id1452453066)
+Xcode 27 ou plus récent, macOS 13 minimum.
 
-The App Store build is sandboxed and cannot hide icons on macOS 27. On macOS 27, use the GitHub or Homebrew build below.
-
-### Others
-
-The Hidden Bar is notarized before distributed out side App Store. It's safe to use 👍
-
-#### Using Homebrew
-
-```
-brew install --cask hiddenbar
+```sh
+xcodebuild -project 'Hidden Bar.xcodeproj' -scheme 'Hidden Bar' -configuration Release-Direct build
 ```
 
-Coming from the App Store version? Quit it and move `/Applications/Hidden Bar.app` to the Trash first: Homebrew does not install over it. Your settings stay; the new version offers to import them on first launch.
+Pour signer avec votre propre compte, remplacez `DEVELOPMENT_TEAM` dans le projet par votre identifiant d'équipe Apple.
 
-#### Manual download
+## Licence
 
-- [Download latest version](https://github.com/consolelabs/hidden/releases/latest)
-- Open and drag the app to the Applications folder.
-- Launch Hidden and drag the icon in your menu bar (hold CMD) to the right so it is between some other icons.
-
-## 🕹 Usage
-
-* `⌘` + drag to move the Hidden icons around in the menu bar.
-* Click the Arrow icon to hide menu bar items, and click it again to show them.
-* Option-click the Arrow to reach the always-hidden section, a second group that stays hidden when you click the arrow.
-* Settings has the hide delay, a global shortcut, other ways to reveal icons (hover, scroll, shake) and the arrow style.
-
-<p align="center">
-	<img width="960" src="img/hero.gif">
-</p>
-
-## 📚 Documentation
-
-- [Manual](docs/MANUAL.md): every setting, the hidden Terminal-only options, and troubleshooting.
-- [Architecture](docs/ARCHITECTURE.md): how the hiding trick works, topology, and known limits.
-- [Maintainer runbook](docs/RUNBOOK.md): build, behavioral verification, and release process.
-
-## ✨<a href="https://github.com/consolelabs/hidden/graphs/contributors">Contributors</a>
-
-This project exists thanks to all the people who contribute. Thank you guys so much 👏
-
-[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/0)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/0)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/1)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/1)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/2)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/2)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/3)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/3)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/4)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/4)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/5)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/5)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/6)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/6)[![](https://sourcerer.io/fame/phucledien/consolelabs/hidden/images/7)](https://sourcerer.io/fame/phucledien/consolelabs/hidden/links/7)
-
-Please read [this](CONTRIBUTING.md) before you make a contribution.
-
-## Requirements
-macOS version >= 13.0 (Ventura)
-
-Running an older macOS? The last release supporting macOS 10.13 High Sierra
-through 12 Monterey is [v1.10](https://github.com/consolelabs/hidden/releases/tag/v1.10).
-Later versions require macOS 13 because autostart moved to the `SMAppService`
-API introduced there.
-
-## You may also like
-- [Blurred](https://apps.apple.com/app/id1497527363) - A macOS utility that helps reduce distraction by dimming your inactive noise
-- [VimMotion](https://github.com/consolelabs/VimMotionApp) Vim style shortcut for MacOS
-## License
-
-MIT &copy; [Console Labs](https://console.so)
+MIT. Voir [`LICENSE`](LICENSE) : les copyrights de Dwarves Foundation et de Console Labs y sont conservés.

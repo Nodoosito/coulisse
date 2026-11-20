@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the three reveal gestures are opt-in prefs, and the General tab
 /// groups them with the hover row under the title the design board gives.

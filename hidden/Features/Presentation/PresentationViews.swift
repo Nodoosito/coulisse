@@ -305,14 +305,14 @@ final class PresentationPanelView: NSView {
 
     private func buildPaused(in stack: NSStackView) {
         stack.addArrangedSubview(heading("Hiding paused: camera or microphone in use".localized))
-        stack.addArrangedSubview(body("Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Hidden Bar shows every icon when one turns on.".localized))
+        stack.addArrangedSubview(body("Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Coulisse shows every icon when one turns on.".localized))
         stack.setCustomSpacing(10, after: stack.arrangedSubviews.last!)
         stack.addArrangedSubview(body("To keep apps out of a shared screen during a call:".localized))
         stack.setCustomSpacing(6, after: stack.arrangedSubviews.last!)
         stack.addArrangedSubview(tip(symbol: "rectangle.on.rectangle", title: "Share one window, not the whole screen".localized,
                                      detail: "The menu bar is not in the picture.".localized))
         stack.addArrangedSubview(tip(symbol: "lock", title: "Quit sensitive apps before the call".localized,
-                                     detail: "Hidden Bar will not quit apps for you.".localized))
+                                     detail: "Coulisse will not quit apps for you.".localized))
         stack.setCustomSpacing(10, after: stack.arrangedSubviews.last!)
         stack.addArrangedSubview(line())
         stack.setCustomSpacing(8, after: stack.arrangedSubviews.last!)
@@ -322,7 +322,7 @@ final class PresentationPanelView: NSView {
     }
 
     private func buildCouldNotHide(in stack: NSStackView) {
-        stack.addArrangedSubview(heading("Hidden Bar could not hide your icons".localized))
+        stack.addArrangedSubview(heading("Coulisse could not hide your icons".localized))
         stack.addArrangedSubview(body("macOS did not accept the request, so every icon is showing. Stop presentation mode and start it again, or quit the sensitive apps first.".localized))
         stack.setCustomSpacing(10, after: stack.arrangedSubviews.last!)
         stack.addArrangedSubview(line())

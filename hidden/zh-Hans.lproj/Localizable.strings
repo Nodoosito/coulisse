@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  Hidden Bar
+  Coulisse
 
   Created by Licardo on 2020/3/9.
   Copyright © 2020 Console Labs. All rights reserved.
@@ -37,7 +37,7 @@
 "Chevron" = "V 形";
 "Dot" = "圆点";
 "Line" = "线条";
-"Hidden Bar needs Accessibility access to hide icons." = "Hidden Bar 需要辅助功能权限才能隐藏图标。";
+"Coulisse needs Accessibility access to hide icons." = "Coulisse 需要辅助功能权限才能隐藏图标。";
 "Open Settings…" = "打开设置…";
 "Expand the bar when the pointer rests on the menu bar" = "指针停在菜单栏上时展开栏";
 "Show the whole bar when the microphone or camera turns on" = "麦克风或摄像头开启时显示整个栏";
@@ -57,13 +57,13 @@
 "Appearance" = "外观";
 "Advanced" = "高级";
 "About" = "关于";
-"Hidden Bar is working" = "Hidden Bar 正在运行";
+"Coulisse is working" = "Coulisse 正在运行";
 "Click the arrow in the menu bar, or press %@, to show hidden icons." = "点按菜单栏中的箭头，或按 %@，即可显示隐藏的图标。";
 "Click the arrow in the menu bar to show hidden icons." = "点按菜单栏中的箭头即可显示隐藏的图标。";
-"Hidden Bar needs Accessibility access" = "Hidden Bar 需要辅助功能权限";
-"macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 仅在授予此权限后才允许 Hidden Bar 隐藏图标。在您开启之前不会隐藏任何内容。";
+"Coulisse needs Accessibility access" = "Coulisse 需要辅助功能权限";
+"macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 仅在授予此权限后才允许 Coulisse 隐藏图标。在您开启之前不会隐藏任何内容。";
 "Open System Settings" = "打开系统设置";
-"Move Hidden Bar to Applications" = "将 Hidden Bar 移到“应用程序”";
+"Move Coulisse to Applications" = "将 Coulisse 移到“应用程序”";
 "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet." = "它正从 %@ 运行。macOS 27 仅对位于“应用程序”文件夹中的 App 隐藏图标，因此目前尚未隐藏任何内容。";
 "This App Store version can't hide icons on macOS 27" = "此 App Store 版本在 macOS 27 上无法隐藏图标";
 "Apple's sandbox blocks hiding on macOS 27. Your settings below are kept." = "Apple 的沙盒会阻止 macOS 27 上的隐藏功能。下方的设置会保留。";
@@ -77,9 +77,9 @@
 "Hold ⌘ and drag an icon left of the arrow to hide it." = "按住 ⌘ 并将图标拖到箭头左侧即可将其隐藏。";
 "Hold ⌘ and drag an icon left of the | separator to hide it." = "按住 ⌘ 并将图标拖到 | 分隔符左侧即可将其隐藏。";
 "Option-click the arrow to see always-hidden icons." = "按住 Option 点按箭头即可查看持续隐藏的图标。";
-"Open Hidden Bar at login" = "登录时打开 Hidden Bar";
+"Open Coulisse at login" = "登录时打开 Coulisse";
 "Could not update the login item" = "无法更新登录项";
-"Check System Settings > General > Login Items and make sure Hidden Bar is allowed." = "请检查“系统设置”>“通用”>“登录项”，确保已允许 Hidden Bar。";
+"Check System Settings > General > Login Items and make sure Coulisse is allowed." = "请检查“系统设置”>“通用”>“登录项”，确保已允许 Coulisse。";
 "Hide icons again" = "再次隐藏图标";
 "Never" = "从不";
 "After %d seconds" = "%d 秒后";
@@ -106,13 +106,13 @@
 "Fade the arrow when icons are hidden" = "图标隐藏时淡化箭头";
 "The arrow turns almost invisible until you need it. It is still there to click." = "在您需要之前，箭头几乎不可见，但仍可点按。";
 "Each preview shows the arrow with icons hidden, then shown." = "每个预览都会展示图标隐藏、再显示时的箭头。";
-"Show this window when Hidden Bar opens" = "Hidden Bar 打开时显示此窗口";
+"Show this window when Coulisse opens" = "Coulisse 打开时显示此窗口";
 "Make room for icons while they are shown" = "图标显示期间腾出空间";
 "Hides the menus of the app you are using while hidden icons are shown, so more icons fit." = "显示隐藏图标期间，隐藏您正在使用的 App 的菜单，以便容纳更多图标。";
 "Reach icons behind the camera notch" = "访问摄像头刘海后面的图标";
 "Right-click the arrow to list icons the notch covers." = "右键点按箭头可列出被刘海遮住的图标。";
 "Pause hiding while macOS shows Now Playing, Focus and similar items" = "当 macOS 显示“播放中”、专注模式等项目时暂停隐藏";
-"macOS 27 hides these items whenever an app hides icons. While one shows, Hidden Bar hides nothing." = "只要有 App 隐藏图标，macOS 27 就会隐藏这些项目。显示其中任何一项时，Hidden Bar 不会隐藏任何内容。";
+"macOS 27 hides these items whenever an app hides icons. While one shows, Coulisse hides nothing." = "只要有 App 隐藏图标，macOS 27 就会隐藏这些项目。显示其中任何一项时，Coulisse 不会隐藏任何内容。";
 "Seen on this Mac: %@." = "在此 Mac 上发现：%@。";
 "Hiding method" = "隐藏方式";
 "macOS 27 visibility" = "macOS 27 可见性";
@@ -129,7 +129,7 @@
 "Updates come from the Mac App Store." = "更新来自 Mac App Store。";
 "Help and feedback" = "帮助与反馈";
 "Report a problem" = "报告问题";
-"On GitHub. Please say your macOS version and which Hidden Bar you use." = "在 GitHub 上。请注明您的 macOS 版本以及所用的 Hidden Bar 版本。";
+"On GitHub. Please say your macOS version and which Coulisse you use." = "在 GitHub 上。请注明您的 macOS 版本以及所用的 Coulisse 版本。";
 "Email" = "电子邮件";
 "Source code" = "源代码";
 "Free and open source, MIT license." = "免费开源，采用 MIT 许可证。";
@@ -167,7 +167,7 @@
 "Visible" = "可见";
 "Show Everything" = "全部显示";
 "Your menu bar is full" = "您的菜单栏已满";
-"macOS moved the Hidden Bar arrow into the « button. Click « to reach it, or use the Hidden Bar hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "macOS 已将 Hidden Bar 的箭头移到 « 按钮中。点按 « 即可找到它，或使用 Hidden Bar 的快捷键。要让箭头保持可见，请将一些图标移到箭头左侧。";
+"macOS moved the Coulisse arrow into the « button. Click « to reach it, or use the Coulisse hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "macOS 已将 Coulisse 的箭头移到 « 按钮中。点按 « 即可找到它，或使用 Coulisse 的快捷键。要让箭头保持可见，请将一些图标移到箭头左侧。";
 "Some icons are in the « button" = "部分图标位于 « 按钮中";
 "Some icons do not fit in the menu bar, so macOS moved them into its own « button. Click « to see them. To make room, move icons you rarely use to the always-hidden section." = "部分图标无法放入菜单栏，因此 macOS 将它们移到了自己的 « 按钮中。点按 « 即可查看。要腾出空间，请将很少使用的图标移到持续隐藏区域。";
 "Also used by %@" = "%@ 也在使用";
@@ -182,7 +182,7 @@
 "Not chosen yet. Not running now." = "尚未选择。当前未运行。";
 "New in your menu bar" = "菜单栏中的新内容";
 "%d new apps in your menu bar" = "菜单栏中有 %d 个新 App";
-"Choose once. Hidden Bar remembers, also after the app or your Mac restarts." = "只需选择一次。无论 App 或 Mac 重新启动，Hidden Bar 都会记住。";
+"Choose once. Coulisse remembers, also after the app or your Mac restarts." = "只需选择一次。无论 App 或 Mac 重新启动，Coulisse 都会记住。";
 "Not running now. It stays shown until you choose." = "当前未运行。在您做出选择之前保持显示。";
 "Added %d icons. They show or hide together." = "已添加 %d 个图标。它们会一起显示或隐藏。";
 "Added an icon %@" = "已添加图标（%@）";
@@ -218,8 +218,8 @@
 "Open Menu Bar Apps" = "打开菜单栏 App";
 "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen." = "它会读取菜单栏中有哪些 App 并打开其菜单。它绝不会读取屏幕上的内容。";
 "%@ can't be opened from here" = "无法从此处打开 %@";
-"macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything." = "只要 Hidden Bar 隐藏图标，macOS 就会隐藏专注模式、Siri 和“播放中”。点按箭头即可显示所有内容。";
-"Hidden Bar is not hiding icons right now" = "Hidden Bar 当前未隐藏图标";
+"macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything." = "只要 Coulisse 隐藏图标，macOS 就会隐藏专注模式、Siri 和“播放中”。点按箭头即可显示所有内容。";
+"Coulisse is not hiding icons right now" = "Coulisse 当前未隐藏图标";
 "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why." = "所有图标都已在菜单栏中，因此没有可查找的内容。打开“设置”查看原因。";
 "Its icon does not answer Accessibility. Click the arrow to show everything, then click its icon." = "其图标不响应辅助功能。点按箭头显示所有内容，然后点按其图标。";
 "Presenting" = "演示中";
@@ -237,16 +237,16 @@
 "Stop Presenting" = "停止演示";
 "macOS's own items stay." = "macOS 自带项目会保留。";
 "Hiding paused: camera or microphone in use" = "隐藏已暂停：摄像头或麦克风正在使用";
-"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Hidden Bar shows every icon when one turns on." = "当前未隐藏任何内容，包括敏感 App。macOS 27 会将显示正在使用摄像头或麦克风的 App 名称的胶囊与其他图标一起隐藏，因此一旦开启，Hidden Bar 就会显示所有图标。";
+"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Coulisse shows every icon when one turns on." = "当前未隐藏任何内容，包括敏感 App。macOS 27 会将显示正在使用摄像头或麦克风的 App 名称的胶囊与其他图标一起隐藏，因此一旦开启，Coulisse 就会显示所有图标。";
 "To keep apps out of a shared screen during a call:" = "在通话期间避免 App 出现在共享屏幕中：";
 "Share one window, not the whole screen" = "共享一个窗口，而不是整个屏幕";
 "The menu bar is not in the picture." = "菜单栏不会出现在画面中。";
 "Quit sensitive apps before the call" = "通话前退出敏感 App";
-"Hidden Bar will not quit apps for you." = "Hidden Bar 不会替您退出 App。";
+"Coulisse will not quit apps for you." = "Coulisse 不会替您退出 App。";
 "OK" = "好";
 "Resumes on its own." = "会自动恢复。";
 "Hide again" = "再次隐藏";
-"Hidden Bar could not hide your icons" = "Hidden Bar 无法隐藏您的图标";
+"Coulisse could not hide your icons" = "Coulisse 无法隐藏您的图标";
 "macOS did not accept the request, so every icon is showing. Stop presentation mode and start it again, or quit the sensitive apps first." = "macOS 未接受该请求，因此所有图标都在显示。请停止演示模式后重新启动，或先退出敏感 App。";
 "1 app stays hidden" = "1 个 App 保持隐藏";
 "%d apps stay hidden" = "%d 个 App 保持隐藏";
@@ -271,44 +271,46 @@
 "Edit..." = "编辑...";
 "None" = "无";
 "Choose the apps that stay hidden while presenting, even when you click the arrow, except while hiding is paused for the camera or microphone." = "选取演示期间保持隐藏的 App，即使点按箭头也是如此，但因摄像头或麦克风而暂停隐藏时除外。";
-"Apps with a menu bar icon appear here once Hidden Bar has seen them." = "Hidden Bar 发现菜单栏中有图标的 App 后，它们会显示在这里。";
+"Apps with a menu bar icon appear here once Coulisse has seen them." = "Coulisse 发现菜单栏中有图标的 App 后，它们会显示在这里。";
 "Right-click on the arrow" = "右键点按箭头";
 "Show menu" = "显示菜单";
 "Show always-hidden icons" = "显示持续隐藏的图标";
 "Option-right-click the arrow to open the menu." = "按住 Option 右键点按箭头即可打开菜单。";
-"Hidden Bar from the App Store is running. Quit it and switch to this version?" = "App Store 版 Hidden Bar 正在运行。要退出它并切换到此版本吗？";
-"Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise." = "同一时间只能运行一个 Hidden Bar。在您另作选择之前，App Store 版会保持安装。";
-"Hidden Bar %@ is running. Quit it and switch to this version?" = "Hidden Bar %@ 正在运行。要退出它并切换到此版本吗？";
-"Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise." = "同一时间只能运行一个 Hidden Bar。在您另作选择之前，旧版本会保留在原处。";
+"Coulisse from the App Store is running. Quit it and switch to this version?" = "App Store 版 Coulisse 正在运行。要退出它并切换到此版本吗？";
+"Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise." = "同一时间只能运行一个 Coulisse。在您另作选择之前，App Store 版会保持安装。";
+"Coulisse %@ is running. Quit it and switch to this version?" = "Coulisse %@ 正在运行。要退出它并切换到此版本吗？";
+"Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise." = "同一时间只能运行一个 Coulisse。在您另作选择之前，旧版本会保留在原处。";
 "Quit and Switch" = "退出并切换";
 "Cancel" = "取消";
 "Import your settings from the App Store version?" = "要从 App Store 版导入您的设置吗？";
-"Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "App Store 版 Hidden Bar 将设置保存在另一个位置。导入后，此版本将以您设置好的方式启动。";
+"Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "App Store 版 Coulisse 将设置保存在另一个位置。导入后，此版本将以您设置好的方式启动。";
 "Import" = "导入";
 "Not now" = "暂不";
 "Move the App Store copy to the Trash?" = "要将 App Store 版副本移到废纸篓吗？";
-"The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later." = "App Store 版 Hidden Bar 仍然安装着：\n%@\n您之后可以从废纸篓中将其恢复。";
+"The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later." = "App Store 版 Coulisse 仍然安装着：\n%@\n您之后可以从废纸篓中将其恢复。";
 "Move to Trash" = "移到废纸篓";
-"Hidden Bar could not move the App Store copy to the Trash" = "Hidden Bar 无法将 App Store 版副本移到废纸篓";
+"Coulisse could not move the App Store copy to the Trash" = "Coulisse 无法将 App Store 版副本移到废纸篓";
 "Drag it to the Trash in Finder instead:\n%@" = "请改为在 Finder 中将其拖到废纸篓：\n%@";
-"The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there." = "App Store 版副本位于 /Applications。请退出 Hidden Bar，将 /Applications/Hidden Bar.app 移到废纸篓，把此副本拖到“应用程序”文件夹，然后从那里打开。";
-"This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there." = "此账户无法向 /Applications 添加 App。请让管理员将 Hidden Bar 拖到 /Applications，然后从那里打开。";
-"Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there." = "Hidden Bar 正在“应用程序”文件夹之外运行。“应用程序”中已有的副本会被移到废纸篓，然后 Hidden Bar 将从那里重新启动。";
-"Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Hidden Bar 正在“应用程序”文件夹之外运行。请将其移到“应用程序”，这样清空“下载”后它仍能正常使用，然后重新启动。";
-"Move Hidden Bar to the Applications folder?" = "要将 Hidden Bar 移到“应用程序”文件夹吗？";
+"The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there." = "App Store 版副本位于 /Applications。请退出 Coulisse，将 /Applications/Coulisse.app 移到废纸篓，把此副本拖到“应用程序”文件夹，然后从那里打开。";
+"This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there." = "此账户无法向 /Applications 添加 App。请让管理员将 Coulisse 拖到 /Applications，然后从那里打开。";
+"Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there." = "Coulisse 正在“应用程序”文件夹之外运行。“应用程序”中已有的副本会被移到废纸篓，然后 Coulisse 将从那里重新启动。";
+"Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Coulisse 正在“应用程序”文件夹之外运行。请将其移到“应用程序”，这样清空“下载”后它仍能正常使用，然后重新启动。";
+"Move Coulisse to the Applications folder?" = "要将 Coulisse 移到“应用程序”文件夹吗？";
 "Move to Applications" = "移到“应用程序”";
-"Hidden Bar can hide icons only from /Applications" = "Hidden Bar 只能在 /Applications 中隐藏图标";
+"Coulisse can hide icons only from /Applications" = "Coulisse 只能在 /Applications 中隐藏图标";
 "a temporary folder" = "临时文件夹";
-"Hidden Bar cannot hide icons on macOS 27" = "Hidden Bar 无法在 macOS 27 上隐藏图标";
-"macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 不再允许 App Store 应用隐藏菜单栏图标。github.com/consolelabs/hidden 上的 Hidden Bar（免费、开源）可在 macOS 27 上使用。";
+"Coulisse cannot hide icons on macOS 27" = "Coulisse 无法在 macOS 27 上隐藏图标";
+"macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 不再允许 App Store 应用隐藏菜单栏图标。github.com/consolelabs/hidden 上的 Coulisse（免费、开源）可在 macOS 27 上使用。";
 "Open github.com/consolelabs/hidden" = "打开 github.com/consolelabs/hidden";
 "Don't show again" = "不再显示";
-"Hidden Bar on macOS 27" = "macOS 27 上的 Hidden Bar";
+"Coulisse on macOS 27" = "macOS 27 上的 Coulisse";
 "macOS 27: get the working version..." = "macOS 27：获取可用版本...";
 "Or install it with Homebrew:" = "或使用 Homebrew 安装：";
 "Quit this App Store version and move it to the Trash first. Homebrew does not install over it." = "请先退出此 App Store 版并将其移到废纸篓。Homebrew 不能覆盖安装。";
 "Hiding is paused" = "已暂停隐藏";
-"macOS hides these icons whatever Hidden Bar allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "无论 Hidden Bar 是否允许，macOS 都会隐藏这些图标：%@。它们位于箭头右侧，因此只要它们仍在那里，“高级”中的暂停开关就会让所有图标保持可见。";
+"macOS hides these icons whatever Coulisse allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "无论 Coulisse 是否允许，macOS 都会隐藏这些图标：%@。它们位于箭头右侧，因此只要它们仍在那里，“高级”中的暂停开关就会让所有图标保持可见。";
 "icons with no name" = "没有名称的图标";
 "Nothing to hide" = "没有可隐藏的内容";
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "所有图标都在箭头右侧，因此没有可隐藏的内容。按住 Command 并将箭头拖到要隐藏的图标右侧。";
+
+"Based on Hidden Bar" = "基于 Hidden Bar";

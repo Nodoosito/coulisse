@@ -116,12 +116,12 @@ final class MacOS27Notice: NSObject {
 
         let alert = NSAlert()
         alert.alertStyle = .informational
-        alert.messageText = "Hidden Bar cannot hide icons on macOS 27".localized
-        alert.informativeText = "macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27.".localized
+        alert.messageText = "Coulisse cannot hide icons on macOS 27".localized
+        alert.informativeText = "macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27.".localized
         alert.addButton(withTitle: "Open github.com/consolelabs/hidden".localized)
         alert.addButton(withTitle: "Close".localized)
         alert.addButton(withTitle: "Don't show again".localized)
-        alert.window.title = "Hidden Bar on macOS 27".localized
+        alert.window.title = "Coulisse on macOS 27".localized
         alert.accessoryView = Self.makeBrewCommandView()
 
         NSApp.activate(ignoringOtherApps: true)

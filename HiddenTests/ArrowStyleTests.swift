@@ -1,6 +1,6 @@
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the user picks the expand/collapse arrow from a short list of
 /// styles (issue #310), stored as one preference. The default look is the

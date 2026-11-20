@@ -1,6 +1,6 @@
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the hover-to-expand setting has a Preferences checkbox bound to
 /// `Preferences.hoverToExpand`, and the always-hidden tutorial text matches the

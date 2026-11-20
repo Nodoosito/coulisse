@@ -34,7 +34,7 @@ final class AdvancedSettingsViewController: SettingsPaneController {
         let fullBar = boundSwitch(UserDefaults.Key.useFullStatusBarOnExpandEnabled,
                                   read: { Preferences.useFullStatusBarOnExpandEnabled },
                                   write: { Preferences.useFullStatusBarOnExpandEnabled = $0 })
-        var rows = [SettingsForm.row("Show this window when Hidden Bar opens".localized, control: showWindow),
+        var rows = [SettingsForm.row("Show this window when Coulisse opens".localized, control: showWindow),
                     SettingsForm.row("Make room for icons while they are shown".localized,
                                           caption: "Hides the menus of the app you are using while hidden icons are shown, so more icons fit.".localized,
                                           control: fullBar),
@@ -108,7 +108,7 @@ final class AdvancedSettingsViewController: SettingsPaneController {
     private func refreshMacOSAlsoHides() {
         let names = NativeVisibilityEngine.knownUnkeepableSystemItems.map(NativeVisibilityEngine.displayName(ofSystemItem:))
             + NativeVisibilityEngine.knownUnkeepableApps
-        let help = "macOS 27 hides these items whenever an app hides icons. While one shows, Hidden Bar hides nothing.".localized
+        let help = "macOS 27 hides these items whenever an app hides icons. While one shows, Coulisse hides nothing.".localized
         macOSAlsoHidesCaption?.stringValue = names.isEmpty
             ? help
             : help + " " + String(format: "Seen on this Mac: %@.".localized, names.joined(separator: ", "))

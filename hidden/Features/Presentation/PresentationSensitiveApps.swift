@@ -106,7 +106,7 @@ final class PresentationSensitiveAppsEditor: NSViewController {
         list.alignment = .leading
         list.spacing = 4
         if rows.isEmpty {
-            list.addArrangedSubview(SettingsForm.caption("Apps with a menu bar icon appear here once Hidden Bar has seen them.".localized))
+            list.addArrangedSubview(SettingsForm.caption("Apps with a menu bar icon appear here once Coulisse has seen them.".localized))
         }
         let chosen = read()
         for row in rows {

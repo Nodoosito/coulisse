@@ -67,16 +67,16 @@ final class StatusCardView: NSView {
         let buttonKey: String?
         switch status {
         case .working:
-            titleLabel.stringValue = "Hidden Bar is working".localized
+            titleLabel.stringValue = "Coulisse is working".localized
             captionLabel.stringValue = shortcut.map { String(format: "Click the arrow in the menu bar, or press %@, to show hidden icons.".localized, $0) }
                 ?? "Click the arrow in the menu bar to show hidden icons.".localized
             buttonKey = nil
         case .needsAccessibility:
-            titleLabel.stringValue = "Hidden Bar needs Accessibility access".localized
-            captionLabel.stringValue = "macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on.".localized
+            titleLabel.stringValue = "Coulisse needs Accessibility access".localized
+            captionLabel.stringValue = "macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on.".localized
             buttonKey = "Open System Settings"
         case .outsideApplications:
-            titleLabel.stringValue = "Move Hidden Bar to Applications".localized
+            titleLabel.stringValue = "Move Coulisse to Applications".localized
             captionLabel.stringValue = String(format: "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet.".localized,
                                               runningFolder ?? "Downloads")
             buttonKey = "Move to Applications"

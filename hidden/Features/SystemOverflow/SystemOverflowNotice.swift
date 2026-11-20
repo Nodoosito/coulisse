@@ -174,7 +174,7 @@ final class SystemOverflowNotice {
     private func present() {
         RunLoop.main.perform(inModes: [.default]) { [weak self] in
             self?.runAlert(Self.makeAlert(title: "Your menu bar is full".localized,
-                                          text: "macOS moved the Hidden Bar arrow into the « button. Click « to reach it, or use the Hidden Bar hotkey. To keep the arrow in view, move some icons to the left of the arrow.".localized))
+                                          text: "macOS moved the Coulisse arrow into the « button. Click « to reach it, or use the Coulisse hotkey. To keep the arrow in view, move some icons to the left of the arrow.".localized))
             self?.policy.recordShown()
             self?.isChecking = false
         }

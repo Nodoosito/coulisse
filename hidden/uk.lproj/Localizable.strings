@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  Hidden Bar
+  Coulisse
 
   Created by Licardo on 2020/3/9.
   Copyright © 2020 Console Labs. All rights reserved.
@@ -35,7 +35,7 @@
 "Chevron" = "Шеврон";
 "Dot" = "Крапка";
 "Line" = "Лінія";
-"Hidden Bar needs Accessibility access to hide icons." = "Для приховування піктограм Hidden Bar потрібен дозвіл «Універсальний доступ».";
+"Coulisse needs Accessibility access to hide icons." = "Для приховування піктограм Coulisse потрібен дозвіл «Універсальний доступ».";
 "Open Settings…" = "Відкрити налаштування…";
 "Expand the bar when the pointer rests on the menu bar" = "Розгортати рядок, коли вказівник зупиняється на рядку меню";
 "Show the whole bar when the microphone or camera turns on" = "Показувати весь рядок, коли вмикається мікрофон або камера";
@@ -55,13 +55,13 @@
 "Appearance" = "Вигляд";
 "Advanced" = "Додатково";
 "About" = "Про програму";
-"Hidden Bar is working" = "Hidden Bar працює";
+"Coulisse is working" = "Coulisse працює";
 "Click the arrow in the menu bar, or press %@, to show hidden icons." = "Натисніть стрілку в рядку меню або %@, щоб показати приховані піктограми.";
 "Click the arrow in the menu bar to show hidden icons." = "Натисніть стрілку в рядку меню, щоб показати приховані піктограми.";
-"Hidden Bar needs Accessibility access" = "Hidden Bar потрібен дозвіл «Універсальний доступ»";
-"macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 дозволяє Hidden Bar приховувати піктограми лише з цим дозволом. Нічого не буде приховано, доки ви його не ввімкнете.";
+"Coulisse needs Accessibility access" = "Coulisse потрібен дозвіл «Універсальний доступ»";
+"macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 дозволяє Coulisse приховувати піктограми лише з цим дозволом. Нічого не буде приховано, доки ви його не ввімкнете.";
 "Open System Settings" = "Відкрити Системні налаштування";
-"Move Hidden Bar to Applications" = "Перемістити Hidden Bar до «Програм»";
+"Move Coulisse to Applications" = "Перемістити Coulisse до «Програм»";
 "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet." = "Запущено з %@. macOS 27 приховує піктограми лише для програм у папці «Програми», тож поки що нічого не приховано.";
 "This App Store version can't hide icons on macOS 27" = "Ця версія з App Store не може приховувати піктограми в macOS 27";
 "Apple's sandbox blocks hiding on macOS 27. Your settings below are kept." = "Пісочниця Apple блокує приховування в macOS 27. Ваші налаштування нижче збережено.";
@@ -75,9 +75,9 @@
 "Hold ⌘ and drag an icon left of the arrow to hide it." = "Утримуючи ⌘, перетягніть піктограму ліворуч від стрілки, щоб приховати її.";
 "Hold ⌘ and drag an icon left of the | separator to hide it." = "Утримуючи ⌘, перетягніть піктограму ліворуч від роздільника |, щоб приховати її.";
 "Option-click the arrow to see always-hidden icons." = "Клацніть стрілку з ⌥ Option, щоб побачити завжди приховані піктограми.";
-"Open Hidden Bar at login" = "Відкривати Hidden Bar під час входу";
+"Open Coulisse at login" = "Відкривати Coulisse під час входу";
 "Could not update the login item" = "Не вдалося оновити елемент входу";
-"Check System Settings > General > Login Items and make sure Hidden Bar is allowed." = "Перевірте Системні налаштування > Загальні > Елементи входу й переконайтеся, що Hidden Bar дозволено.";
+"Check System Settings > General > Login Items and make sure Coulisse is allowed." = "Перевірте Системні налаштування > Загальні > Елементи входу й переконайтеся, що Coulisse дозволено.";
 "Hide icons again" = "Знову приховувати піктограми";
 "Never" = "Ніколи";
 "After %d seconds" = "Через %d с";
@@ -104,13 +104,13 @@
 "Fade the arrow when icons are hidden" = "Притемнювати стрілку, коли піктограми приховано";
 "The arrow turns almost invisible until you need it. It is still there to click." = "Стрілка стає майже невидимою, доки не знадобиться. Її все одно можна натиснути.";
 "Each preview shows the arrow with icons hidden, then shown." = "Кожен перегляд показує стрілку з прихованими, а потім із показаними піктограмами.";
-"Show this window when Hidden Bar opens" = "Показувати це вікно під час відкриття Hidden Bar";
+"Show this window when Coulisse opens" = "Показувати це вікно під час відкриття Coulisse";
 "Make room for icons while they are shown" = "Звільняти місце для піктограм, поки вони показані";
 "Hides the menus of the app you are using while hidden icons are shown, so more icons fit." = "Приховує меню програми, якою ви користуєтеся, поки показано приховані піктограми, щоб вмістилося більше піктограм.";
 "Reach icons behind the camera notch" = "Доступ до піктограм за вирізом камери";
 "Right-click the arrow to list icons the notch covers." = "Клацніть стрілку правою кнопкою, щоб побачити піктограми, закриті вирізом.";
 "Pause hiding while macOS shows Now Playing, Focus and similar items" = "Призупиняти приховування, поки macOS показує «Зараз відтворюється», «Фокусування» та подібні елементи";
-"macOS 27 hides these items whenever an app hides icons. While one shows, Hidden Bar hides nothing." = "macOS 27 приховує ці елементи щоразу, коли програма приховує піктограми. Поки один із них показано, Hidden Bar нічого не приховує.";
+"macOS 27 hides these items whenever an app hides icons. While one shows, Coulisse hides nothing." = "macOS 27 приховує ці елементи щоразу, коли програма приховує піктограми. Поки один із них показано, Coulisse нічого не приховує.";
 "Seen on this Mac: %@." = "Помічено на цьому Mac: %@.";
 "Hiding method" = "Спосіб приховування";
 "macOS 27 visibility" = "Видимість у macOS 27";
@@ -127,7 +127,7 @@
 "Updates come from the Mac App Store." = "Оновлення надходять із Mac App Store.";
 "Help and feedback" = "Допомога та відгуки";
 "Report a problem" = "Повідомити про проблему";
-"On GitHub. Please say your macOS version and which Hidden Bar you use." = "На GitHub. Вкажіть, будь ласка, версію macOS і яким Hidden Bar ви користуєтеся.";
+"On GitHub. Please say your macOS version and which Coulisse you use." = "На GitHub. Вкажіть, будь ласка, версію macOS і яким Coulisse ви користуєтеся.";
 "Email" = "Електронна пошта";
 "Source code" = "Вихідний код";
 "Free and open source, MIT license." = "Безкоштовно та з відкритим кодом, ліцензія MIT.";
@@ -165,7 +165,7 @@
 "Visible" = "Видимі";
 "Show Everything" = "Показати все";
 "Your menu bar is full" = "Рядок меню заповнений";
-"macOS moved the Hidden Bar arrow into the « button. Click « to reach it, or use the Hidden Bar hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "Система macOS перемістила стрілку Hidden Bar до кнопки «. Натисніть «, щоб дістатися до неї, або скористайтеся гарячою клавішею Hidden Bar. Щоб стрілка залишалася на виду, перемістіть кілька піктограм ліворуч від стрілки.";
+"macOS moved the Coulisse arrow into the « button. Click « to reach it, or use the Coulisse hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "Система macOS перемістила стрілку Coulisse до кнопки «. Натисніть «, щоб дістатися до неї, або скористайтеся гарячою клавішею Coulisse. Щоб стрілка залишалася на виду, перемістіть кілька піктограм ліворуч від стрілки.";
 "Some icons are in the « button" = "Деякі піктограми в кнопці «";
 "Some icons do not fit in the menu bar, so macOS moved them into its own « button. Click « to see them. To make room, move icons you rarely use to the always-hidden section." = "Деякі піктограми не вміщуються в рядок меню, тому система macOS перемістила їх до власної кнопки «. Натисніть «, щоб їх побачити. Щоб звільнити місце, перемістіть рідко вживані піктограми до розділу завжди прихованих.";
 "Also used by %@" = "Цю комбінацію також використовує %@";
@@ -180,7 +180,7 @@
 "Not chosen yet. Not running now." = "Ще не вибрано. Зараз не запущено.";
 "New in your menu bar" = "Нове у вашому рядку меню";
 "%d new apps in your menu bar" = "%d нових програм у вашому рядку меню";
-"Choose once. Hidden Bar remembers, also after the app or your Mac restarts." = "Виберіть один раз. Hidden Bar запам’ятає, також після перезапуску програми чи Mac.";
+"Choose once. Coulisse remembers, also after the app or your Mac restarts." = "Виберіть один раз. Coulisse запам’ятає, також після перезапуску програми чи Mac.";
 "Not running now. It stays shown until you choose." = "Зараз не запущено. Лишається показаною, доки ви не виберете.";
 "Added %d icons. They show or hide together." = "Додано піктограм: %d. Вони показуються або приховуються разом.";
 "Added an icon %@" = "Додано піктограму %@";
@@ -216,8 +216,8 @@
 "Open Menu Bar Apps" = "Відкрити програми рядка меню";
 "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen." = "Зчитує, які програми є в рядку меню, і відкриває їхні меню. Ніколи не зчитує те, що на вашому екрані.";
 "%@ can't be opened from here" = "%@ не можна відкрити звідси";
-"macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything." = "macOS приховує «Фокусування», Siri і «Зараз відтворюється» щоразу, коли Hidden Bar приховує піктограми. Натисніть стрілку, щоб показати все.";
-"Hidden Bar is not hiding icons right now" = "Hidden Bar зараз не приховує піктограми";
+"macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything." = "macOS приховує «Фокусування», Siri і «Зараз відтворюється» щоразу, коли Coulisse приховує піктограми. Натисніть стрілку, щоб показати все.";
+"Coulisse is not hiding icons right now" = "Coulisse зараз не приховує піктограми";
 "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why." = "Усі піктограми вже в рядку меню, тож шукати нічого. Відкрийте Налаштування, щоб дізнатися чому.";
 "Its icon does not answer Accessibility. Click the arrow to show everything, then click its icon." = "Її піктограма не відповідає на запити універсального доступу. Натисніть стрілку, щоб показати все, потім натисніть її піктограму.";
 "Presenting" = "Презентація";
@@ -235,16 +235,16 @@
 "Stop Presenting" = "Зупинити презентацію";
 "macOS's own items stay." = "Власні елементи macOS лишаються.";
 "Hiding paused: camera or microphone in use" = "Приховування призупинено: використовується камера або мікрофон";
-"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Hidden Bar shows every icon when one turns on." = "Зараз нічого не приховано, зокрема й чутливі програми. macOS 27 приховує капсулу з назвою програми, що використовує камеру або мікрофон, разом з іншими піктограмами, тому Hidden Bar показує всі піктограми, коли вмикається одне з них.";
+"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Coulisse shows every icon when one turns on." = "Зараз нічого не приховано, зокрема й чутливі програми. macOS 27 приховує капсулу з назвою програми, що використовує камеру або мікрофон, разом з іншими піктограмами, тому Coulisse показує всі піктограми, коли вмикається одне з них.";
 "To keep apps out of a shared screen during a call:" = "Щоб програми не потрапили на спільний екран під час дзвінка:";
 "Share one window, not the whole screen" = "Поширюйте одне вікно, а не весь екран";
 "The menu bar is not in the picture." = "Рядка меню в кадрі немає.";
 "Quit sensitive apps before the call" = "Вийдіть із чутливих програм перед дзвінком";
-"Hidden Bar will not quit apps for you." = "Hidden Bar не виходитиме з програм за вас.";
+"Coulisse will not quit apps for you." = "Coulisse не виходитиме з програм за вас.";
 "OK" = "OK";
 "Resumes on its own." = "Відновлюється само.";
 "Hide again" = "Приховати знову";
-"Hidden Bar could not hide your icons" = "Hidden Bar не зміг приховати ваші піктограми";
+"Coulisse could not hide your icons" = "Coulisse не зміг приховати ваші піктограми";
 "macOS did not accept the request, so every icon is showing. Stop presentation mode and start it again, or quit the sensitive apps first." = "macOS не прийняла запит, тому показано всі піктограми. Зупиніть режим презентації й запустіть його знову або спершу вийдіть із чутливих програм.";
 "1 app stays hidden" = "1 програма лишається прихованою";
 "%d apps stay hidden" = "%d програм лишаються прихованими";
@@ -269,44 +269,46 @@
 "Edit..." = "Змінити...";
 "None" = "Немає";
 "Choose the apps that stay hidden while presenting, even when you click the arrow, except while hiding is paused for the camera or microphone." = "Виберіть програми, що лишаються прихованими під час презентації, навіть якщо натиснути стрілку, окрім випадків, коли приховування призупинено через камеру або мікрофон.";
-"Apps with a menu bar icon appear here once Hidden Bar has seen them." = "Програми з піктограмою в рядку меню з’являються тут, щойно Hidden Bar їх побачить.";
+"Apps with a menu bar icon appear here once Coulisse has seen them." = "Програми з піктограмою в рядку меню з’являються тут, щойно Coulisse їх побачить.";
 "Right-click on the arrow" = "Клацання правою кнопкою на стрілці";
 "Show menu" = "Показати меню";
 "Show always-hidden icons" = "Показати завжди приховані піктограми";
 "Option-right-click the arrow to open the menu." = "Клацніть стрілку правою кнопкою з ⌥ Option, щоб відкрити меню.";
-"Hidden Bar from the App Store is running. Quit it and switch to this version?" = "Hidden Bar з App Store запущено. Вийти з нього й перейти на цю версію?";
-"Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise." = "Одночасно може працювати лише один Hidden Bar. Версія з App Store залишається встановленою, доки ви не вирішите інакше.";
-"Hidden Bar %@ is running. Quit it and switch to this version?" = "Hidden Bar %@ запущено. Вийти з нього й перейти на цю версію?";
-"Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise." = "Одночасно може працювати лише один Hidden Bar. Старіша версія залишається на місці, доки ви не вирішите інакше.";
+"Coulisse from the App Store is running. Quit it and switch to this version?" = "Coulisse з App Store запущено. Вийти з нього й перейти на цю версію?";
+"Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise." = "Одночасно може працювати лише один Coulisse. Версія з App Store залишається встановленою, доки ви не вирішите інакше.";
+"Coulisse %@ is running. Quit it and switch to this version?" = "Coulisse %@ запущено. Вийти з нього й перейти на цю версію?";
+"Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise." = "Одночасно може працювати лише один Coulisse. Старіша версія залишається на місці, доки ви не вирішите інакше.";
 "Quit and Switch" = "Вийти й перейти";
 "Cancel" = "Скасувати";
 "Import your settings from the App Store version?" = "Імпортувати налаштування з версії з App Store?";
-"Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "Hidden Bar з App Store зберігає налаштування в окремому місці. Імпортуйте їх, щоб ця версія запускалася з вашими налаштуваннями.";
+"Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "Coulisse з App Store зберігає налаштування в окремому місці. Імпортуйте їх, щоб ця версія запускалася з вашими налаштуваннями.";
 "Import" = "Імпортувати";
 "Not now" = "Не зараз";
 "Move the App Store copy to the Trash?" = "Перемістити копію з App Store до Смітника?";
-"The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later." = "Версія Hidden Bar з App Store усе ще встановлена:\n%@\nПізніше її можна відновити зі Смітника.";
+"The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later." = "Версія Coulisse з App Store усе ще встановлена:\n%@\nПізніше її можна відновити зі Смітника.";
 "Move to Trash" = "Перемістити до Смітника";
-"Hidden Bar could not move the App Store copy to the Trash" = "Hidden Bar не вдалося перемістити копію з App Store до Смітника";
+"Coulisse could not move the App Store copy to the Trash" = "Coulisse не вдалося перемістити копію з App Store до Смітника";
 "Drag it to the Trash in Finder instead:\n%@" = "Натомість перетягніть її до Смітника у Finder:\n%@";
-"The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there." = "Копія з App Store лежить у /Applications. Вийдіть із Hidden Bar, перемістіть /Applications/Hidden Bar.app до Смітника, перетягніть цю копію до папки «Програми» й відкрийте її звідти.";
-"This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there." = "Цей обліковий запис не може додавати програми до /Applications. Попросіть адміністратора перетягнути Hidden Bar до /Applications, а потім відкрийте його звідти.";
-"Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there." = "Hidden Bar запущено поза папкою «Програми». Копію, що вже є в «Програмах», буде переміщено до Смітника, після чого Hidden Bar перезапуститься звідти.";
-"Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Hidden Bar запущено поза папкою «Програми». Перемістіть його туди, щоб він працював і після очищення «Завантажень», а потім перезапустіть.";
-"Move Hidden Bar to the Applications folder?" = "Перемістити Hidden Bar до папки «Програми»?";
+"The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there." = "Копія з App Store лежить у /Applications. Вийдіть із Coulisse, перемістіть /Applications/Coulisse.app до Смітника, перетягніть цю копію до папки «Програми» й відкрийте її звідти.";
+"This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there." = "Цей обліковий запис не може додавати програми до /Applications. Попросіть адміністратора перетягнути Coulisse до /Applications, а потім відкрийте його звідти.";
+"Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there." = "Coulisse запущено поза папкою «Програми». Копію, що вже є в «Програмах», буде переміщено до Смітника, після чого Coulisse перезапуститься звідти.";
+"Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Coulisse запущено поза папкою «Програми». Перемістіть його туди, щоб він працював і після очищення «Завантажень», а потім перезапустіть.";
+"Move Coulisse to the Applications folder?" = "Перемістити Coulisse до папки «Програми»?";
 "Move to Applications" = "Перемістити до «Програм»";
-"Hidden Bar can hide icons only from /Applications" = "Hidden Bar може приховувати піктограми лише з /Applications";
+"Coulisse can hide icons only from /Applications" = "Coulisse може приховувати піктограми лише з /Applications";
 "a temporary folder" = "тимчасова папка";
-"Hidden Bar cannot hide icons on macOS 27" = "Hidden Bar не може приховувати піктограми в macOS 27";
-"macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 більше не дозволяє програмам з App Store приховувати піктограми в рядку меню. Hidden Bar з github.com/consolelabs/hidden (безкоштовний, з відкритим кодом) працює в macOS 27.";
+"Coulisse cannot hide icons on macOS 27" = "Coulisse не може приховувати піктограми в macOS 27";
+"macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 більше не дозволяє програмам з App Store приховувати піктограми в рядку меню. Coulisse з github.com/consolelabs/hidden (безкоштовний, з відкритим кодом) працює в macOS 27.";
 "Open github.com/consolelabs/hidden" = "Відкрити github.com/consolelabs/hidden";
 "Don't show again" = "Більше не показувати";
-"Hidden Bar on macOS 27" = "Hidden Bar у macOS 27";
+"Coulisse on macOS 27" = "Coulisse у macOS 27";
 "macOS 27: get the working version..." = "macOS 27: отримати робочу версію...";
 "Or install it with Homebrew:" = "Або встановіть через Homebrew:";
 "Quit this App Store version and move it to the Trash first. Homebrew does not install over it." = "Спершу вийдіть із цієї версії з App Store і перемістіть її до Смітника. Homebrew не встановлюється поверх неї.";
 "Hiding is paused" = "Приховування призупинено";
-"macOS hides these icons whatever Hidden Bar allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "macOS приховує ці піктограми, навіть якщо Hidden Bar їх дозволяє: %@. Вони розташовані праворуч від стрілки, тому перемикач призупинення в розділі «Додатково» залишає все видимим, поки вони там.";
+"macOS hides these icons whatever Coulisse allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "macOS приховує ці піктограми, навіть якщо Coulisse їх дозволяє: %@. Вони розташовані праворуч від стрілки, тому перемикач призупинення в розділі «Додатково» залишає все видимим, поки вони там.";
 "icons with no name" = "піктограми без назви";
 "Nothing to hide" = "Нічого приховувати";
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Усі піктограми розташовані праворуч від стрілки, тому приховувати нічого. Утримуючи Command, перетягніть стрілку праворуч від піктограм, які потрібно приховати.";
+
+"Based on Hidden Bar" = "На основі Hidden Bar";

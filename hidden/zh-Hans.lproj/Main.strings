@@ -5,8 +5,8 @@
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
 "1UK-8n-QPP.title" = "自定工具栏…";
 
-/* Class = "NSMenuItem"; title = "Hidden Bar"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "Hidden Bar";
+/* Class = "NSMenuItem"; title = "Coulisse"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Coulisse";
 
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
 "1b7-l0-nxx.title" = "查找";
@@ -23,8 +23,8 @@
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
 "2oI-Rn-ZJC.title" = "转换";
 
-/* Class = "NSTextFieldCell"; title = "Hidden Bar"; ObjectID = "2xp-Ht-xa6"; */
-"2xp-Ht-xa6.title" = "Hidden Bar";
+/* Class = "NSTextFieldCell"; title = "Coulisse"; ObjectID = "2xp-Ht-xa6"; */
+"2xp-Ht-xa6.title" = "Coulisse";
 
 /* Class = "NSButtonCell"; title = "Keep last app state"; ObjectID = "31D-vN-XSA"; */
 "31D-vN-XSA.title" = "保留上一次使用应用时的状态";
@@ -50,8 +50,8 @@
 /* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
 "4J7-dP-txa.title" = "进入全屏幕";
 
-/* Class = "NSMenuItem"; title = "Quit Hidden Bar"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "退出 Hidden Bar";
+/* Class = "NSMenuItem"; title = "Quit Coulisse"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "退出 Coulisse";
 
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "编辑";
@@ -59,8 +59,8 @@
 /* Class = "NSMenuItem"; title = "Copy Style"; ObjectID = "5Vv-lz-BsD"; */
 "5Vv-lz-BsD.title" = "拷贝样式";
 
-/* Class = "NSMenuItem"; title = "About Hidden Bar"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "关于 Hidden Bar";
+/* Class = "NSMenuItem"; title = "About Coulisse"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "关于 Coulisse";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "重做";
@@ -107,8 +107,8 @@
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "帮助";
 
-/* Class = "NSMenuItem"; title = "Hidden Bar Help"; ObjectID = "FKE-Sm-Kum"; */
-"FKE-Sm-Kum.title" = "Hidden Bar 帮助";
+/* Class = "NSMenuItem"; title = "Coulisse Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Coulisse 帮助";
 
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "Fal-I4-PZk"; */
 "Fal-I4-PZk.title" = "文本";
@@ -155,8 +155,8 @@
 /* Class = "NSButtonCell"; title = "⌫"; ObjectID = "IId-1b-leb"; */
 "IId-1b-leb.title" = "⌫";
 
-/* Class = "NSWindow"; title = "Hidden Bar"; ObjectID = "IQv-IB-iLA"; */
-"IQv-IB-iLA.title" = "Hidden Bar";
+/* Class = "NSWindow"; title = "Coulisse"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Coulisse";
 
 /* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
 "J5U-5w-g23.title" = "两端对齐";
@@ -209,8 +209,8 @@
 /* Class = "NSMenuItem"; title = "Baseline"; ObjectID = "OaQ-X3-Vso"; */
 "OaQ-X3-Vso.title" = "基线";
 
-/* Class = "NSMenuItem"; title = "Hide Hidden Bar"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "隐藏 Hidden Bar";
+/* Class = "NSMenuItem"; title = "Hide Coulisse"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "隐藏 Coulisse";
 
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "查找上一个";
@@ -257,8 +257,8 @@
 /* Class = "NSMenuItem"; title = "Italic"; ObjectID = "Vjx-xi-njq"; */
 "Vjx-xi-njq.title" = "斜体";
 
-/* Class = "NSButtonCell"; title = "Start Hidden Bar when I log in"; ObjectID = "W1G-55-zGo"; */
-"W1G-55-zGo.title" = "在登录时启动 Hidden Bar";
+/* Class = "NSButtonCell"; title = "Start Coulisse when I log in"; ObjectID = "W1G-55-zGo"; */
+"W1G-55-zGo.title" = "在登录时启动 Coulisse";
 
 /* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
 "W48-6f-4Dl.title" = "编辑";
@@ -395,7 +395,7 @@
 /* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
 "jxT-CU-nIS.title" = "格式";
 
-/* Class = "NSTextFieldCell"; title = "In your Mac's menu bar, hold ⌘ and drag icons \nbetween sections to configure Hidden Bar."; ObjectID = "k7C-e5-6a0"; */
+/* Class = "NSTextFieldCell"; title = "In your Mac's menu bar, hold ⌘ and drag icons \nbetween sections to configure Coulisse."; ObjectID = "k7C-e5-6a0"; */
 "k7C-e5-6a0.title" = "在 Mac 的菜单栏中，按住 ⌘ 并拖动图标\n以自定义菜单栏";
 
 /* Class = "NSMenuItem"; title = "Show Sidebar"; ObjectID = "kIP-vf-haE"; */
@@ -455,8 +455,8 @@
 /* Class = "NSMenu"; title = "Kern"; ObjectID = "tlD-Oa-oAM"; */
 "tlD-Oa-oAM.title" = "字距调整";
 
-/* Class = "NSMenu"; title = "Hidden Bar"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "Hidden Bar";
+/* Class = "NSMenu"; title = "Coulisse"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Coulisse";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "剪切";

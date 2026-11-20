@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the find shortcut is one Data preference, unset by default (the
 /// feature is off), recorded by a row under "Keyboard shortcut" on the General
@@ -168,11 +168,11 @@ final class PaletteSettingsTests: XCTestCase {
                     "Hidden", "Always hidden", "%@ is shown in the menu bar now.", "%@ is not running.",
                     "Only hidden icons are listed. Shown icons are already one click away.", "No hidden icon matches \"%@\"",
                     "Nothing is hidden right now", "Hold ⌘ and drag an icon left of the arrow, or pick sections in Settings.",
-                    "Open Menu Bar Apps", "Hidden Bar needs Accessibility access",
+                    "Open Menu Bar Apps", "Coulisse needs Accessibility access",
                     "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen.",
                     "Open System Settings", "%@ can't be opened from here",
-                    "macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything.",
-                    "Hidden Bar is not hiding icons right now",
+                    "macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything.",
+                    "Coulisse is not hiding icons right now",
                     "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why.",
                     "Its icon does not answer Accessibility. Click the arrow to show everything, then click its icon."]
         let localizations = Bundle.main.localizations.filter { $0 != "Base" }

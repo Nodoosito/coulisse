@@ -10,7 +10,7 @@ import Foundation
 import os
 
 enum Constant {
-    static let appName = "Hidden Bar"
+    static let appName = "Coulisse"
 
     static var isUsingLTRLanguage = false
 }

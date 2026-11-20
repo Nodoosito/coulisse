@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  Hidden Bar
+  Coulisse
 
   Created by Licardo on 2020/3/9.
   Copyright © 2020 Console Labs. All rights reserved.
@@ -36,7 +36,7 @@
 "Chevron" = "رأس سهم";
 "Dot" = "نقطة";
 "Line" = "خط";
-"Hidden Bar needs Accessibility access to hide icons." = "يحتاج Hidden Bar إلى صلاحية تسهيلات الاستخدام لإخفاء الأيقونات.";
+"Coulisse needs Accessibility access to hide icons." = "يحتاج Coulisse إلى صلاحية تسهيلات الاستخدام لإخفاء الأيقونات.";
 "Open Settings…" = "فتح الإعدادات…";
 "Expand the bar when the pointer rests on the menu bar" = "توسيع الشريط عند استقرار المؤشر على شريط القائمة";
 "Show the whole bar when the microphone or camera turns on" = "إظهار الشريط بالكامل عند تشغيل الميكروفون أو الكاميرا";
@@ -56,13 +56,13 @@
 "Appearance" = "المظهر";
 "Advanced" = "متقدم";
 "About" = "حول";
-"Hidden Bar is working" = "Hidden Bar يعمل";
+"Coulisse is working" = "Coulisse يعمل";
 "Click the arrow in the menu bar, or press %@, to show hidden icons." = "انقر على السهم في شريط القائمة، أو اضغط %@، لإظهار الأيقونات المخفية.";
 "Click the arrow in the menu bar to show hidden icons." = "انقر على السهم في شريط القائمة لإظهار الأيقونات المخفية.";
-"Hidden Bar needs Accessibility access" = "يحتاج Hidden Bar إلى صلاحية تسهيلات الاستخدام";
-"macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on." = "لا يتيح macOS 27 لـ Hidden Bar إخفاء الأيقونات إلا بهذا الإذن. لن يُخفى أي شيء حتى تفعّله.";
+"Coulisse needs Accessibility access" = "يحتاج Coulisse إلى صلاحية تسهيلات الاستخدام";
+"macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on." = "لا يتيح macOS 27 لـ Coulisse إخفاء الأيقونات إلا بهذا الإذن. لن يُخفى أي شيء حتى تفعّله.";
 "Open System Settings" = "فتح إعدادات النظام";
-"Move Hidden Bar to Applications" = "نقل Hidden Bar إلى التطبيقات";
+"Move Coulisse to Applications" = "نقل Coulisse إلى التطبيقات";
 "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet." = "يعمل من %@. لا يخفي macOS 27 الأيقونات إلا للتطبيقات الموجودة في مجلد التطبيقات، لذلك لم يُخفَ شيء بعد.";
 "This App Store version can't hide icons on macOS 27" = "لا يمكن لإصدار App Store هذا إخفاء الأيقونات على macOS 27";
 "Apple's sandbox blocks hiding on macOS 27. Your settings below are kept." = "يمنع صندوق الحماية من Apple الإخفاء على macOS 27. إعداداتك أدناه محفوظة.";
@@ -76,9 +76,9 @@
 "Hold ⌘ and drag an icon left of the arrow to hide it." = "استمر بالضغط على ⌘ واسحب أيقونة إلى يمين السهم لإخفائها.";
 "Hold ⌘ and drag an icon left of the | separator to hide it." = "استمر بالضغط على ⌘ واسحب أيقونة إلى يمين الفاصل | لإخفائها.";
 "Option-click the arrow to see always-hidden icons." = "انقر على السهم مع الضغط على ⌥ Option لعرض الأيقونات المخفية دائمًا.";
-"Open Hidden Bar at login" = "فتح Hidden Bar عند تسجيل الدخول";
+"Open Coulisse at login" = "فتح Coulisse عند تسجيل الدخول";
 "Could not update the login item" = "تعذّر تحديث عنصر تسجيل الدخول";
-"Check System Settings > General > Login Items and make sure Hidden Bar is allowed." = "تحقق من إعدادات النظام > عام > عناصر تسجيل الدخول وتأكد من السماح لـ Hidden Bar.";
+"Check System Settings > General > Login Items and make sure Coulisse is allowed." = "تحقق من إعدادات النظام > عام > عناصر تسجيل الدخول وتأكد من السماح لـ Coulisse.";
 "Hide icons again" = "إخفاء الأيقونات مجددًا";
 "Never" = "أبدًا";
 "After %d seconds" = "بعد %d ثانية";
@@ -105,13 +105,13 @@
 "Fade the arrow when icons are hidden" = "تلاشي السهم عند إخفاء الأيقونات";
 "The arrow turns almost invisible until you need it. It is still there to click." = "يصبح السهم شبه غير مرئي إلى أن تحتاج إليه. وما زال موجودًا للنقر عليه.";
 "Each preview shows the arrow with icons hidden, then shown." = "تعرض كل معاينة السهم والأيقونات مخفية، ثم ظاهرة.";
-"Show this window when Hidden Bar opens" = "إظهار هذه النافذة عند فتح Hidden Bar";
+"Show this window when Coulisse opens" = "إظهار هذه النافذة عند فتح Coulisse";
 "Make room for icons while they are shown" = "توفير مساحة للأيقونات أثناء عرضها";
 "Hides the menus of the app you are using while hidden icons are shown, so more icons fit." = "يخفي قوائم التطبيق الذي تستخدمه أثناء عرض الأيقونات المخفية، لتتسع لأيقونات أكثر.";
 "Reach icons behind the camera notch" = "الوصول إلى الأيقونات خلف شق الكاميرا";
 "Right-click the arrow to list icons the notch covers." = "انقر بالزر الأيمن على السهم لعرض قائمة الأيقونات التي يغطيها الشق.";
 "Pause hiding while macOS shows Now Playing, Focus and similar items" = "إيقاف الإخفاء مؤقتًا أثناء إظهار macOS لـ “قيد التشغيل الآن” و“التركيز” وعناصر مشابهة";
-"macOS 27 hides these items whenever an app hides icons. While one shows, Hidden Bar hides nothing." = "يخفي macOS 27 هذه العناصر كلما أخفى تطبيق أيقونات. وما دام أحدها ظاهرًا، لا يخفي Hidden Bar شيئًا.";
+"macOS 27 hides these items whenever an app hides icons. While one shows, Coulisse hides nothing." = "يخفي macOS 27 هذه العناصر كلما أخفى تطبيق أيقونات. وما دام أحدها ظاهرًا، لا يخفي Coulisse شيئًا.";
 "Seen on this Mac: %@." = "رُصد على هذا الـ Mac: %@.";
 "Hiding method" = "طريقة الإخفاء";
 "macOS 27 visibility" = "الظهور على macOS 27";
@@ -128,7 +128,7 @@
 "Updates come from the Mac App Store." = "تأتي التحديثات من Mac App Store.";
 "Help and feedback" = "المساعدة والملاحظات";
 "Report a problem" = "الإبلاغ عن مشكلة";
-"On GitHub. Please say your macOS version and which Hidden Bar you use." = "على GitHub. يرجى ذكر إصدار macOS الذي تستخدمه ونسخة Hidden Bar التي تستخدمها.";
+"On GitHub. Please say your macOS version and which Coulisse you use." = "على GitHub. يرجى ذكر إصدار macOS الذي تستخدمه ونسخة Coulisse التي تستخدمها.";
 "Email" = "البريد الإلكتروني";
 "Source code" = "الشفرة المصدرية";
 "Free and open source, MIT license." = "مجاني ومفتوح المصدر، بترخيص MIT.";
@@ -166,7 +166,7 @@
 "Visible" = "ظاهر";
 "Show Everything" = "إظهار كل شيء";
 "Your menu bar is full" = "شريط القائمة ممتلئ";
-"macOS moved the Hidden Bar arrow into the « button. Click « to reach it, or use the Hidden Bar hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "نقل macOS سهم Hidden Bar إلى الزر «. انقر على « للوصول إليه، أو استخدم اختصار Hidden Bar. لإبقاء السهم ظاهرًا، انقل بعض الأيقونات إلى يمين السهم.";
+"macOS moved the Coulisse arrow into the « button. Click « to reach it, or use the Coulisse hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "نقل macOS سهم Coulisse إلى الزر «. انقر على « للوصول إليه، أو استخدم اختصار Coulisse. لإبقاء السهم ظاهرًا، انقل بعض الأيقونات إلى يمين السهم.";
 "Some icons are in the « button" = "بعض الأيقونات في الزر «";
 "Some icons do not fit in the menu bar, so macOS moved them into its own « button. Click « to see them. To make room, move icons you rarely use to the always-hidden section." = "لا تتسع بعض الأيقونات في شريط القائمة، فنقلها macOS إلى الزر « الخاص به. انقر على « لرؤيتها. لتوفير مساحة، انقل الأيقونات التي نادرًا ما تستخدمها إلى القسم المخفي دائمًا.";
 "Also used by %@" = "يستخدمه أيضًا %@";
@@ -181,7 +181,7 @@
 "Not chosen yet. Not running now." = "لم يتم الاختيار بعد. لا يعمل الآن.";
 "New in your menu bar" = "جديد في شريط القائمة";
 "%d new apps in your menu bar" = "%d تطبيقات جديدة في شريط القائمة";
-"Choose once. Hidden Bar remembers, also after the app or your Mac restarts." = "اختر مرة واحدة. يتذكر Hidden Bar اختيارك، حتى بعد إعادة تشغيل التطبيق أو الـ Mac.";
+"Choose once. Coulisse remembers, also after the app or your Mac restarts." = "اختر مرة واحدة. يتذكر Coulisse اختيارك، حتى بعد إعادة تشغيل التطبيق أو الـ Mac.";
 "Not running now. It stays shown until you choose." = "لا يعمل الآن. يبقى ظاهرًا إلى أن تختار.";
 "Added %d icons. They show or hide together." = "أُضيفت %d أيقونات. تظهر أو تختفي معًا.";
 "Added an icon %@" = "أُضيفت أيقونة %@";
@@ -217,8 +217,8 @@
 "Open Menu Bar Apps" = "فتح تطبيقات شريط القائمة";
 "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen." = "يقرأ أي التطبيقات موجودة في شريط القائمة ويفتح قوائمها. ولا يقرأ أبدًا ما يظهر على شاشتك.";
 "%@ can't be opened from here" = "لا يمكن فتح %@ من هنا";
-"macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything." = "يخفي macOS “التركيز” وSiri و“قيد التشغيل الآن” كلما أخفى Hidden Bar الأيقونات. انقر على السهم لإظهار كل شيء.";
-"Hidden Bar is not hiding icons right now" = "Hidden Bar لا يخفي الأيقونات حاليًا";
+"macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything." = "يخفي macOS “التركيز” وSiri و“قيد التشغيل الآن” كلما أخفى Coulisse الأيقونات. انقر على السهم لإظهار كل شيء.";
+"Coulisse is not hiding icons right now" = "Coulisse لا يخفي الأيقونات حاليًا";
 "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why." = "كل الأيقونات موجودة في شريط القائمة أصلًا، لذا لا يوجد ما يمكن البحث عنه. افتح الإعدادات لمعرفة السبب.";
 "Its icon does not answer Accessibility. Click the arrow to show everything, then click its icon." = "لا تستجيب أيقونته لتسهيلات الاستخدام. انقر على السهم لإظهار كل شيء، ثم انقر على أيقونته.";
 "Presenting" = "قيد العرض";
@@ -236,16 +236,16 @@
 "Stop Presenting" = "إيقاف العرض";
 "macOS's own items stay." = "تبقى عناصر macOS نفسها.";
 "Hiding paused: camera or microphone in use" = "الإخفاء متوقف مؤقتًا: الكاميرا أو الميكروفون قيد الاستخدام";
-"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Hidden Bar shows every icon when one turns on." = "لا شيء مخفي حاليًا، بما في ذلك التطبيقات الحساسة. يخفي macOS 27 الكبسولة التي تذكر اسم التطبيق الذي يستخدم الكاميرا أو الميكروفون مع الأيقونات الأخرى، لذلك يُظهر Hidden Bar كل الأيقونات عند تشغيل أحدهما.";
+"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Coulisse shows every icon when one turns on." = "لا شيء مخفي حاليًا، بما في ذلك التطبيقات الحساسة. يخفي macOS 27 الكبسولة التي تذكر اسم التطبيق الذي يستخدم الكاميرا أو الميكروفون مع الأيقونات الأخرى، لذلك يُظهر Coulisse كل الأيقونات عند تشغيل أحدهما.";
 "To keep apps out of a shared screen during a call:" = "لإبقاء التطبيقات بعيدة عن الشاشة المشتركة أثناء مكالمة:";
 "Share one window, not the whole screen" = "شارك نافذة واحدة، وليس الشاشة بأكملها";
 "The menu bar is not in the picture." = "شريط القائمة ليس ضمن الصورة.";
 "Quit sensitive apps before the call" = "أنهِ التطبيقات الحساسة قبل المكالمة";
-"Hidden Bar will not quit apps for you." = "لن يُنهي Hidden Bar التطبيقات نيابةً عنك.";
+"Coulisse will not quit apps for you." = "لن يُنهي Coulisse التطبيقات نيابةً عنك.";
 "OK" = "حسنًا";
 "Resumes on its own." = "يستأنف من تلقاء نفسه.";
 "Hide again" = "إخفاء مجددًا";
-"Hidden Bar could not hide your icons" = "تعذّر على Hidden Bar إخفاء أيقوناتك";
+"Coulisse could not hide your icons" = "تعذّر على Coulisse إخفاء أيقوناتك";
 "macOS did not accept the request, so every icon is showing. Stop presentation mode and start it again, or quit the sensitive apps first." = "لم يقبل macOS الطلب، لذلك تظهر كل الأيقونات. أوقف وضع العرض التقديمي ثم شغّله مجددًا، أو أنهِ التطبيقات الحساسة أولًا.";
 "1 app stays hidden" = "تطبيق واحد يبقى مخفيًا";
 "%d apps stay hidden" = "%d تطبيقات تبقى مخفية";
@@ -270,44 +270,46 @@
 "Edit..." = "تحرير...";
 "None" = "بلا";
 "Choose the apps that stay hidden while presenting, even when you click the arrow, except while hiding is paused for the camera or microphone." = "اختر التطبيقات التي تبقى مخفية أثناء العرض، حتى عند النقر على السهم، إلا عندما يتوقف الإخفاء مؤقتًا بسبب الكاميرا أو الميكروفون.";
-"Apps with a menu bar icon appear here once Hidden Bar has seen them." = "تظهر هنا التطبيقات التي لها أيقونة في شريط القائمة بمجرد أن يراها Hidden Bar.";
+"Apps with a menu bar icon appear here once Coulisse has seen them." = "تظهر هنا التطبيقات التي لها أيقونة في شريط القائمة بمجرد أن يراها Coulisse.";
 "Right-click on the arrow" = "النقر بالزر الأيمن على السهم";
 "Show menu" = "إظهار القائمة";
 "Show always-hidden icons" = "إظهار الأيقونات المخفية دائمًا";
 "Option-right-click the arrow to open the menu." = "انقر بالزر الأيمن على السهم مع الضغط على ⌥ Option لفتح القائمة.";
-"Hidden Bar from the App Store is running. Quit it and switch to this version?" = "يعمل Hidden Bar من App Store. هل تريد إنهاءه والتبديل إلى هذا الإصدار؟";
-"Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise." = "يمكن تشغيل نسخة واحدة فقط من Hidden Bar في كل مرة. تبقى نسخة App Store مثبتة إلى أن تقرر خلاف ذلك.";
-"Hidden Bar %@ is running. Quit it and switch to this version?" = "يعمل Hidden Bar %@. هل تريد إنهاءه والتبديل إلى هذا الإصدار؟";
-"Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise." = "يمكن تشغيل نسخة واحدة فقط من Hidden Bar في كل مرة. تبقى النسخة الأقدم في مكانها إلى أن تقرر خلاف ذلك.";
+"Coulisse from the App Store is running. Quit it and switch to this version?" = "يعمل Coulisse من App Store. هل تريد إنهاءه والتبديل إلى هذا الإصدار؟";
+"Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise." = "يمكن تشغيل نسخة واحدة فقط من Coulisse في كل مرة. تبقى نسخة App Store مثبتة إلى أن تقرر خلاف ذلك.";
+"Coulisse %@ is running. Quit it and switch to this version?" = "يعمل Coulisse %@. هل تريد إنهاءه والتبديل إلى هذا الإصدار؟";
+"Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise." = "يمكن تشغيل نسخة واحدة فقط من Coulisse في كل مرة. تبقى النسخة الأقدم في مكانها إلى أن تقرر خلاف ذلك.";
 "Quit and Switch" = "إنهاء والتبديل";
 "Cancel" = "إلغاء";
 "Import your settings from the App Store version?" = "هل تريد استيراد إعداداتك من إصدار App Store؟";
-"Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "يحتفظ Hidden Bar من App Store بإعداداته في مكان منفصل. استورد هذه الإعدادات لتبدأ هذه النسخة كما أعددتها.";
+"Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "يحتفظ Coulisse من App Store بإعداداته في مكان منفصل. استورد هذه الإعدادات لتبدأ هذه النسخة كما أعددتها.";
 "Import" = "استيراد";
 "Not now" = "ليس الآن";
 "Move the App Store copy to the Trash?" = "هل تريد نقل نسخة App Store إلى سلة المحذوفات؟";
-"The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later." = "إصدار App Store من Hidden Bar لا يزال مثبتًا:\n%@\nيمكنك استعادته من سلة المحذوفات لاحقًا.";
+"The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later." = "إصدار App Store من Coulisse لا يزال مثبتًا:\n%@\nيمكنك استعادته من سلة المحذوفات لاحقًا.";
 "Move to Trash" = "نقل إلى سلة المحذوفات";
-"Hidden Bar could not move the App Store copy to the Trash" = "تعذّر على Hidden Bar نقل نسخة App Store إلى سلة المحذوفات";
+"Coulisse could not move the App Store copy to the Trash" = "تعذّر على Coulisse نقل نسخة App Store إلى سلة المحذوفات";
 "Drag it to the Trash in Finder instead:\n%@" = "اسحبها بدلًا من ذلك إلى سلة المحذوفات في Finder:\n%@";
-"The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there." = "نسخة App Store موجودة في /Applications. أنهِ Hidden Bar، وانقل /Applications/Hidden Bar.app إلى سلة المحذوفات، ثم اسحب هذه النسخة إلى مجلد التطبيقات وافتحها من هناك.";
-"This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there." = "لا يمكن لهذا الحساب إضافة تطبيقات إلى /Applications. اطلب من مسؤول سحب Hidden Bar إلى /Applications ثم افتحه من هناك.";
-"Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there." = "يعمل Hidden Bar من خارج مجلد التطبيقات. ستُنقل النسخة الموجودة بالفعل في مجلد التطبيقات إلى سلة المحذوفات، ثم يُعاد تشغيل Hidden Bar من هناك.";
-"Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "يعمل Hidden Bar من خارج مجلد التطبيقات. انقله إليه ليواصل العمل بعد إفراغ مجلد التنزيلات، ثم أعد تشغيله.";
-"Move Hidden Bar to the Applications folder?" = "هل تريد نقل Hidden Bar إلى مجلد التطبيقات؟";
+"The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there." = "نسخة App Store موجودة في /Applications. أنهِ Coulisse، وانقل /Applications/Coulisse.app إلى سلة المحذوفات، ثم اسحب هذه النسخة إلى مجلد التطبيقات وافتحها من هناك.";
+"This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there." = "لا يمكن لهذا الحساب إضافة تطبيقات إلى /Applications. اطلب من مسؤول سحب Coulisse إلى /Applications ثم افتحه من هناك.";
+"Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there." = "يعمل Coulisse من خارج مجلد التطبيقات. ستُنقل النسخة الموجودة بالفعل في مجلد التطبيقات إلى سلة المحذوفات، ثم يُعاد تشغيل Coulisse من هناك.";
+"Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "يعمل Coulisse من خارج مجلد التطبيقات. انقله إليه ليواصل العمل بعد إفراغ مجلد التنزيلات، ثم أعد تشغيله.";
+"Move Coulisse to the Applications folder?" = "هل تريد نقل Coulisse إلى مجلد التطبيقات؟";
 "Move to Applications" = "نقل إلى التطبيقات";
-"Hidden Bar can hide icons only from /Applications" = "يمكن لـ Hidden Bar إخفاء الأيقونات فقط عند تشغيله من /Applications";
+"Coulisse can hide icons only from /Applications" = "يمكن لـ Coulisse إخفاء الأيقونات فقط عند تشغيله من /Applications";
 "a temporary folder" = "مجلد مؤقت";
-"Hidden Bar cannot hide icons on macOS 27" = "لا يمكن لـ Hidden Bar إخفاء الأيقونات على macOS 27";
-"macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "لم يعد macOS 27 يسمح لتطبيقات App Store بإخفاء أيقونات شريط القائمة. يعمل Hidden Bar من github.com/consolelabs/hidden (مجاني ومفتوح المصدر) على macOS 27.";
+"Coulisse cannot hide icons on macOS 27" = "لا يمكن لـ Coulisse إخفاء الأيقونات على macOS 27";
+"macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "لم يعد macOS 27 يسمح لتطبيقات App Store بإخفاء أيقونات شريط القائمة. يعمل Coulisse من github.com/consolelabs/hidden (مجاني ومفتوح المصدر) على macOS 27.";
 "Open github.com/consolelabs/hidden" = "فتح github.com/consolelabs/hidden";
 "Don't show again" = "عدم الإظهار مرة أخرى";
-"Hidden Bar on macOS 27" = "Hidden Bar على macOS 27";
+"Coulisse on macOS 27" = "Coulisse على macOS 27";
 "macOS 27: get the working version..." = "macOS 27: احصل على الإصدار الذي يعمل...";
 "Or install it with Homebrew:" = "أو ثبّته باستخدام Homebrew:";
 "Quit this App Store version and move it to the Trash first. Homebrew does not install over it." = "أنهِ نسخة App Store هذه وانقلها إلى سلة المحذوفات أولًا. لا يثبّت Homebrew النسخة فوقها.";
 "Hiding is paused" = "الإخفاء متوقف مؤقتًا";
-"macOS hides these icons whatever Hidden Bar allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "يخفي macOS هذه الأيقونات مهما سمح بها Hidden Bar: %@. توجد إلى يسار السهم، لذلك يُبقي مفتاح الإيقاف المؤقت في «متقدم» كل شيء ظاهرًا ما دامت هناك.";
+"macOS hides these icons whatever Coulisse allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "يخفي macOS هذه الأيقونات مهما سمح بها Coulisse: %@. توجد إلى يسار السهم، لذلك يُبقي مفتاح الإيقاف المؤقت في «متقدم» كل شيء ظاهرًا ما دامت هناك.";
 "icons with no name" = "أيقونات بلا اسم";
 "Nothing to hide" = "لا شيء لإخفائه";
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "كل الأيقونات إلى يسار السهم، لذا لا يوجد ما يمكن إخفاؤه. استمر بالضغط على Command واسحب السهم إلى يسار الأيقونات التي تريد إخفاءها.";
+
+"Based on Hidden Bar" = "مبني على Hidden Bar";

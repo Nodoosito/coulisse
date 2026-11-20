@@ -57,7 +57,7 @@ struct NoHideNoticeModel: Equatable {
         switch reason {
         case .outsideApplications:
             return NoHideNoticeModel(
-                title: "Move Hidden Bar to Applications".localized,
+                title: "Move Coulisse to Applications".localized,
                 text: String(format: "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet.".localized,
                              runningFolder),
                 action: .moveToApplications)
@@ -65,13 +65,13 @@ struct NoHideNoticeModel: Equatable {
             let list = names.isEmpty ? "icons with no name".localized : ListFormatter.localizedString(byJoining: names)
             return NoHideNoticeModel(
                 title: "Hiding is paused".localized,
-                text: String(format: "macOS hides these icons whatever Hidden Bar allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there.".localized,
+                text: String(format: "macOS hides these icons whatever Coulisse allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there.".localized,
                              list),
                 action: .openSettings(.advanced))
         case .accessibilityNeeded:
             return NoHideNoticeModel(
-                title: "Hidden Bar needs Accessibility access".localized,
-                text: "macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on.".localized,
+                title: "Coulisse needs Accessibility access".localized,
+                text: "macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on.".localized,
                 action: .openSettings(.general))
         case .everythingRightOfArrow:
             return NoHideNoticeModel(

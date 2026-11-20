@@ -1,6 +1,6 @@
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: a test run never reads or writes the shipping app's preferences
 /// domain (`com.dwarvesv.minimalbar`) and never acts on the real install. The

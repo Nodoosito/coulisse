@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  Hidden Bar
+  Coulisse
 
   Created by Licardo on 2020/3/9.
   Copyright © 2020 Console Labs. All rights reserved.
@@ -35,7 +35,7 @@ Các bước thực hiện:
 "Chevron" = "Chữ V";
 "Dot" = "Chấm";
 "Line" = "Gạch";
-"Hidden Bar needs Accessibility access to hide icons." = "Hidden Bar cần quyền Trợ năng để ẩn biểu tượng.";
+"Coulisse needs Accessibility access to hide icons." = "Coulisse cần quyền Trợ năng để ẩn biểu tượng.";
 "Open Settings…" = "Mở Cài đặt…";
 "Expand the bar when the pointer rests on the menu bar" = "Mở rộng thanh khi con trỏ dừng trên thanh menu";
 "Show the whole bar when the microphone or camera turns on" = "Hiện toàn bộ thanh khi micrô hoặc camera được bật";
@@ -55,13 +55,13 @@ Các bước xem biểu tượng luôn ẩn:
 "Appearance" = "Giao diện";
 "Advanced" = "Nâng cao";
 "About" = "Giới thiệu";
-"Hidden Bar is working" = "Hidden Bar đang hoạt động";
+"Coulisse is working" = "Coulisse đang hoạt động";
 "Click the arrow in the menu bar, or press %@, to show hidden icons." = "Nhấp vào mũi tên trên thanh menu hoặc nhấn %@ để hiện các biểu tượng ẩn.";
 "Click the arrow in the menu bar to show hidden icons." = "Nhấp vào mũi tên trên thanh menu để hiện các biểu tượng ẩn.";
-"Hidden Bar needs Accessibility access" = "Hidden Bar cần quyền Trợ năng";
-"macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 chỉ cho phép Hidden Bar ẩn biểu tượng khi có quyền này. Chưa có gì bị ẩn cho đến khi bạn bật nó.";
+"Coulisse needs Accessibility access" = "Coulisse cần quyền Trợ năng";
+"macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 chỉ cho phép Coulisse ẩn biểu tượng khi có quyền này. Chưa có gì bị ẩn cho đến khi bạn bật nó.";
 "Open System Settings" = "Mở Cài đặt Hệ thống";
-"Move Hidden Bar to Applications" = "Chuyển Hidden Bar vào Ứng dụng";
+"Move Coulisse to Applications" = "Chuyển Coulisse vào Ứng dụng";
 "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet." = "Nó đang chạy từ %@. macOS 27 chỉ ẩn biểu tượng của ứng dụng nằm trong thư mục Ứng dụng, nên chưa có gì bị ẩn.";
 "This App Store version can't hide icons on macOS 27" = "Bản App Store này không thể ẩn biểu tượng trên macOS 27";
 "Apple's sandbox blocks hiding on macOS 27. Your settings below are kept." = "Hộp cát (sandbox) của Apple chặn việc ẩn trên macOS 27. Các cài đặt bên dưới vẫn được giữ lại.";
@@ -75,9 +75,9 @@ Các bước xem biểu tượng luôn ẩn:
 "Hold ⌘ and drag an icon left of the arrow to hide it." = "Giữ ⌘ và kéo một biểu tượng sang bên trái mũi tên để ẩn nó.";
 "Hold ⌘ and drag an icon left of the | separator to hide it." = "Giữ ⌘ và kéo một biểu tượng sang bên trái dấu phân cách | để ẩn nó.";
 "Option-click the arrow to see always-hidden icons." = "Nhấp vào mũi tên trong khi giữ Option để xem các biểu tượng luôn ẩn.";
-"Open Hidden Bar at login" = "Mở Hidden Bar khi đăng nhập";
+"Open Coulisse at login" = "Mở Coulisse khi đăng nhập";
 "Could not update the login item" = "Không thể cập nhật mục đăng nhập";
-"Check System Settings > General > Login Items and make sure Hidden Bar is allowed." = "Hãy kiểm tra Cài đặt Hệ thống > Cài đặt chung > Mục đăng nhập và đảm bảo Hidden Bar được cho phép.";
+"Check System Settings > General > Login Items and make sure Coulisse is allowed." = "Hãy kiểm tra Cài đặt Hệ thống > Cài đặt chung > Mục đăng nhập và đảm bảo Coulisse được cho phép.";
 "Hide icons again" = "Ẩn lại biểu tượng";
 "Never" = "Không bao giờ";
 "After %d seconds" = "Sau %d giây";
@@ -104,13 +104,13 @@ Các bước xem biểu tượng luôn ẩn:
 "Fade the arrow when icons are hidden" = "Làm mờ mũi tên khi biểu tượng đang ẩn";
 "The arrow turns almost invisible until you need it. It is still there to click." = "Mũi tên gần như vô hình cho đến khi bạn cần. Bạn vẫn có thể nhấp vào nó.";
 "Each preview shows the arrow with icons hidden, then shown." = "Mỗi bản xem trước cho thấy mũi tên khi biểu tượng đang ẩn, rồi khi đang hiện.";
-"Show this window when Hidden Bar opens" = "Hiện cửa sổ này khi Hidden Bar mở";
+"Show this window when Coulisse opens" = "Hiện cửa sổ này khi Coulisse mở";
 "Make room for icons while they are shown" = "Dành chỗ cho biểu tượng khi chúng đang hiện";
 "Hides the menus of the app you are using while hidden icons are shown, so more icons fit." = "Ẩn các menu của ứng dụng bạn đang dùng khi biểu tượng ẩn đang hiện, để chứa được nhiều biểu tượng hơn.";
 "Reach icons behind the camera notch" = "Truy cập biểu tượng sau phần khuyết camera";
 "Right-click the arrow to list icons the notch covers." = "Nhấp chuột phải vào mũi tên để xem danh sách biểu tượng bị phần khuyết che.";
 "Pause hiding while macOS shows Now Playing, Focus and similar items" = "Tạm dừng ẩn khi macOS hiển thị Đang phát, Tập trung và các mục tương tự";
-"macOS 27 hides these items whenever an app hides icons. While one shows, Hidden Bar hides nothing." = "macOS 27 ẩn các mục này mỗi khi một ứng dụng ẩn biểu tượng. Khi một mục đang hiện, Hidden Bar không ẩn gì cả.";
+"macOS 27 hides these items whenever an app hides icons. While one shows, Coulisse hides nothing." = "macOS 27 ẩn các mục này mỗi khi một ứng dụng ẩn biểu tượng. Khi một mục đang hiện, Coulisse không ẩn gì cả.";
 "Seen on this Mac: %@." = "Đã thấy trên máy Mac này: %@.";
 "Hiding method" = "Cách ẩn";
 "macOS 27 visibility" = "Hiển thị trên macOS 27";
@@ -127,7 +127,7 @@ Các bước xem biểu tượng luôn ẩn:
 "Updates come from the Mac App Store." = "Bản cập nhật đến từ Mac App Store.";
 "Help and feedback" = "Trợ giúp và phản hồi";
 "Report a problem" = "Báo cáo sự cố";
-"On GitHub. Please say your macOS version and which Hidden Bar you use." = "Trên GitHub. Vui lòng cho biết phiên bản macOS và bản Hidden Bar bạn đang dùng.";
+"On GitHub. Please say your macOS version and which Coulisse you use." = "Trên GitHub. Vui lòng cho biết phiên bản macOS và bản Coulisse bạn đang dùng.";
 "Email" = "Email";
 "Source code" = "Mã nguồn";
 "Free and open source, MIT license." = "Miễn phí và mã nguồn mở, giấy phép MIT.";
@@ -165,7 +165,7 @@ Các bước xem biểu tượng luôn ẩn:
 "Visible" = "Hiển thị";
 "Show Everything" = "Hiện mọi thứ";
 "Your menu bar is full" = "Thanh menu của bạn đã đầy";
-"macOS moved the Hidden Bar arrow into the « button. Click « to reach it, or use the Hidden Bar hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "macOS đã chuyển mũi tên Hidden Bar vào nút «. Nhấp vào « để mở nó, hoặc dùng phím tắt Hidden Bar. Để giữ mũi tên luôn hiển thị, hãy chuyển bớt biểu tượng sang bên trái mũi tên.";
+"macOS moved the Coulisse arrow into the « button. Click « to reach it, or use the Coulisse hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "macOS đã chuyển mũi tên Coulisse vào nút «. Nhấp vào « để mở nó, hoặc dùng phím tắt Coulisse. Để giữ mũi tên luôn hiển thị, hãy chuyển bớt biểu tượng sang bên trái mũi tên.";
 "Some icons are in the « button" = "Một số biểu tượng nằm trong nút «";
 "Some icons do not fit in the menu bar, so macOS moved them into its own « button. Click « to see them. To make room, move icons you rarely use to the always-hidden section." = "Một số biểu tượng không vừa trên thanh menu nên macOS đã chuyển chúng vào nút « của riêng nó. Nhấp vào « để xem. Để tạo thêm chỗ, hãy chuyển các biểu tượng bạn ít dùng vào vùng luôn ẩn.";
 "Also used by %@" = "Cũng được dùng bởi %@";
@@ -180,7 +180,7 @@ Các bước xem biểu tượng luôn ẩn:
 "Not chosen yet. Not running now." = "Chưa chọn. Hiện không chạy.";
 "New in your menu bar" = "Mới trên thanh menu của bạn";
 "%d new apps in your menu bar" = "%d ứng dụng mới trên thanh menu của bạn";
-"Choose once. Hidden Bar remembers, also after the app or your Mac restarts." = "Chỉ cần chọn một lần. Hidden Bar sẽ nhớ, kể cả sau khi ứng dụng hoặc máy Mac khởi động lại.";
+"Choose once. Coulisse remembers, also after the app or your Mac restarts." = "Chỉ cần chọn một lần. Coulisse sẽ nhớ, kể cả sau khi ứng dụng hoặc máy Mac khởi động lại.";
 "Not running now. It stays shown until you choose." = "Hiện không chạy. Biểu tượng vẫn hiện cho đến khi bạn chọn.";
 "Added %d icons. They show or hide together." = "Đã thêm %d biểu tượng. Chúng hiện hoặc ẩn cùng nhau.";
 "Added an icon %@" = "Đã thêm một biểu tượng %@";
@@ -216,8 +216,8 @@ Các bước xem biểu tượng luôn ẩn:
 "Open Menu Bar Apps" = "Mở ứng dụng trên thanh menu";
 "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen." = "Nó đọc xem ứng dụng nào đang có trên thanh menu và mở menu của chúng. Nó không bao giờ đọc nội dung trên màn hình của bạn.";
 "%@ can't be opened from here" = "Không thể mở %@ từ đây";
-"macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything." = "macOS ẩn Tập trung, Siri và Đang phát mỗi khi Hidden Bar ẩn biểu tượng. Nhấp vào mũi tên để hiện tất cả.";
-"Hidden Bar is not hiding icons right now" = "Hidden Bar hiện không ẩn biểu tượng";
+"macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything." = "macOS ẩn Tập trung, Siri và Đang phát mỗi khi Coulisse ẩn biểu tượng. Nhấp vào mũi tên để hiện tất cả.";
+"Coulisse is not hiding icons right now" = "Coulisse hiện không ẩn biểu tượng";
 "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why." = "Mọi biểu tượng đều đã nằm trên thanh menu nên không có gì để tìm. Mở Cài đặt để xem lý do.";
 "Its icon does not answer Accessibility. Click the arrow to show everything, then click its icon." = "Biểu tượng của nó không phản hồi Trợ năng. Nhấp vào mũi tên để hiện tất cả, rồi nhấp vào biểu tượng của nó.";
 "Presenting" = "Đang trình chiếu";
@@ -235,16 +235,16 @@ Các bước xem biểu tượng luôn ẩn:
 "Stop Presenting" = "Dừng trình chiếu";
 "macOS's own items stay." = "Các mục của macOS vẫn giữ nguyên.";
 "Hiding paused: camera or microphone in use" = "Đã tạm dừng ẩn: camera hoặc micrô đang dùng";
-"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Hidden Bar shows every icon when one turns on." = "Hiện không có gì bị ẩn, kể cả ứng dụng nhạy cảm. macOS 27 ẩn biểu tượng viên thuốc cho biết ứng dụng đang dùng camera hoặc micrô cùng với các biểu tượng khác, nên Hidden Bar hiện mọi biểu tượng khi một trong hai bật.";
+"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Coulisse shows every icon when one turns on." = "Hiện không có gì bị ẩn, kể cả ứng dụng nhạy cảm. macOS 27 ẩn biểu tượng viên thuốc cho biết ứng dụng đang dùng camera hoặc micrô cùng với các biểu tượng khác, nên Coulisse hiện mọi biểu tượng khi một trong hai bật.";
 "To keep apps out of a shared screen during a call:" = "Để giữ ứng dụng không xuất hiện trên màn hình chia sẻ trong cuộc gọi:";
 "Share one window, not the whole screen" = "Chia sẻ một cửa sổ, không chia sẻ toàn bộ màn hình";
 "The menu bar is not in the picture." = "Thanh menu không nằm trong hình.";
 "Quit sensitive apps before the call" = "Thoát các ứng dụng nhạy cảm trước cuộc gọi";
-"Hidden Bar will not quit apps for you." = "Hidden Bar sẽ không thoát ứng dụng thay bạn.";
+"Coulisse will not quit apps for you." = "Coulisse sẽ không thoát ứng dụng thay bạn.";
 "OK" = "OK";
 "Resumes on its own." = "Tự tiếp tục.";
 "Hide again" = "Ẩn lại";
-"Hidden Bar could not hide your icons" = "Hidden Bar không thể ẩn biểu tượng của bạn";
+"Coulisse could not hide your icons" = "Coulisse không thể ẩn biểu tượng của bạn";
 "macOS did not accept the request, so every icon is showing. Stop presentation mode and start it again, or quit the sensitive apps first." = "macOS không chấp nhận yêu cầu nên mọi biểu tượng đang hiện. Hãy dừng chế độ trình chiếu và bật lại, hoặc thoát các ứng dụng nhạy cảm trước.";
 "1 app stays hidden" = "1 ứng dụng vẫn bị ẩn";
 "%d apps stay hidden" = "%d ứng dụng vẫn bị ẩn";
@@ -269,44 +269,46 @@ Các bước xem biểu tượng luôn ẩn:
 "Edit..." = "Sửa...";
 "None" = "Không có";
 "Choose the apps that stay hidden while presenting, even when you click the arrow, except while hiding is paused for the camera or microphone." = "Chọn các ứng dụng vẫn bị ẩn khi trình chiếu, kể cả khi bạn nhấp vào mũi tên, trừ khi việc ẩn bị tạm dừng do camera hoặc micrô.";
-"Apps with a menu bar icon appear here once Hidden Bar has seen them." = "Các ứng dụng có biểu tượng trên thanh menu sẽ xuất hiện ở đây khi Hidden Bar đã thấy chúng.";
+"Apps with a menu bar icon appear here once Coulisse has seen them." = "Các ứng dụng có biểu tượng trên thanh menu sẽ xuất hiện ở đây khi Coulisse đã thấy chúng.";
 "Right-click on the arrow" = "Nhấp chuột phải vào mũi tên";
 "Show menu" = "Hiện menu";
 "Show always-hidden icons" = "Hiện biểu tượng luôn ẩn";
 "Option-right-click the arrow to open the menu." = "Nhấp chuột phải vào mũi tên trong khi giữ Option để mở menu.";
-"Hidden Bar from the App Store is running. Quit it and switch to this version?" = "Hidden Bar từ App Store đang chạy. Thoát nó và chuyển sang phiên bản này?";
-"Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise." = "Chỉ một Hidden Bar có thể chạy tại một thời điểm. Phiên bản App Store vẫn được cài đặt cho đến khi bạn chọn khác.";
-"Hidden Bar %@ is running. Quit it and switch to this version?" = "Hidden Bar %@ đang chạy. Thoát nó và chuyển sang phiên bản này?";
-"Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise." = "Chỉ một Hidden Bar có thể chạy tại một thời điểm. Phiên bản cũ hơn vẫn giữ nguyên vị trí cho đến khi bạn chọn khác.";
+"Coulisse from the App Store is running. Quit it and switch to this version?" = "Coulisse từ App Store đang chạy. Thoát nó và chuyển sang phiên bản này?";
+"Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise." = "Chỉ một Coulisse có thể chạy tại một thời điểm. Phiên bản App Store vẫn được cài đặt cho đến khi bạn chọn khác.";
+"Coulisse %@ is running. Quit it and switch to this version?" = "Coulisse %@ đang chạy. Thoát nó và chuyển sang phiên bản này?";
+"Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise." = "Chỉ một Coulisse có thể chạy tại một thời điểm. Phiên bản cũ hơn vẫn giữ nguyên vị trí cho đến khi bạn chọn khác.";
 "Quit and Switch" = "Thoát và chuyển";
 "Cancel" = "Hủy";
 "Import your settings from the App Store version?" = "Nhập cài đặt từ phiên bản App Store?";
-"Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "Hidden Bar từ App Store lưu cài đặt ở một nơi riêng. Hãy nhập chúng để phiên bản này khởi động đúng như bạn đã thiết lập.";
+"Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "Coulisse từ App Store lưu cài đặt ở một nơi riêng. Hãy nhập chúng để phiên bản này khởi động đúng như bạn đã thiết lập.";
 "Import" = "Nhập";
 "Not now" = "Không phải bây giờ";
 "Move the App Store copy to the Trash?" = "Chuyển bản sao App Store vào Thùng rác?";
-"The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later." = "Phiên bản App Store của Hidden Bar vẫn còn được cài đặt:\n%@\nBạn có thể khôi phục nó từ Thùng rác sau.";
+"The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later." = "Phiên bản App Store của Coulisse vẫn còn được cài đặt:\n%@\nBạn có thể khôi phục nó từ Thùng rác sau.";
 "Move to Trash" = "Chuyển vào Thùng rác";
-"Hidden Bar could not move the App Store copy to the Trash" = "Hidden Bar không thể chuyển bản sao App Store vào Thùng rác";
+"Coulisse could not move the App Store copy to the Trash" = "Coulisse không thể chuyển bản sao App Store vào Thùng rác";
 "Drag it to the Trash in Finder instead:\n%@" = "Hãy kéo nó vào Thùng rác trong Finder:\n%@";
-"The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there." = "Bản sao App Store nằm trong /Applications. Hãy thoát Hidden Bar, chuyển /Applications/Hidden Bar.app vào Thùng rác, kéo bản sao này vào thư mục Ứng dụng, rồi mở nó từ đó.";
-"This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there." = "Tài khoản này không thể thêm ứng dụng vào /Applications. Hãy nhờ quản trị viên kéo Hidden Bar vào /Applications, rồi mở nó từ đó.";
-"Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there." = "Hidden Bar đang chạy từ bên ngoài thư mục Ứng dụng. Bản sao đã có trong Ứng dụng sẽ được chuyển vào Thùng rác, sau đó Hidden Bar khởi chạy lại từ đó.";
-"Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Hidden Bar đang chạy từ bên ngoài thư mục Ứng dụng. Hãy chuyển nó vào đó để tiếp tục hoạt động sau khi bạn dọn thư mục Tải về, rồi mở lại.";
-"Move Hidden Bar to the Applications folder?" = "Chuyển Hidden Bar vào thư mục Ứng dụng?";
+"The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there." = "Bản sao App Store nằm trong /Applications. Hãy thoát Coulisse, chuyển /Applications/Coulisse.app vào Thùng rác, kéo bản sao này vào thư mục Ứng dụng, rồi mở nó từ đó.";
+"This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there." = "Tài khoản này không thể thêm ứng dụng vào /Applications. Hãy nhờ quản trị viên kéo Coulisse vào /Applications, rồi mở nó từ đó.";
+"Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there." = "Coulisse đang chạy từ bên ngoài thư mục Ứng dụng. Bản sao đã có trong Ứng dụng sẽ được chuyển vào Thùng rác, sau đó Coulisse khởi chạy lại từ đó.";
+"Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Coulisse đang chạy từ bên ngoài thư mục Ứng dụng. Hãy chuyển nó vào đó để tiếp tục hoạt động sau khi bạn dọn thư mục Tải về, rồi mở lại.";
+"Move Coulisse to the Applications folder?" = "Chuyển Coulisse vào thư mục Ứng dụng?";
 "Move to Applications" = "Chuyển vào Ứng dụng";
-"Hidden Bar can hide icons only from /Applications" = "Hidden Bar chỉ có thể ẩn biểu tượng khi chạy từ /Applications";
+"Coulisse can hide icons only from /Applications" = "Coulisse chỉ có thể ẩn biểu tượng khi chạy từ /Applications";
 "a temporary folder" = "một thư mục tạm";
-"Hidden Bar cannot hide icons on macOS 27" = "Hidden Bar không thể ẩn biểu tượng trên macOS 27";
-"macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 không còn cho phép ứng dụng App Store ẩn biểu tượng trên thanh menu. Hidden Bar từ github.com/consolelabs/hidden (miễn phí, mã nguồn mở) hoạt động trên macOS 27.";
+"Coulisse cannot hide icons on macOS 27" = "Coulisse không thể ẩn biểu tượng trên macOS 27";
+"macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 không còn cho phép ứng dụng App Store ẩn biểu tượng trên thanh menu. Coulisse từ github.com/consolelabs/hidden (miễn phí, mã nguồn mở) hoạt động trên macOS 27.";
 "Open github.com/consolelabs/hidden" = "Mở github.com/consolelabs/hidden";
 "Don't show again" = "Không hiển thị lại";
-"Hidden Bar on macOS 27" = "Hidden Bar trên macOS 27";
+"Coulisse on macOS 27" = "Coulisse trên macOS 27";
 "macOS 27: get the working version..." = "macOS 27: tải phiên bản hoạt động được...";
 "Or install it with Homebrew:" = "Hoặc cài bằng Homebrew:";
 "Quit this App Store version and move it to the Trash first. Homebrew does not install over it." = "Hãy thoát phiên bản App Store này và chuyển nó vào Thùng rác trước. Homebrew không cài đè lên nó.";
 "Hiding is paused" = "Đã tạm dừng ẩn";
-"macOS hides these icons whatever Hidden Bar allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "macOS ẩn các biểu tượng này dù Hidden Bar cho phép: %@. Chúng nằm bên phải mũi tên, nên công tắc tạm dừng trong Nâng cao giữ mọi thứ hiển thị khi chúng còn ở đó.";
+"macOS hides these icons whatever Coulisse allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "macOS ẩn các biểu tượng này dù Coulisse cho phép: %@. Chúng nằm bên phải mũi tên, nên công tắc tạm dừng trong Nâng cao giữ mọi thứ hiển thị khi chúng còn ở đó.";
 "icons with no name" = "biểu tượng không có tên";
 "Nothing to hide" = "Không có gì để ẩn";
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Mọi biểu tượng đều nằm bên phải mũi tên nên không có gì để ẩn. Giữ Command và kéo mũi tên sang bên phải các biểu tượng bạn muốn ẩn.";
+
+"Based on Hidden Bar" = "Dựa trên Hidden Bar";

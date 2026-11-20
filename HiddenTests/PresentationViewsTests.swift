@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: presentation mode's Settings group, its sensitive-apps picker and
 /// the panels the capsule opens say what the boards say, and write only what the

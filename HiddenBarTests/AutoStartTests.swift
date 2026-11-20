@@ -273,7 +273,7 @@ final class LegacyLoginItemTests: XCTestCase {
     }
 
     func testHintNamesTheRowUsersSee() {
-        XCTAssertTrue(LegacyLoginItem.failureHint.contains("\"Hidden Bar\" under Allow in the Background"))
+        XCTAssertTrue(LegacyLoginItem.failureHint.contains("\"Coulisse\" under Allow in the Background"))
         XCTAssertFalse(LegacyLoginItem.failureHint.contains("LauncherApplication"))
     }
 

@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the redesigned Settings window still reads and writes every
 /// preference the old storyboard window did, under the same keys, and shows the
@@ -116,7 +116,9 @@ final class SettingsWindowTests: XCTestCase {
     func test_everyOldSwitch_stillWritesItsKey() {
         let views = allViews(PreferencesWindowController(context: fullContext()))
         // The notch switch does not exist on macOS 27; its own test covers it.
-        for key in Self.legacyBoolKeys where key != UserDefaults.Key.notchOverflowEnabled {
+        // Coulisse ships without Sparkle for now, so the update switch only exists when it is compiled in.
+        for key in Self.legacyBoolKeys where key != UserDefaults.Key.notchOverflowEnabled
+            && (key != "SUEnableAutomaticChecks" || AboutViewController.hasUpdater(.direct)) {
             guard let toggle = control(key, in: views) else {
                 XCTFail("no control writes \(key) any more")
                 continue
@@ -275,8 +277,10 @@ final class SettingsWindowTests: XCTestCase {
         XCTAssertNil(control(AboutViewController.checkForUpdatesIdentifier.rawValue, in: views))
         let texts = views.compactMap { ($0 as? NSTextField)?.stringValue } + views.compactMap { ($0 as? NSButton)?.title }
         XCTAssertFalse(texts.contains { $0.localizedCaseInsensitiveContains("Direct Version") }, "App Store build links the direct version")
-        XCTAssertNotNil(control(AboutViewController.checkForUpdatesIdentifier.rawValue,
-                                in: allViews(PreferencesWindowController(context: fullContext()))))
+        if AboutViewController.hasUpdater(.direct) {
+            XCTAssertNotNil(control(AboutViewController.checkForUpdatesIdentifier.rawValue,
+                                    in: allViews(PreferencesWindowController(context: fullContext()))))
+        }
     }
 
     // MARK: tabs
@@ -516,9 +520,9 @@ final class SettingsWindowTests: XCTestCase {
     // Then the card's title and single button match the state
     func test_statusCard_showsEachState() throws {
         let expected: [(SettingsStatus, String, String?)] = [
-            (.working, "Hidden Bar is working", nil),
-            (.needsAccessibility, "Hidden Bar needs Accessibility access", "Open System Settings"),
-            (.outsideApplications, "Move Hidden Bar to Applications", "Move to Applications"),
+            (.working, "Coulisse is working", nil),
+            (.needsAccessibility, "Coulisse needs Accessibility access", "Open System Settings"),
+            (.outsideApplications, "Move Coulisse to Applications", "Move to Applications"),
             (.appStoreOnMacOS27, "This App Store version can't hide icons on macOS 27", "Learn More…"),
         ]
         for (status, title, button) in expected {
@@ -534,7 +538,7 @@ final class SettingsWindowTests: XCTestCase {
     // When looking in every Localizable.strings the app ships
     // Then each locale carries them (English text for now), so none shows a raw key
     func test_everyLocale_carriesTheSettingsKeys() {
-        let keys = ["Hidden Bar is working", "Hide icons again", "Never", "After %d seconds", "Your menu bar",
+        let keys = ["Coulisse is working", "Hide icons again", "Never", "After %d seconds", "Your menu bar",
                     "This App Store version can't hide icons on macOS 27", "Check for Updates…", "What's new",
                     "Right-click on the arrow", "Show menu", "Show always-hidden icons",
                     "Option-click the arrow to see always-hidden icons.", "Option-right-click the arrow to open the menu."]

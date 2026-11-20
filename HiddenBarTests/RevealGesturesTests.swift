@@ -219,7 +219,7 @@ final class RevealGesturesTests: XCTestCase {
         XCTAssertTrue(allows(.shake, .unknown))
         for trigger in RevealTrigger.allCases {
             XCTAssertFalse(allows(trigger, .emptySpace, collapsed: false), "\(trigger) acts on a bar that is already expanded")
-            XCTAssertFalse(allows(trigger, .emptySpace, menu: true), "\(trigger) acts while Hidden Bar's menu is open")
+            XCTAssertFalse(allows(trigger, .emptySpace, menu: true), "\(trigger) acts while Coulisse's menu is open")
         }
     }
 

@@ -54,7 +54,7 @@ struct ArrivalsPromptModel {
             Row(bundle: $0.bundle, name: $0.name, caption: caption(for: $0, now: now), icon: $0.icon, style: .question)
         }
         return ArrivalsPromptModel(title: title,
-                                   subtitle: "Choose once. Hidden Bar remembers, also after the app or your Mac restarts.".localized,
+                                   subtitle: "Choose once. Coulisse remembers, also after the app or your Mac restarts.".localized,
                                    rows: rows, footer: more > 0 ? .bulk(more: more) : .hint)
     }
 

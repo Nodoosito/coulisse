@@ -57,12 +57,12 @@ enum ArrivalsSnapshot {
         known.rows = [ArrivalsPromptModel.Row(bundle: "com.tinyspeck.slackmacgap", name: "Slack",
                                               caption: "10:02 quit to update. 10:03 back in Hidden, where you put it.",
                                               icon: icon("number", NSColor(srgbRed: 0.29, green: 0.08, blue: 0.29, alpha: 1)), style: .kept)]
-        known.footer = .text("Only apps Hidden Bar has never seen are asked about.")
+        known.footer = .text("Only apps Coulisse has never seen are asked about.")
 
         var system = model([])
         system.subtitle = nil
         system.rows = [ArrivalsPromptModel.Row(bundle: "com.apple.controlcenter", name: "Timer (Live Activity)",
-                                               caption: "A macOS item. macOS decides when it shows; Hidden Bar can't keep it shown while hiding.",
+                                               caption: "A macOS item. macOS decides when it shows; Coulisse can't keep it shown while hiding.",
                                                icon: icon("timer", NSColor.systemGray), style: .notice)]
         system.footer = .none
 

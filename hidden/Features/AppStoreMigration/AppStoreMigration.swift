@@ -380,14 +380,14 @@ final class AppStoreMigration {
             return false
         case .offerToReplaceAppStoreCopy(let pid):
             return offerSwitch(from: apps.first { $0.processIdentifier == pid },
-                               message: "Hidden Bar from the App Store is running. Quit it and switch to this version?".localized,
-                               info: "Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise.".localized)
+                               message: "Coulisse from the App Store is running. Quit it and switch to this version?".localized,
+                               info: "Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise.".localized)
         case .offerToReplaceOlderCopy(let pid):
             let older = apps.first { $0.processIdentifier == pid }
             let version = others.first { $0.pid == pid }?.version ?? ""
             return offerSwitch(from: older,
-                               message: String(format: "Hidden Bar %@ is running. Quit it and switch to this version?".localized, version),
-                               info: "Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise.".localized)
+                               message: String(format: "Coulisse %@ is running. Quit it and switch to this version?".localized, version),
+                               info: "Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise.".localized)
         }
     }
 
@@ -477,7 +477,7 @@ final class AppStoreMigration {
         let alert = NSAlert()
         alert.alertStyle = .informational
         alert.messageText = "Import your settings from the App Store version?".localized
-        alert.informativeText = "Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up.".localized
+        alert.informativeText = "Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up.".localized
         alert.addButton(withTitle: "Import".localized)
         alert.addButton(withTitle: "Not now".localized)
 
@@ -515,7 +515,7 @@ final class AppStoreMigration {
         let alert = NSAlert()
         alert.alertStyle = .informational
         alert.messageText = "Move the App Store copy to the Trash?".localized
-        alert.informativeText = String(format: "The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later.".localized,
+        alert.informativeText = String(format: "The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later.".localized,
                                        copies.map(\.path).joined(separator: "\n"))
         alert.addButton(withTitle: "Move to Trash".localized)
         alert.addButton(withTitle: "Not now".localized)
@@ -545,7 +545,7 @@ final class AppStoreMigration {
     private func explainTrashFailure(_ error: Error, copies: [URL]) {
         let alert = NSAlert()
         alert.alertStyle = .warning
-        alert.messageText = "Hidden Bar could not move the App Store copy to the Trash".localized
+        alert.messageText = "Coulisse could not move the App Store copy to the Trash".localized
         alert.informativeText = error.localizedDescription + "\n\n"
             + String(format: "Drag it to the Trash in Finder instead:\n%@".localized, copies.map(\.path).joined(separator: "\n"))
         alert.addButton(withTitle: "OK".localized)
@@ -583,21 +583,21 @@ final class AppStoreMigration {
         case .none:
             return
         case .explainAppStoreCopyKept:
-            explainMove("The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there.".localized)
+            explainMove("The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there.".localized)
             return
         case .explainNotWritable:
-            explainMove("This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there.".localized)
+            explainMove("This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there.".localized)
             return
         case .moveToApplications(let url):
             destination = url
             info = fm.fileExists(atPath: url.path)
-                ? "Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there.".localized
-                : "Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch.".localized
+                ? "Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there.".localized
+                : "Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch.".localized
         }
 
         let alert = NSAlert()
         alert.alertStyle = .informational
-        alert.messageText = "Move Hidden Bar to the Applications folder?".localized
+        alert.messageText = "Move Coulisse to the Applications folder?".localized
         alert.informativeText = info
         alert.addButton(withTitle: "Move to Applications".localized)
         alert.addButton(withTitle: "Not now".localized)
@@ -617,7 +617,7 @@ final class AppStoreMigration {
     private func explainMove(_ steps: String) {
         let alert = NSAlert()
         alert.alertStyle = .warning
-        alert.messageText = "Hidden Bar can hide icons only from /Applications".localized
+        alert.messageText = "Coulisse can hide icons only from /Applications".localized
         alert.informativeText = steps
         alert.addButton(withTitle: "OK".localized)
         run(alert, id: "explain")

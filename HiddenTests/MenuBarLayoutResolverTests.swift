@@ -1,5 +1,5 @@
 import XCTest
-@testable import Hidden_Bar
+@testable import Coulisse
 
 private func makeItem(bundleIdentifier: String?, x: CGFloat, width: CGFloat = 22, height: CGFloat = 22) -> MenuBarInventoryItem {
     MenuBarInventoryItem(

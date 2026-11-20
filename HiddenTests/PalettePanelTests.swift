@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 #if HIDDENBAR_NATIVE_VISIBILITY
 
@@ -273,7 +273,7 @@ final class PalettePanelTests: XCTestCase {
         palette.show()
         palette.perform(.open)
         fake.finish?(.unavailable)
-        XCTAssertTrue(texts.contains("Hidden Bar is not hiding icons right now"))
+        XCTAssertTrue(texts.contains("Coulisse is not hiding icons right now"))
     }
 
     // Given no Accessibility
@@ -282,7 +282,7 @@ final class PalettePanelTests: XCTestCase {
     func test_accessibilityOff_buttonOpensSystemSettings() throws {
         fake.environment.accessibilityTrusted = false
         palette.show()
-        XCTAssertTrue(texts.contains("Hidden Bar needs Accessibility access"))
+        XCTAssertTrue(texts.contains("Coulisse needs Accessibility access"))
         let button = try XCTUnwrap(buttons().first { $0.title == "Open System Settings" })
         button.performClick(nil)
         XCTAssertEqual(fake.accessibilityOpened, 1)
@@ -318,7 +318,7 @@ final class PalettePanelTests: XCTestCase {
         palette.show()
         palette.setQuery("focus")
         XCTAssertTrue(texts.contains("Focus can't be opened from here"))
-        XCTAssertTrue(texts.contains("macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything."))
+        XCTAssertTrue(texts.contains("macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything."))
     }
 
     // Given an app that quit since the last read

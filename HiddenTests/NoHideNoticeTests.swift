@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: a reason a click hid nothing maps to one short text and at most one
 /// button, and a notice is shown only for a manual request, once per reason per
@@ -47,7 +47,7 @@ final class NoHideNoticeTests: XCTestCase {
 
     func testOutsideApplicationsReusesTheStatusCardAndOffersTheMove() {
         let model = NoHideNoticeModel.make(.outsideApplications, runningFolder: "Downloads")
-        XCTAssertEqual(model.title, "Move Hidden Bar to Applications".localized)
+        XCTAssertEqual(model.title, "Move Coulisse to Applications".localized)
         XCTAssertEqual(model.text, String(format: "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet.".localized, "Downloads"))
         XCTAssertEqual(model.action, .moveToApplications)
         XCTAssertEqual(model.buttonTitle, "Move to Applications".localized)
@@ -68,7 +68,7 @@ final class NoHideNoticeTests: XCTestCase {
 
     func testAccessibilityNeededOpensSettings() {
         let model = NoHideNoticeModel.make(.accessibilityNeeded, runningFolder: "")
-        XCTAssertEqual(model.title, "Hidden Bar needs Accessibility access".localized)
+        XCTAssertEqual(model.title, "Coulisse needs Accessibility access".localized)
         XCTAssertEqual(model.action, .openSettings(.general))
     }
 

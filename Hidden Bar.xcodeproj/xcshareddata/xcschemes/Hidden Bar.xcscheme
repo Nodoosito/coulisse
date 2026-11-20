@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51B913D72A4A207DE767D168"
-               BuildableName = "Hidden Bar.app"
+               BuildableName = "Coulisse.app"
                BlueprintName = "Hidden Bar Direct"
                ReferencedContainer = "container:Hidden Bar.xcodeproj">
             </BuildableReference>
@@ -81,7 +81,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51B913D72A4A207DE767D168"
-            BuildableName = "Hidden Bar.app"
+            BuildableName = "Coulisse.app"
             BlueprintName = "Hidden Bar Direct"
             ReferencedContainer = "container:Hidden Bar.xcodeproj">
          </BuildableReference>
@@ -98,7 +98,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51B913D72A4A207DE767D168"
-            BuildableName = "Hidden Bar.app"
+            BuildableName = "Coulisse.app"
             BlueprintName = "Hidden Bar Direct"
             ReferencedContainer = "container:Hidden Bar.xcodeproj">
          </BuildableReference>

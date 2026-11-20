@@ -1,6 +1,6 @@
 /* 
   Localizable.strings
-  Hidden Bar
+  Coulisse
 
   Created by Licardo on 2020/3/9.
   Copyright © 2020 Console Labs. All rights reserved.
@@ -35,7 +35,7 @@
 "Chevron" = "Kutna strelica";
 "Dot" = "Točka";
 "Line" = "Crta";
-"Hidden Bar needs Accessibility access to hide icons." = "Hidden Bar treba pristup Pristupačnosti za skrivanje ikona.";
+"Coulisse needs Accessibility access to hide icons." = "Coulisse treba pristup Pristupačnosti za skrivanje ikona.";
 "Open Settings…" = "Otvori postavke …";
 "Expand the bar when the pointer rests on the menu bar" = "Proširi traku kad pokazivač miruje na traci izbornika";
 "Show the whole bar when the microphone or camera turns on" = "Prikaži cijelu traku kad se uključi mikrofon ili kamera";
@@ -55,13 +55,13 @@
 "Appearance" = "Izgled";
 "Advanced" = "Napredno";
 "About" = "O programu";
-"Hidden Bar is working" = "Hidden Bar radi";
+"Coulisse is working" = "Coulisse radi";
 "Click the arrow in the menu bar, or press %@, to show hidden icons." = "Klikni strelicu u traci izbornika ili pritisni %@ za prikaz skrivenih ikona.";
 "Click the arrow in the menu bar to show hidden icons." = "Klikni strelicu u traci izbornika za prikaz skrivenih ikona.";
-"Hidden Bar needs Accessibility access" = "Hidden Bar treba pristup Pristupačnosti";
-"macOS 27 lets Hidden Bar hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 omogućuje skrivanje ikona programu Hidden Bar samo uz ovo dopuštenje. Ništa nije skriveno dok ga ne uključiš.";
+"Coulisse needs Accessibility access" = "Coulisse treba pristup Pristupačnosti";
+"macOS 27 lets Coulisse hide icons only with this permission. Nothing is hidden until you turn it on." = "macOS 27 omogućuje skrivanje ikona programu Coulisse samo uz ovo dopuštenje. Ništa nije skriveno dok ga ne uključiš.";
 "Open System Settings" = "Otvori Postavke sustava";
-"Move Hidden Bar to Applications" = "Premjesti Hidden Bar u Aplikacije";
+"Move Coulisse to Applications" = "Premjesti Coulisse u Aplikacije";
 "It is running from %@. macOS 27 hides icons only for apps in the Applications folder, so nothing is hidden yet." = "Pokrenut je iz %@. macOS 27 skriva ikone samo za programe u mapi Aplikacije, pa još ništa nije skriveno.";
 "This App Store version can't hide icons on macOS 27" = "Ova App Store verzija ne može skrivati ikone na macOS 27";
 "Apple's sandbox blocks hiding on macOS 27. Your settings below are kept." = "Appleov sandbox blokira skrivanje na macOS 27. Tvoje postavke ispod ostaju sačuvane.";
@@ -75,9 +75,9 @@
 "Hold ⌘ and drag an icon left of the arrow to hide it." = "Drži ⌘ i povuci ikonu lijevo od strelice da je sakriješ.";
 "Hold ⌘ and drag an icon left of the | separator to hide it." = "Drži ⌘ i povuci ikonu lijevo od razdjelnika | da je sakriješ.";
 "Option-click the arrow to see always-hidden icons." = "Option-klik na strelicu prikazuje uvijek skrivene ikone.";
-"Open Hidden Bar at login" = "Otvori Hidden Bar pri prijavi";
+"Open Coulisse at login" = "Otvori Coulisse pri prijavi";
 "Could not update the login item" = "Nije moguće ažurirati stavku za prijavu";
-"Check System Settings > General > Login Items and make sure Hidden Bar is allowed." = "Provjeri Postavke sustava > Općenito > Stavke za prijavu i provjeri je li Hidden Bar dopušten.";
+"Check System Settings > General > Login Items and make sure Coulisse is allowed." = "Provjeri Postavke sustava > Općenito > Stavke za prijavu i provjeri je li Coulisse dopušten.";
 "Hide icons again" = "Ponovno sakrij ikone";
 "Never" = "Nikad";
 "After %d seconds" = "Nakon %d sekundi";
@@ -104,13 +104,13 @@
 "Fade the arrow when icons are hidden" = "Izblijedi strelicu kad su ikone skrivene";
 "The arrow turns almost invisible until you need it. It is still there to click." = "Strelica postaje gotovo nevidljiva dok ti ne zatreba. I dalje je tu za klik.";
 "Each preview shows the arrow with icons hidden, then shown." = "Svaki pregled prikazuje strelicu sa skrivenim, a zatim s prikazanim ikonama.";
-"Show this window when Hidden Bar opens" = "Prikaži ovaj prozor kad se Hidden Bar otvori";
+"Show this window when Coulisse opens" = "Prikaži ovaj prozor kad se Coulisse otvori";
 "Make room for icons while they are shown" = "Oslobodi mjesto za ikone dok su prikazane";
 "Hides the menus of the app you are using while hidden icons are shown, so more icons fit." = "Skriva izbornike aplikacije koju koristiš dok su skrivene ikone prikazane, kako bi stalo više ikona.";
 "Reach icons behind the camera notch" = "Dosegni ikone iza ureza kamere";
 "Right-click the arrow to list icons the notch covers." = "Desni klik na strelicu prikazuje popis ikona koje urez prekriva.";
 "Pause hiding while macOS shows Now Playing, Focus and similar items" = "Pauziraj skrivanje dok macOS prikazuje „Trenutno se reproducira”, „Fokus” i slične stavke";
-"macOS 27 hides these items whenever an app hides icons. While one shows, Hidden Bar hides nothing." = "macOS 27 skriva te stavke kad god neka aplikacija skriva ikone. Dok je jedna prikazana, Hidden Bar ne skriva ništa.";
+"macOS 27 hides these items whenever an app hides icons. While one shows, Coulisse hides nothing." = "macOS 27 skriva te stavke kad god neka aplikacija skriva ikone. Dok je jedna prikazana, Coulisse ne skriva ništa.";
 "Seen on this Mac: %@." = "Viđeno na ovom Macu: %@.";
 "Hiding method" = "Način skrivanja";
 "macOS 27 visibility" = "Vidljivost na macOS 27";
@@ -127,7 +127,7 @@
 "Updates come from the Mac App Store." = "Ažuriranja dolaze iz trgovine Mac App Store.";
 "Help and feedback" = "Pomoć i povratne informacije";
 "Report a problem" = "Prijavi problem";
-"On GitHub. Please say your macOS version and which Hidden Bar you use." = "Na GitHubu. Navedi verziju sustava macOS i koju verziju programa Hidden Bar koristiš.";
+"On GitHub. Please say your macOS version and which Coulisse you use." = "Na GitHubu. Navedi verziju sustava macOS i koju verziju programa Coulisse koristiš.";
 "Email" = "E-pošta";
 "Source code" = "Izvorni kôd";
 "Free and open source, MIT license." = "Besplatno i otvorenog koda, MIT licenca.";
@@ -165,7 +165,7 @@
 "Visible" = "Vidljivo";
 "Show Everything" = "Prikaži sve";
 "Your menu bar is full" = "Traka izbornika je puna";
-"macOS moved the Hidden Bar arrow into the « button. Click « to reach it, or use the Hidden Bar hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "macOS je premjestio strelicu aplikacije Hidden Bar u gumb «. Klikni « za pristup strelici ili upotrijebi tipkovnički prečac aplikacije Hidden Bar. Da strelica ostane vidljiva, premjesti neke ikone lijevo od strelice.";
+"macOS moved the Coulisse arrow into the « button. Click « to reach it, or use the Coulisse hotkey. To keep the arrow in view, move some icons to the left of the arrow." = "macOS je premjestio strelicu aplikacije Coulisse u gumb «. Klikni « za pristup strelici ili upotrijebi tipkovnički prečac aplikacije Coulisse. Da strelica ostane vidljiva, premjesti neke ikone lijevo od strelice.";
 "Some icons are in the « button" = "Neke ikone su u gumbu «";
 "Some icons do not fit in the menu bar, so macOS moved them into its own « button. Click « to see them. To make room, move icons you rarely use to the always-hidden section." = "Neke ikone ne stanu u traku izbornika pa ih je macOS premjestio u vlastiti gumb «. Klikni « da ih vidiš. Da oslobodiš mjesto, premjesti ikone koje rijetko koristiš u uvijek skriveni odjeljak.";
 "Also used by %@" = "Prečac koristi i %@";
@@ -180,7 +180,7 @@
 "Not chosen yet. Not running now." = "Još nije odabrano. Trenutačno nije pokrenuta.";
 "New in your menu bar" = "Novo u traci izbornika";
 "%d new apps in your menu bar" = "%d novih aplikacija u traci izbornika";
-"Choose once. Hidden Bar remembers, also after the app or your Mac restarts." = "Odaberi jednom. Hidden Bar pamti, i nakon ponovnog pokretanja aplikacije ili Maca.";
+"Choose once. Coulisse remembers, also after the app or your Mac restarts." = "Odaberi jednom. Coulisse pamti, i nakon ponovnog pokretanja aplikacije ili Maca.";
 "Not running now. It stays shown until you choose." = "Trenutačno nije pokrenuta. Ostaje prikazana dok ne odabereš.";
 "Added %d icons. They show or hide together." = "Dodano ikona: %d. Prikazuju se ili skrivaju zajedno.";
 "Added an icon %@" = "Dodana ikona %@";
@@ -216,8 +216,8 @@
 "Open Menu Bar Apps" = "Otvori aplikacije trake izbornika";
 "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen." = "Čita koje su aplikacije u traci izbornika i otvara njihove izbornike. Nikad ne čita što je na tvojem zaslonu.";
 "%@ can't be opened from here" = "%@ se ne može otvoriti odavde";
-"macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything." = "macOS skriva Fokus, Siri i Trenutno se reproducira kad god Hidden Bar skriva ikone. Klikni strelicu da prikažeš sve.";
-"Hidden Bar is not hiding icons right now" = "Hidden Bar trenutačno ne skriva ikone";
+"macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything." = "macOS skriva Fokus, Siri i Trenutno se reproducira kad god Coulisse skriva ikone. Klikni strelicu da prikažeš sve.";
+"Coulisse is not hiding icons right now" = "Coulisse trenutačno ne skriva ikone";
 "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why." = "Svaka je ikona već u traci izbornika pa nema što pronaći. Otvori Postavke da vidiš zašto.";
 "Its icon does not answer Accessibility. Click the arrow to show everything, then click its icon." = "Njezina ikona ne odgovara na Pristupačnost. Klikni strelicu da prikažeš sve, zatim klikni njezinu ikonu.";
 "Presenting" = "Prezentiranje";
@@ -235,16 +235,16 @@
 "Stop Presenting" = "Zaustavi prezentiranje";
 "macOS's own items stay." = "Vlastite stavke sustava macOS ostaju.";
 "Hiding paused: camera or microphone in use" = "Skrivanje pauzirano: kamera ili mikrofon u upotrebi";
-"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Hidden Bar shows every icon when one turns on." = "Trenutačno ništa nije skriveno, ni osjetljive aplikacije. macOS 27 zajedno s drugim ikonama skriva kapsulu koja navodi aplikaciju što koristi tvoju kameru ili mikrofon, pa Hidden Bar prikazuje sve ikone kad se jedno od toga uključi.";
+"Nothing is hidden right now, sensitive apps included. macOS 27 hides the capsule that names the app using your camera or microphone along with other icons, so Coulisse shows every icon when one turns on." = "Trenutačno ništa nije skriveno, ni osjetljive aplikacije. macOS 27 zajedno s drugim ikonama skriva kapsulu koja navodi aplikaciju što koristi tvoju kameru ili mikrofon, pa Coulisse prikazuje sve ikone kad se jedno od toga uključi.";
 "To keep apps out of a shared screen during a call:" = "Da aplikacije ne budu na dijeljenom zaslonu tijekom poziva:";
 "Share one window, not the whole screen" = "Dijeli jedan prozor, ne cijeli zaslon";
 "The menu bar is not in the picture." = "Traka izbornika nije na slici.";
 "Quit sensitive apps before the call" = "Zatvori osjetljive aplikacije prije poziva";
-"Hidden Bar will not quit apps for you." = "Hidden Bar neće zatvarati aplikacije umjesto tebe.";
+"Coulisse will not quit apps for you." = "Coulisse neće zatvarati aplikacije umjesto tebe.";
 "OK" = "U redu";
 "Resumes on its own." = "Nastavlja se sam.";
 "Hide again" = "Ponovno sakrij";
-"Hidden Bar could not hide your icons" = "Hidden Bar nije mogao sakriti tvoje ikone";
+"Coulisse could not hide your icons" = "Coulisse nije mogao sakriti tvoje ikone";
 "macOS did not accept the request, so every icon is showing. Stop presentation mode and start it again, or quit the sensitive apps first." = "macOS nije prihvatio zahtjev pa su sve ikone prikazane. Zaustavi način prezentacije i pokreni ga ponovno ili prvo zatvori osjetljive aplikacije.";
 "1 app stays hidden" = "1 aplikacija ostaje skrivena";
 "%d apps stay hidden" = "%d aplikacija ostaje skriveno";
@@ -269,44 +269,46 @@
 "Edit..." = "Uredi …";
 "None" = "Nijedno";
 "Choose the apps that stay hidden while presenting, even when you click the arrow, except while hiding is paused for the camera or microphone." = "Odaberi aplikacije koje ostaju skrivene tijekom prezentiranja, čak i kad klikneš strelicu, osim dok je skrivanje pauzirano zbog kamere ili mikrofona.";
-"Apps with a menu bar icon appear here once Hidden Bar has seen them." = "Aplikacije s ikonom u traci izbornika pojavljuju se ovdje čim ih Hidden Bar vidi.";
+"Apps with a menu bar icon appear here once Coulisse has seen them." = "Aplikacije s ikonom u traci izbornika pojavljuju se ovdje čim ih Coulisse vidi.";
 "Right-click on the arrow" = "Desni klik na strelicu";
 "Show menu" = "Prikaži izbornik";
 "Show always-hidden icons" = "Prikaži uvijek skrivene ikone";
 "Option-right-click the arrow to open the menu." = "Option-desni klik na strelicu otvara izbornik.";
-"Hidden Bar from the App Store is running. Quit it and switch to this version?" = "Hidden Bar iz trgovine App Store je pokrenut. Zatvoriti ga i prijeći na ovu verziju?";
-"Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise." = "Istodobno može raditi samo jedan Hidden Bar. App Store verzija ostaje instalirana dok ne odlučiš drukčije.";
-"Hidden Bar %@ is running. Quit it and switch to this version?" = "Hidden Bar %@ je pokrenut. Zatvoriti ga i prijeći na ovu verziju?";
-"Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise." = "Istodobno može raditi samo jedan Hidden Bar. Starija verzija ostaje gdje jest dok ne odlučiš drukčije.";
+"Coulisse from the App Store is running. Quit it and switch to this version?" = "Coulisse iz trgovine App Store je pokrenut. Zatvoriti ga i prijeći na ovu verziju?";
+"Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise." = "Istodobno može raditi samo jedan Coulisse. App Store verzija ostaje instalirana dok ne odlučiš drukčije.";
+"Coulisse %@ is running. Quit it and switch to this version?" = "Coulisse %@ je pokrenut. Zatvoriti ga i prijeći na ovu verziju?";
+"Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise." = "Istodobno može raditi samo jedan Coulisse. Starija verzija ostaje gdje jest dok ne odlučiš drukčije.";
 "Quit and Switch" = "Zatvori i prebaci";
 "Cancel" = "Odustani";
 "Import your settings from the App Store version?" = "Uvesti postavke iz App Store verzije?";
-"Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "App Store verzija programa Hidden Bar sprema postavke na zasebno mjesto. Uvezi ih kako bi ova verzija počela s tvojim postavkama.";
+"Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up." = "App Store verzija programa Coulisse sprema postavke na zasebno mjesto. Uvezi ih kako bi ova verzija počela s tvojim postavkama.";
 "Import" = "Uvezi";
 "Not now" = "Ne sada";
 "Move the App Store copy to the Trash?" = "Premjestiti App Store kopiju u smeće?";
-"The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later." = "App Store verzija programa Hidden Bar još je instalirana:\n%@\nKasnije je možeš vratiti iz smeća.";
+"The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later." = "App Store verzija programa Coulisse još je instalirana:\n%@\nKasnije je možeš vratiti iz smeća.";
 "Move to Trash" = "Premjesti u smeće";
-"Hidden Bar could not move the App Store copy to the Trash" = "Hidden Bar nije mogao premjestiti App Store kopiju u smeće";
+"Coulisse could not move the App Store copy to the Trash" = "Coulisse nije mogao premjestiti App Store kopiju u smeće";
 "Drag it to the Trash in Finder instead:\n%@" = "Umjesto toga povuci je u smeće u Finderu:\n%@";
-"The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there." = "App Store kopija nalazi se u /Applications. Zatvori Hidden Bar, premjesti /Applications/Hidden Bar.app u smeće, povuci ovu kopiju u mapu Aplikacije, a zatim je otvori odande.";
-"This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there." = "Ovaj račun ne može dodavati aplikacije u /Applications. Zamoli administratora da povuče Hidden Bar u /Applications, a zatim ga otvori odande.";
-"Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there." = "Hidden Bar radi izvan mape Aplikacije. Kopija koja je već u mapi Aplikacije premješta se u smeće, a zatim se Hidden Bar ponovno pokreće odande.";
-"Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Hidden Bar radi izvan mape Aplikacije. Premjesti ga tamo kako bi nastavio raditi nakon što isprazniš mapu Preuzimanja, a zatim ga ponovno pokreni.";
-"Move Hidden Bar to the Applications folder?" = "Premjestiti Hidden Bar u mapu Aplikacije?";
+"The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there." = "App Store kopija nalazi se u /Applications. Zatvori Coulisse, premjesti /Applications/Coulisse.app u smeće, povuci ovu kopiju u mapu Aplikacije, a zatim je otvori odande.";
+"This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there." = "Ovaj račun ne može dodavati aplikacije u /Applications. Zamoli administratora da povuče Coulisse u /Applications, a zatim ga otvori odande.";
+"Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there." = "Coulisse radi izvan mape Aplikacije. Kopija koja je već u mapi Aplikacije premješta se u smeće, a zatim se Coulisse ponovno pokreće odande.";
+"Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch." = "Coulisse radi izvan mape Aplikacije. Premjesti ga tamo kako bi nastavio raditi nakon što isprazniš mapu Preuzimanja, a zatim ga ponovno pokreni.";
+"Move Coulisse to the Applications folder?" = "Premjestiti Coulisse u mapu Aplikacije?";
 "Move to Applications" = "Premjesti u Aplikacije";
-"Hidden Bar can hide icons only from /Applications" = "Hidden Bar može sakriti ikone samo iz /Applications";
+"Coulisse can hide icons only from /Applications" = "Coulisse može sakriti ikone samo iz /Applications";
 "a temporary folder" = "privremena mapa";
-"Hidden Bar cannot hide icons on macOS 27" = "Hidden Bar ne može sakriti ikone na macOS 27";
-"macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 više ne dopušta App Store aplikacijama da sakrivaju ikone u traci izbornika. Hidden Bar s github.com/consolelabs/hidden (besplatan, otvorenog koda) radi na macOS 27.";
+"Coulisse cannot hide icons on macOS 27" = "Coulisse ne može sakriti ikone na macOS 27";
+"macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27." = "macOS 27 više ne dopušta App Store aplikacijama da sakrivaju ikone u traci izbornika. Coulisse s github.com/consolelabs/hidden (besplatan, otvorenog koda) radi na macOS 27.";
 "Open github.com/consolelabs/hidden" = "Otvori github.com/consolelabs/hidden";
 "Don't show again" = "Ne prikazuj ponovno";
-"Hidden Bar on macOS 27" = "Hidden Bar na macOS 27";
+"Coulisse on macOS 27" = "Coulisse na macOS 27";
 "macOS 27: get the working version..." = "macOS 27: preuzmi verziju koja radi...";
 "Or install it with Homebrew:" = "Ili ga instaliraj pomoću alata Homebrew:";
 "Quit this App Store version and move it to the Trash first. Homebrew does not install over it." = "Prvo zatvori ovu App Store verziju i premjesti je u smeće. Homebrew se ne instalira preko nje.";
 "Hiding is paused" = "Skrivanje je pauzirano";
-"macOS hides these icons whatever Hidden Bar allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "macOS skriva ove ikone bez obzira na to što Hidden Bar dopušta: %@. Nalaze se desno od strelice, pa prekidač za pauziranje u kartici Napredno sve drži vidljivim dok su ondje.";
+"macOS hides these icons whatever Coulisse allows: %@. They sit right of the arrow, so the pause switch in Advanced keeps everything visible while they are there." = "macOS skriva ove ikone bez obzira na to što Coulisse dopušta: %@. Nalaze se desno od strelice, pa prekidač za pauziranje u kartici Napredno sve drži vidljivim dok su ondje.";
 "icons with no name" = "ikone bez imena";
 "Nothing to hide" = "Nema što sakriti";
 "Every icon is right of the arrow, so there is nothing to hide. Hold Command and drag the arrow to the right of the icons you want to hide." = "Sve su ikone desno od strelice pa nema što sakriti. Drži Command i povuci strelicu desno od ikona koje želiš sakriti.";
+
+"Based on Hidden Bar" = "Temeljeno na Hidden Bar";

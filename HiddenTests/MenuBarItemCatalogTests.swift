@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 #if HIDDENBAR_NATIVE_VISIBILITY
 

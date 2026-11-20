@@ -1,5 +1,5 @@
 import XCTest
-@testable import Hidden_Bar
+@testable import Coulisse
 
 #if HIDDENBAR_NATIVE_VISIBILITY
 
@@ -247,8 +247,8 @@ final class AppStoreMigrationTests: XCTestCase {
 
     func testWellKnownCandidatesCoverBothApplicationsFolders() {
         let home = URL(fileURLWithPath: "/Users/x")
-        XCTAssertEqual(AppStoreCopyFinder.wellKnownCandidates(home: home, appName: "Hidden Bar").map(\.path),
-                       ["/Applications/Hidden Bar.app", "/Users/x/Applications/Hidden Bar.app"])
+        XCTAssertEqual(AppStoreCopyFinder.wellKnownCandidates(home: home, appName: "Coulisse").map(\.path),
+                       ["/Applications/Coulisse.app", "/Users/x/Applications/Coulisse.app"])
     }
 
     // MARK: move into /Applications
@@ -394,36 +394,36 @@ final class AppStoreMigrationTests: XCTestCase {
     // Then each locale carries them with the same placeholders, so none shows a raw key or drops a path
     func test_everyLocale_carriesTheMigrationStrings() {
         let keys = [
-            "Hidden Bar from the App Store is running. Quit it and switch to this version?",
-            "Only one Hidden Bar can run at a time. The App Store version stays installed until you choose otherwise.",
-            "Hidden Bar %@ is running. Quit it and switch to this version?",
-            "Only one Hidden Bar can run at a time. The older version stays where it is until you choose otherwise.",
+            "Coulisse from the App Store is running. Quit it and switch to this version?",
+            "Only one Coulisse can run at a time. The App Store version stays installed until you choose otherwise.",
+            "Coulisse %@ is running. Quit it and switch to this version?",
+            "Only one Coulisse can run at a time. The older version stays where it is until you choose otherwise.",
             "Quit and Switch",
             "Cancel",
             "Import your settings from the App Store version?",
-            "Hidden Bar from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up.",
+            "Coulisse from the App Store keeps its settings in a separate place. Import them so this version starts the way you set it up.",
             "Import",
             "Not now",
             "Move the App Store copy to the Trash?",
-            "The App Store version of Hidden Bar is still installed:\n%@\nYou can restore it from the Trash later.",
+            "The App Store version of Coulisse is still installed:\n%@\nYou can restore it from the Trash later.",
             "Move to Trash",
-            "Hidden Bar could not move the App Store copy to the Trash",
+            "Coulisse could not move the App Store copy to the Trash",
             "Drag it to the Trash in Finder instead:\n%@",
-            "The App Store copy is in /Applications. Quit Hidden Bar, move /Applications/Hidden Bar.app to the Trash, drag this copy into Applications, then open it from there.",
-            "This account can't add apps to /Applications. Ask an administrator to drag Hidden Bar into /Applications, then open it from there.",
-            "Hidden Bar is running from outside Applications. The copy already in Applications goes to the Trash, then Hidden Bar relaunches from there.",
-            "Hidden Bar is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch.",
-            "Move Hidden Bar to the Applications folder?",
+            "The App Store copy is in /Applications. Quit Coulisse, move /Applications/Coulisse.app to the Trash, drag this copy into Applications, then open it from there.",
+            "This account can't add apps to /Applications. Ask an administrator to drag Coulisse into /Applications, then open it from there.",
+            "Coulisse is running from outside Applications. The copy already in Applications goes to the Trash, then Coulisse relaunches from there.",
+            "Coulisse is running from outside Applications. Move it there so it keeps working after you empty Downloads, then relaunch.",
+            "Move Coulisse to the Applications folder?",
             "Move to Applications",
-            "Hidden Bar can hide icons only from /Applications",
+            "Coulisse can hide icons only from /Applications",
             "OK",
             "a temporary folder",
-            "Hidden Bar cannot hide icons on macOS 27",
-            "macOS 27 no longer lets App Store apps hide menu-bar icons. Hidden Bar from github.com/consolelabs/hidden (free, open source) works on macOS 27.",
+            "Coulisse cannot hide icons on macOS 27",
+            "macOS 27 no longer lets App Store apps hide menu-bar icons. Coulisse from github.com/consolelabs/hidden (free, open source) works on macOS 27.",
             "Open github.com/consolelabs/hidden",
             "Close",
             "Don't show again",
-            "Hidden Bar on macOS 27",
+            "Coulisse on macOS 27",
             "macOS 27: get the working version...",
             "Or install it with Homebrew:",
             "Quit this App Store version and move it to the Trash first. Homebrew does not install over it.",

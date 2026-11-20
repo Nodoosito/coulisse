@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the shortcut recorder reads and writes one `Data` preference key,
 /// records the next combination, refuses a bare letter, can be cancelled or

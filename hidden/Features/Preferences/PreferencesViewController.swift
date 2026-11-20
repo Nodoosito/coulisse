@@ -72,7 +72,7 @@ class PreferencesViewController: SettingsPaneController {
                                 write: { Preferences.hoverToExpand = $0 })
         // One group for everything you set once; the preview above names it.
         var everydayRows = [
-            SettingsForm.row("Open Hidden Bar at login".localized, control: login),
+            SettingsForm.row("Open Coulisse at login".localized, control: login),
             SettingsForm.row("Hide icons again".localized, control: autoHidePopup),
             SettingsForm.row("Always-hidden section".localized,
                              caption: "A second group, left of the hidden icons, that stays hidden when you click the arrow.".localized,
@@ -269,7 +269,7 @@ class PreferencesViewController: SettingsPaneController {
         if Preferences.isAutoStart != wanted {
             let alert = NSAlert()
             alert.messageText = "Could not update the login item".localized
-            alert.informativeText = "Check System Settings > General > Login Items and make sure Hidden Bar is allowed.".localized
+            alert.informativeText = "Check System Settings > General > Login Items and make sure Coulisse is allowed.".localized
             alert.alertStyle = .warning
             alert.runModal()
         }

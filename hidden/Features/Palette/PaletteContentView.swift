@@ -184,15 +184,15 @@ final class PaletteContentView: NSView, NSTextFieldDelegate {
                                     detail: "Hold ⌘ and drag an icon left of the arrow, or pick sections in Settings.".localized,
                                     button: ("Open Menu Bar Apps".localized, false, .openMenuBarApps)))
         case .accessibilityOff:
-            views.append(emptyState(title: "Hidden Bar needs Accessibility access".localized,
+            views.append(emptyState(title: "Coulisse needs Accessibility access".localized,
                                     detail: "It reads which apps are in the menu bar and opens their menus. It never reads what is on your screen.".localized,
                                     badge: "lock.fill",
                                     button: ("Open System Settings".localized, true, .openAccessibilitySettings)))
         case .systemItem(let name):
             views.append(emptyState(title: String(format: "%@ can't be opened from here".localized, name),
-                                    detail: "macOS hides Focus, Siri and Now Playing whenever Hidden Bar hides icons. Click the arrow to show everything.".localized))
+                                    detail: "macOS hides Focus, Siri and Now Playing whenever Coulisse hides icons. Click the arrow to show everything.".localized))
         case .engineUnavailable:
-            views.append(emptyState(title: "Hidden Bar is not hiding icons right now".localized,
+            views.append(emptyState(title: "Coulisse is not hiding icons right now".localized,
                                     detail: "Every icon is already in the menu bar, so there is nothing to find. Open Settings to see why.".localized,
                                     badge: "exclamationmark.triangle.fill"))
         case .cannotOpen(let appName):

@@ -5,8 +5,8 @@
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
 "1UK-8n-QPP.title" = "Araç Çubuğunu Özelleştir…";
 
-/* Class = "NSMenuItem"; title = "Hidden Bar"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "Hidden Bar";
+/* Class = "NSMenuItem"; title = "Coulisse"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Coulisse";
 
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
 "1b7-l0-nxx.title" = "Bul";
@@ -23,8 +23,8 @@
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
 "2oI-Rn-ZJC.title" = "Dönüşümler";
 
-/* Class = "NSTextFieldCell"; title = "Hidden Bar"; ObjectID = "2xp-Ht-xa6"; */
-"2xp-Ht-xa6.title" = "Hidden Bar";
+/* Class = "NSTextFieldCell"; title = "Coulisse"; ObjectID = "2xp-Ht-xa6"; */
+"2xp-Ht-xa6.title" = "Coulisse";
 
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
 "3IN-sU-3Bg.title" = "Yazım";
@@ -47,8 +47,8 @@
 /* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
 "4J7-dP-txa.title" = "Tam Ekrana Gir";
 
-/* Class = "NSMenuItem"; title = "Quit Hidden Bar"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "Hidden Barʼdan çık";
+/* Class = "NSMenuItem"; title = "Quit Coulisse"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Coulisseʼdan çık";
 
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
 "5QF-Oa-p0T.title" = "Düzen";
@@ -56,8 +56,8 @@
 /* Class = "NSMenuItem"; title = "Copy Style"; ObjectID = "5Vv-lz-BsD"; */
 "5Vv-lz-BsD.title" = "Stili Kopyala";
 
-/* Class = "NSMenuItem"; title = "About Hidden Bar"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "Hidden Bar Hakkında";
+/* Class = "NSMenuItem"; title = "About Coulisse"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Coulisse Hakkında";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "Yinele";
@@ -107,8 +107,8 @@
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Yardım";
 
-/* Class = "NSMenuItem"; title = "Hidden Bar Help"; ObjectID = "FKE-Sm-Kum"; */
-"FKE-Sm-Kum.title" = "Hidden Bar Yardımı";
+/* Class = "NSMenuItem"; title = "Coulisse Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Coulisse Yardımı";
 
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "Fal-I4-PZk"; */
 "Fal-I4-PZk.title" = "Metin";
@@ -203,8 +203,8 @@
 /* Class = "NSMenuItem"; title = "Baseline"; ObjectID = "OaQ-X3-Vso"; */
 "OaQ-X3-Vso.title" = "Taban Çizgisi";
 
-/* Class = "NSMenuItem"; title = "Hide Hidden Bar"; ObjectID = "Olw-nP-bQN"; */
-"Olw-nP-bQN.title" = "Hidden Bar’ı gizle";
+/* Class = "NSMenuItem"; title = "Hide Coulisse"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Coulisse’ı gizle";
 
 /* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "OwM-mh-QMV"; */
 "OwM-mh-QMV.title" = "Öncekini Bul";
@@ -251,8 +251,8 @@
 /* Class = "NSMenuItem"; title = "Italic"; ObjectID = "Vjx-xi-njq"; */
 "Vjx-xi-njq.title" = "İtalik";
 
-/* Class = "NSButtonCell"; title = "Start Hidden Bar when I log in"; ObjectID = "W1G-55-zGo"; */
-"W1G-55-zGo.title" = "Oturum açıldığında Hidden Bar’ı başlat";
+/* Class = "NSButtonCell"; title = "Start Coulisse when I log in"; ObjectID = "W1G-55-zGo"; */
+"W1G-55-zGo.title" = "Oturum açıldığında Coulisse’ı başlat";
 
 /* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
 "W48-6f-4Dl.title" = "Düzen";
@@ -389,8 +389,8 @@
 /* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
 "jxT-CU-nIS.title" = "Biçim";
 
-/* Class = "NSTextFieldCell"; title = "In your Mac's menu bar, hold ⌘ and drag icons\nbetween sections to configure Hidden Bar."; ObjectID = "k7C-e5-6a0"; */
-"k7C-e5-6a0.title" = "Mac’inizin menü çubuğunda ⌘ tuşunu basılı tutup simgeleri\nbölümler arasında sürükleyerek Hidden Bar’ı yapılandırın.";
+/* Class = "NSTextFieldCell"; title = "In your Mac's menu bar, hold ⌘ and drag icons\nbetween sections to configure Coulisse."; ObjectID = "k7C-e5-6a0"; */
+"k7C-e5-6a0.title" = "Mac’inizin menü çubuğunda ⌘ tuşunu basılı tutup simgeleri\nbölümler arasında sürükleyerek Coulisse’ı yapılandırın.";
 
 /* Class = "NSMenuItem"; title = "Show Sidebar"; ObjectID = "kIP-vf-haE"; */
 "kIP-vf-haE.title" = "Kenar Çubuğunu Göster";
@@ -449,8 +449,8 @@
 /* Class = "NSMenu"; title = "Kern"; ObjectID = "tlD-Oa-oAM"; */
 "tlD-Oa-oAM.title" = "Karakter Aralığı";
 
-/* Class = "NSMenu"; title = "Hidden Bar"; ObjectID = "uQy-DD-JDr"; */
-"uQy-DD-JDr.title" = "Hidden Bar";
+/* Class = "NSMenu"; title = "Coulisse"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Coulisse";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "Kes";

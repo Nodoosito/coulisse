@@ -265,8 +265,8 @@ final class NativeVisibilityEngine: MenuBarEngine {
             return completion(.unavailable)
         }
         guard runsFromApplicationsFolder() else {
-            logUnavailableOnce("NativeVisibility: hiding unavailable: Hidden Bar runs from outside an Applications folder, so macOS 27 would also hide its arrow",
-                               detail: "macOS 27 would also hide Hidden Bar's own arrow: it hides only apps it knows by bundle id, and Hidden Bar runs from outside an Applications folder (\((Bundle.main.bundlePath as NSString).abbreviatingWithTildeInPath))")
+            logUnavailableOnce("NativeVisibility: hiding unavailable: Coulisse runs from outside an Applications folder, so macOS 27 would also hide its arrow",
+                               detail: "macOS 27 would also hide Coulisse's own arrow: it hides only apps it knows by bundle id, and Coulisse runs from outside an Applications folder (\((Bundle.main.bundlePath as NSString).abbreviatingWithTildeInPath))")
             state = .unavailable
             return completion(.refused(.outsideApplications))
         }

@@ -7,7 +7,7 @@
 
 import XCTest
 import AppKit
-@testable import Hidden_Bar
+@testable import Coulisse
 
 /// Contract: the Icons pane names and draws each app from its bundle id, the
 /// same way every time, and loads each icon once.
