@@ -300,6 +300,35 @@ enum Preferences {
         }
     }
 
+    // Coulisse: a color drawn behind the menu bar.
+    static var menuBarTintEnabled: Bool {
+        get { AppDefaults.store.bool(forKey: UserDefaults.Key.menuBarTintEnabled) }
+        set {
+            AppDefaults.store.set(newValue, forKey: UserDefaults.Key.menuBarTintEnabled)
+            NotificationCenter.default.post(Notification(name: .prefsChanged))
+        }
+    }
+
+    static var menuBarTintColor: String {
+        get { AppDefaults.store.string(forKey: UserDefaults.Key.menuBarTintColor) ?? MenuBarTintColor.defaultHex }
+        set {
+            AppDefaults.store.set(newValue, forKey: UserDefaults.Key.menuBarTintColor)
+            NotificationCenter.default.post(Notification(name: .prefsChanged))
+        }
+    }
+
+    /// 0.1 to 0.8; 0.3 until set.
+    static var menuBarTintOpacity: Double {
+        get {
+            let stored = AppDefaults.store.object(forKey: UserDefaults.Key.menuBarTintOpacity) as? Double ?? 0.3
+            return min(max(stored, 0.1), 0.8)
+        }
+        set {
+            AppDefaults.store.set(newValue, forKey: UserDefaults.Key.menuBarTintOpacity)
+            NotificationCenter.default.post(Notification(name: .prefsChanged))
+        }
+    }
+
     static var notchOverflowEnabled: Bool {
         get {
             AppDefaults.store.bool(forKey: UserDefaults.Key.notchOverflowEnabled)

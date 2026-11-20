@@ -366,3 +366,14 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "When an external display is connected" = "Quand un écran externe est branché";
 "When the Mac is closed on an external display" = "Quand le Mac est fermé sur un écran externe";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS masque une icône sur tous les écrans à la fois. Un grand écran a la place pour toutes : Coulisse peut donc toutes les afficher, puis les masquer à nouveau quand il est débranché.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Barre des menus";
+"Icon spacing" = "Espacement des icônes";
+"Normal" = "Normal (macOS)";
+"Compact" = "Compact";
+"Tighter" = "Très compact";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Un réglage de macOS pour toutes les apps. Chaque app l’utilise une fois relancée ; fermez puis rouvrez la session pour le voir partout.";
+"Tint" = "Teinte";
+"Draws a color behind the menu bar, on every display." = "Dessine une couleur derrière la barre des menus, sur chaque écran.";
+"Intensity" = "Intensité";

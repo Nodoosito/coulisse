@@ -364,3 +364,14 @@
 "When an external display is connected" = "Коли під’єднано зовнішній дисплей";
 "When the Mac is closed on an external display" = "Коли Mac закрито й працює із зовнішнім дисплеєм";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS приховує значок одразу на всіх дисплеях. Великий дисплей вміщує їх усі, тож Coulisse може їх показати й знову приховати, коли його від’єднають.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Смуга меню";
+"Icon spacing" = "Відстань між значками";
+"Normal" = "Звичайна";
+"Compact" = "Компактна";
+"Tighter" = "Тісніша";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Параметр macOS для всіх програм. Кожна програма застосує його після перезапуску; вийдіть і увійдіть знову, щоб побачити всюди.";
+"Tint" = "Відтінок";
+"Draws a color behind the menu bar, on every display." = "Малює колір позаду смуги меню на кожному дисплеї.";
+"Intensity" = "Інтенсивність";

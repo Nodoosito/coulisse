@@ -68,6 +68,9 @@ enum AppStoreSettingsImport {
         UserDefaults.Key.autoHideCountsFromPointer: .number,
         UserDefaults.Key.autoHideOnAppSwitch: .number,
         UserDefaults.Key.displayShowAll: .string,
+        UserDefaults.Key.menuBarTintEnabled: .number,
+        UserDefaults.Key.menuBarTintColor: .string,
+        UserDefaults.Key.menuBarTintOpacity: .number,
     ]
 
     /// Importable keys the direct build writes by itself on its first collapse:

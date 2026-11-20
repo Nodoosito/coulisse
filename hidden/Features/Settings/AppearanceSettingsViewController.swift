@@ -36,10 +36,69 @@ final class AppearanceSettingsViewController: SettingsPaneController {
                              control: fade),
         ])
         addFootnote("Each preview shows the arrow with icons hidden, then shown.".localized)
+        addMenuBarSection()
         onRefresh { [weak self] in
             self?.tiles.forEach { $0.isSelected = $0.style == Preferences.arrowStyle }
         }
         refreshAll()
+    }
+
+    // MARK: Coulisse: the menu bar itself
+
+    private let spacingPopup = NSPopUpButton(frame: .zero, pullsDown: false)
+    private let tintWell = NSColorWell(style: .minimal)
+    private let tintSlider = NSSlider(value: 0.3, minValue: 0.1, maxValue: 0.8, target: nil, action: nil)
+
+    private func addMenuBarSection() {
+        spacingPopup.controlSize = .small
+        for choice in IconSpacing.allCases { spacingPopup.addItem(withTitle: choice.titleKey.localized) }
+        spacingPopup.identifier = NSUserInterfaceItemIdentifier("iconSpacing")
+        spacingPopup.target = self
+        spacingPopup.action = #selector(spacingPicked(_:))
+
+        let tint = boundSwitch(UserDefaults.Key.menuBarTintEnabled, read: { Preferences.menuBarTintEnabled },
+                               write: { Preferences.menuBarTintEnabled = $0 })
+        tintWell.target = self
+        tintWell.action = #selector(tintColorPicked(_:))
+        tintWell.translatesAutoresizingMaskIntoConstraints = false
+        tintWell.widthAnchor.constraint(equalToConstant: 44).isActive = true
+        tintSlider.target = self
+        tintSlider.action = #selector(tintOpacityPicked(_:))
+        tintSlider.controlSize = .small
+        tintSlider.translatesAutoresizingMaskIntoConstraints = false
+        tintSlider.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        let tintControls = NSStackView(views: [tintWell, tint])
+        tintControls.spacing = 10
+
+        addSection("Menu bar".localized, rows: [
+            SettingsForm.row("Icon spacing".localized,
+                             caption: "A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere.".localized,
+                             control: spacingPopup),
+            SettingsForm.row("Tint".localized, caption: "Draws a color behind the menu bar, on every display.".localized,
+                             control: tintControls),
+            SettingsForm.row("Intensity".localized, control: tintSlider),
+        ])
+        onRefresh { [weak self] in
+            guard let self else { return }
+            self.spacingPopup.selectItem(at: IconSpacing.allCases.firstIndex(of: SystemIconSpacing.current) ?? 0)
+            self.tintWell.color = MenuBarTintColor.color(hex: Preferences.menuBarTintColor)
+            self.tintSlider.doubleValue = Preferences.menuBarTintOpacity
+            self.tintWell.isEnabled = Preferences.menuBarTintEnabled
+            self.tintSlider.isEnabled = Preferences.menuBarTintEnabled
+        }
+    }
+
+    @objc private func spacingPicked(_ sender: NSPopUpButton) {
+        guard IconSpacing.allCases.indices.contains(sender.indexOfSelectedItem) else { return }
+        SystemIconSpacing.apply(IconSpacing.allCases[sender.indexOfSelectedItem])
+    }
+
+    @objc private func tintColorPicked(_ sender: NSColorWell) {
+        Preferences.menuBarTintColor = MenuBarTintColor.hex(of: sender.color)
+    }
+
+    @objc private func tintOpacityPicked(_ sender: NSSlider) {
+        Preferences.menuBarTintOpacity = sender.doubleValue
     }
 
     @objc private func tilePicked(_ sender: ArrowStyleTile) {

@@ -365,3 +365,14 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "When an external display is connected" = "Harici ekran bağlıyken";
 "When the Mac is closed on an external display" = "Mac kapalıyken harici ekranla çalışırken";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS bir simgeyi tüm ekranlarda aynı anda gizler. Büyük bir ekranda hepsine yer vardır; Coulisse onları gösterebilir ve ekran çıkarılınca yeniden gizler.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Menü çubuğu";
+"Icon spacing" = "Simge aralığı";
+"Normal" = "Olağan";
+"Compact" = "Sıkı";
+"Tighter" = "Daha sıkı";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Tüm uygulamalar için bir macOS ayarı. Her uygulama yeniden başladığında kullanır; her yerde görmek için oturumu kapatıp yeniden açın.";
+"Tint" = "Renk tonu";
+"Draws a color behind the menu bar, on every display." = "Her ekranda menü çubuğunun arkasına bir renk çizer.";
+"Intensity" = "Yoğunluk";

@@ -366,3 +366,14 @@ Passi per mostrare le icone sempre nascoste:
 "When an external display is connected" = "Quando è collegato un monitor esterno";
 "When the Mac is closed on an external display" = "Quando il Mac è chiuso su un monitor esterno";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS nasconde un’icona su tutti i monitor insieme. Un monitor grande ha spazio per tutte, quindi Coulisse può mostrarle e nasconderle di nuovo quando viene scollegato.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Barra dei menu";
+"Icon spacing" = "Spaziatura icone";
+"Normal" = "Normale";
+"Compact" = "Compatta";
+"Tighter" = "Più stretta";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Un’impostazione di macOS per tutte le app. Ogni app la usa quando si riavvia; esci e rientra per vederla ovunque.";
+"Tint" = "Tinta";
+"Draws a color behind the menu bar, on every display." = "Disegna un colore dietro la barra dei menu, su ogni monitor.";
+"Intensity" = "Intensità";

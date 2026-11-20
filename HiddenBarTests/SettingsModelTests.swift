@@ -158,3 +158,26 @@ final class DisplayShowAllPolicyTests: XCTestCase {
                        "a bar the user expanded stays when a display goes")
     }
 }
+
+// Coulisse: icon spacing reads back the choice whose values macOS holds, and the
+// tint color round-trips through its stored hex.
+final class BarAppearanceTests: XCTestCase {
+    func testSpacingMatchesStoredValues() {
+        XCTAssertEqual(IconSpacing.matching(spacing: nil, padding: nil), .normal)
+        XCTAssertEqual(IconSpacing.matching(spacing: 8, padding: 8), .compact)
+        XCTAssertEqual(IconSpacing.matching(spacing: 4, padding: 6), .tighter)
+        XCTAssertEqual(IconSpacing.matching(spacing: 11, padding: 3), .normal, "values set by hand read as normal")
+    }
+
+    func testTintColorRoundTripsAndFallsBack() {
+        XCTAssertEqual(MenuBarTintColor.hex(of: MenuBarTintColor.color(hex: "#1E90FF")), "#1E90FF")
+        XCTAssertEqual(MenuBarTintColor.hex(of: MenuBarTintColor.color(hex: "nonsense")), MenuBarTintColor.defaultHex)
+    }
+
+    func testBandIsTheMenuBarStrip() {
+        let frame = CGRect(x: 0, y: 0, width: 1512, height: 982)
+        XCTAssertEqual(MenuBarTintColor.band(frame: frame, visibleFrame: CGRect(x: 0, y: 0, width: 1512, height: 944)),
+                       CGRect(x: 0, y: 944, width: 1512, height: 38))
+        XCTAssertNil(MenuBarTintColor.band(frame: frame, visibleFrame: frame), "an auto-hidden menu bar has no strip")
+    }
+}

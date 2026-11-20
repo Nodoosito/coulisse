@@ -47,6 +47,8 @@ class AppDelegate: NSObject, NSApplicationDelegate{
         // Coulisse: switch icon profiles when displays or power change.
         if MenuBarEngineFactory.usesNativeEngine() { IconProfileManager.shared.start() }
         #endif
+        // Coulisse: the menu bar tint, when turned on.
+        MenuBarTintController.shared.start()
         #if HIDDENBAR_SPARKLE
         _ = UpdateController.shared // starts the updater and its scheduled checks
         #endif

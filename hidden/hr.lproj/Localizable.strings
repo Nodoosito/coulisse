@@ -364,3 +364,14 @@
 "When an external display is connected" = "Kad je spojen vanjski zaslon";
 "When the Mac is closed on an external display" = "Kad je Mac zatvoren i radi s vanjskim zaslonom";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS skriva ikonu na svim zaslonima odjednom. Velik zaslon ima mjesta za sve, pa ih Coulisse može prikazati i ponovno sakriti kad se odspoji.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Traka izbornika";
+"Icon spacing" = "Razmak ikona";
+"Normal" = "Uobičajeno";
+"Compact" = "Zbijeno";
+"Tighter" = "Zbijenije";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Postavka macOS-a za sve aplikacije. Svaka je aplikacija koristi nakon ponovnog pokretanja; odjavite se i ponovno prijavite da biste je vidjeli posvuda.";
+"Tint" = "Nijansa";
+"Draws a color behind the menu bar, on every display." = "Iscrtava boju iza trake izbornika na svakom zaslonu.";
+"Intensity" = "Intenzitet";

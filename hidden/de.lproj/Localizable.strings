@@ -364,3 +364,14 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "When an external display is connected" = "Wenn ein externer Bildschirm angeschlossen ist";
 "When the Mac is closed on an external display" = "Wenn der Mac zugeklappt an einem externen Bildschirm läuft";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS blendet ein Symbol auf allen Bildschirmen zugleich aus. Ein großer Bildschirm hat Platz für alle, daher kann Coulisse sie zeigen und wieder ausblenden, wenn er getrennt wird.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Menüleiste";
+"Icon spacing" = "Symbolabstand";
+"Normal" = "Normal (macOS)";
+"Compact" = "Kompakt";
+"Tighter" = "Enger";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Eine macOS-Einstellung für alle Apps. Jede App übernimmt sie nach einem Neustart; melde dich ab und wieder an, um sie überall zu sehen.";
+"Tint" = "Färbung";
+"Draws a color behind the menu bar, on every display." = "Zeichnet eine Farbe hinter die Menüleiste, auf jedem Bildschirm.";
+"Intensity" = "Stärke";

@@ -364,3 +364,14 @@ Jak wyświetlić ikony „Zawsze ukryte”:
 "When an external display is connected" = "Gdy podłączony jest monitor zewnętrzny";
 "When the Mac is closed on an external display" = "Gdy Mac jest zamknięty i działa z monitorem zewnętrznym";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS ukrywa ikonę na wszystkich monitorach naraz. Duży monitor mieści wszystkie, więc Coulisse może je pokazać i ukryć ponownie po jego odłączeniu.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Pasek menu";
+"Icon spacing" = "Odstęp ikon";
+"Normal" = "Normalny";
+"Compact" = "Kompaktowy";
+"Tighter" = "Ciaśniejszy";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Ustawienie macOS dla wszystkich aplikacji. Każda aplikacja użyje go po ponownym uruchomieniu; wyloguj się i zaloguj, aby zobaczyć je wszędzie.";
+"Tint" = "Odcień";
+"Draws a color behind the menu bar, on every display." = "Rysuje kolor za paskiem menu na każdym monitorze.";
+"Intensity" = "Intensywność";

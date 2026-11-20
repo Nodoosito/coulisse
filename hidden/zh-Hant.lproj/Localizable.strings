@@ -379,3 +379,14 @@
 "When an external display is connected" = "連接外接顯示器時";
 "When the Mac is closed on an external display" = "Mac 闔上並使用外接顯示器時";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS 會同時在所有顯示器上隱藏圖示。大顯示器能放下全部圖示，因此 Coulisse 可以全部顯示，並在中斷連接後再次隱藏。";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "選單列";
+"Icon spacing" = "圖示間距";
+"Normal" = "標準";
+"Compact" = "緊湊";
+"Tighter" = "更緊湊";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "適用於所有 App 的 macOS 設定。各 App 重新啟動後生效；登出並重新登入即可在所有地方看到效果。";
+"Tint" = "色調";
+"Draws a color behind the menu bar, on every display." = "在每部顯示器的選單列後方繪製一種顏色。";
+"Intensity" = "強度";

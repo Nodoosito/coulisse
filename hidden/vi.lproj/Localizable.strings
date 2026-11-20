@@ -364,3 +364,14 @@ Các bước xem biểu tượng luôn ẩn:
 "When an external display is connected" = "Khi cắm màn hình ngoài";
 "When the Mac is closed on an external display" = "Khi Mac gập lại và dùng màn hình ngoài";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS ẩn một biểu tượng trên mọi màn hình cùng lúc. Màn hình lớn đủ chỗ cho tất cả, nên Coulisse có thể hiện chúng và ẩn lại khi màn hình được rút ra.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "Thanh menu";
+"Icon spacing" = "Khoảng cách biểu tượng";
+"Normal" = "Bình thường";
+"Compact" = "Gọn";
+"Tighter" = "Gọn hơn";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "Một thiết lập macOS cho mọi ứng dụng. Mỗi ứng dụng dùng nó khi khởi động lại; đăng xuất rồi đăng nhập lại để thấy ở mọi nơi.";
+"Tint" = "Tông màu";
+"Draws a color behind the menu bar, on every display." = "Vẽ một màu phía sau thanh menu, trên mọi màn hình.";
+"Intensity" = "Cường độ";

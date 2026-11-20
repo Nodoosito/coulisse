@@ -276,6 +276,11 @@
 		DFA0D689793E3D069C59794F /* DisplayShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */; };
 		81E594ACBD60EA9FED719E35 /* DisplayShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */; };
 		695E303BF75673F851F61FEA /* DisplayShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */; };
+		26DF6E0B3868F0F15219DD0D /* BarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */; };
+		DA92950894359BC9E24B312B /* BarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */; };
+		5EB2AAD741AB6AE2B719FF06 /* BarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */; };
+		EB4C0F5E0C0179382BDDD6F7 /* MenuBarTintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */; };
+		13CB66861F1F2E297C7A5531 /* MenuBarTintController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -468,6 +473,8 @@
 		1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRulesSettingsView.swift; sourceTree = "<group>"; };
 		9122826261F0994769B3F28A /* AppRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRuleTests.swift; sourceTree = "<group>"; };
 		02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayShowAll.swift; sourceTree = "<group>"; };
+		CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarAppearance.swift; sourceTree = "<group>"; };
+		478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarTintController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -540,6 +547,7 @@
 				AD53B3E18CA60C627D907979 /* Profiles */,
 				A0BB68C0B1F5461F38F52853 /* AppRules */,
 				09F90C616741B2205B1A526B /* Displays */,
+				282635FDE735789EF0ED567A /* BarAppearance */,
 				B7E40DE0000000000000F006 /* Presentation */,
 			);
 			path = Features;
@@ -916,6 +924,15 @@
 			path = Displays;
 			sourceTree = "<group>";
 		};
+		282635FDE735789EF0ED567A /* BarAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				478732E3CE726F7B04557FE0 /* MenuBarTintController.swift */,
+				CA2EDC8F07FBF0EDD527DBA5 /* BarAppearance.swift */,
+			);
+			path = BarAppearance;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1098,6 +1115,7 @@
 				EC07CF0F0A4B2AA2A420B7B9 /* StatusBarController.swift in Sources */,
 				121C4AE8ED80A49E75101000 /* ExpandCollapseAction.swift in Sources */,
 				DFA0D689793E3D069C59794F /* DisplayShowAll.swift in Sources */,
+				26DF6E0B3868F0F15219DD0D /* BarAppearance.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E2011 /* AutoCollapsePopupGuard.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E3011 /* NoHideNotice.swift in Sources */,
 				36A203B556E81ED914E4CDCC /* HBNativeVisibilityShim.m in Sources */,
@@ -1164,6 +1182,7 @@
 				1AC7507A4828F7C4F978FA75 /* PalettePlacement.swift in Sources */,
 				5E8A16F800637DA48B25A540 /* PaletteContentView.swift in Sources */,
 				FF12D2A950C4CF2C063CE168 /* PaletteController.swift in Sources */,
+				EB4C0F5E0C0179382BDDD6F7 /* MenuBarTintController.swift in Sources */,
 				C3D81FD47A7813888864871A /* AppRulesSettingsView.swift in Sources */,
 				BD513D5ACD3A7AB21C39FBEE /* AppRule.swift in Sources */,
 				A37343205B7469FBDEDC8BEF /* IconProfilesSettingsView.swift in Sources */,
@@ -1224,6 +1243,7 @@
 				92C97B9122018C1F0007559C /* StatusBarController.swift in Sources */,
 				62C8B44F0D264D96B75FF0FC /* ExpandCollapseAction.swift in Sources */,
 				81E594ACBD60EA9FED719E35 /* DisplayShowAll.swift in Sources */,
+				DA92950894359BC9E24B312B /* BarAppearance.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E2012 /* AutoCollapsePopupGuard.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E3012 /* NoHideNotice.swift in Sources */,
 				51977397CC1141721E72D40E /* HBNativeVisibilityShim.m in Sources */,
@@ -1289,6 +1309,7 @@
 				53037AF392CAEEBFA8F60B1A /* PalettePlacement.swift in Sources */,
 				A2AD6DBDA644768ED4A8582F /* PaletteContentView.swift in Sources */,
 				10FD5783E1F35450DBAF8F2F /* PaletteController.swift in Sources */,
+				13CB66861F1F2E297C7A5531 /* MenuBarTintController.swift in Sources */,
 				594A9B0DD52BEAE14476595E /* AppRulesSettingsView.swift in Sources */,
 				EA2644C5521C10BE23402E30 /* AppRule.swift in Sources */,
 				00FFE07410E7064F72B859D7 /* IconProfilesSettingsView.swift in Sources */,
@@ -1320,6 +1341,7 @@
 				A6BC2D15D7C6BDBC5F894D62 /* HBNativeVisibilityShim.m in Sources */,
 				B5435023F0224141B232FCC9 /* ExpandCollapseAction.swift in Sources */,
 				695E303BF75673F851F61FEA /* DisplayShowAll.swift in Sources */,
+				5EB2AAD741AB6AE2B719FF06 /* BarAppearance.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E2013 /* AutoCollapsePopupGuard.swift in Sources */,
 				160B7980C8A44829A864BBA6 /* AutoStart.swift in Sources */,
 				A9D0DE00000000000000D002 /* AppDefaults.swift in Sources */,

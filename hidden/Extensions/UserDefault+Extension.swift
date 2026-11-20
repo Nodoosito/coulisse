@@ -38,6 +38,9 @@ extension UserDefaults {
         static let autoHideCountsFromPointer = "autoHideCountsFromPointer"
         static let autoHideOnAppSwitch = "autoHideOnAppSwitch"
         static let displayShowAll = "displayShowAll"
+        static let menuBarTintEnabled = "menuBarTintEnabled"
+        static let menuBarTintColor = "menuBarTintColor"
+        static let menuBarTintOpacity = "menuBarTintOpacity"
         // Internal: not user-facing, so not in the App Store import whitelist.
         static let menuBarCatalogFirstSeen = "menuBarCatalogFirstSeen"
         static let arrivalsPending = "arrivalsPending"

@@ -365,3 +365,14 @@
 "When an external display is connected" = "عند توصيل شاشة خارجية";
 "When the Mac is closed on an external display" = "عند إغلاق الـ Mac واستخدام شاشة خارجية";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "يخفي macOS الأيقونة على كل الشاشات معًا. الشاشة الكبيرة تتسع لها كلها، لذا يستطيع Coulisse إظهارها ثم إخفاءها مجددًا عند فصل الشاشة.";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "شريط القوائم";
+"Icon spacing" = "تباعد الأيقونات";
+"Normal" = "عادي";
+"Compact" = "مضغوط";
+"Tighter" = "أكثر ضغطًا";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "إعداد في macOS لكل التطبيقات. يستخدمه كل تطبيق عند إعادة تشغيله؛ سجّل الخروج ثم الدخول لتراه في كل مكان.";
+"Tint" = "تلوين";
+"Draws a color behind the menu bar, on every display." = "يرسم لونًا خلف شريط القوائم على كل شاشة.";
+"Intensity" = "الشدة";

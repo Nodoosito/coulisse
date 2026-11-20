@@ -363,3 +363,14 @@
 "When an external display is connected" = "外部ディスプレイが接続されているとき";
 "When the Mac is closed on an external display" = "Macを閉じて外部ディスプレイで使っているとき";
 "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOSはアイコンをすべてのディスプレイで同時に隠します。大きなディスプレイにはすべて表示する余地があるので、Coulisseはそれらを表示し、取り外されたら再び隠せます。";
+
+/* Coulisse: menu bar appearance */
+"Menu bar" = "メニューバー";
+"Icon spacing" = "アイコンの間隔";
+"Normal" = "標準";
+"Compact" = "コンパクト";
+"Tighter" = "より狭く";
+"A macOS setting for every app. Each app uses it once it starts again; log out and back in to see it everywhere." = "すべてのアプリに適用されるmacOSの設定です。各アプリは再起動時に反映します。すべてに反映するにはログアウトして再ログインしてください。";
+"Tint" = "色合い";
+"Draws a color behind the menu bar, on every display." = "すべてのディスプレイでメニューバーの背後に色を描きます。";
+"Intensity" = "強さ";
