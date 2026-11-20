@@ -327,3 +327,21 @@ Passi per mostrare le icone sempre nascoste:
 "Hidden icons" = "Icone nascoste";
 "Click an icon to open its menu." = "Fai clic su un’icona per aprirne il menu.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS non ha trovato spazio per %@ nella barra dei menu. Espandi la barra o sposta un’icona poco usata in Sempre nascoste.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profili";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Salva più disposizioni delle icone e lascia che Coulisse passi dall’una all’altra, ad esempio quando è collegato un monitor esterno o il Mac va a batteria.";
+"Create Profiles" = "Crea profili";
+"Add a Profile" = "Aggiungi un profilo";
+"Default" = "Predefinito";
+"Profile %d" = "Profilo %d";
+"Manual" = "Manuale";
+"Any external display connected" = "Qualsiasi monitor esterno collegato";
+"Display “%@” connected" = "Monitor “%@” collegato";
+"No external display" = "Nessun monitor esterno";
+"On battery" = "A batteria";
+"On power adapter" = "Con alimentatore";
+"Use" = "Usa";
+"Active" = "Attivo";
+"Profile" = "Profilo";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "L’elenco qui sotto modifica il profilo attivo. Coulisse sceglie il profilo la cui regola corrisponde meglio; altrimenti, l’ultimo scelto a mano.";

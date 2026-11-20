@@ -326,3 +326,21 @@
 "Hidden icons" = "الأيقونات المخفية";
 "Click an icon to open its menu." = "انقر على أيقونة لفتح قائمتها.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "لم يجد macOS مكانًا لـ %@ في شريط القوائم. وسّع الشريط، أو انقل أيقونة نادرة الاستخدام إلى «مخفية دائمًا».";
+
+/* Coulisse: profiles */
+"Profiles" = "الملفات الشخصية";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "احفظ عدة ترتيبات للأيقونات ودَع Coulisse يبدّل بينها، مثلًا عند توصيل شاشة خارجية أو عند عمل الـ Mac على البطارية.";
+"Create Profiles" = "إنشاء ملفات شخصية";
+"Add a Profile" = "إضافة ملف شخصي";
+"Default" = "الافتراضي";
+"Profile %d" = "الملف الشخصي %d";
+"Manual" = "يدوي";
+"Any external display connected" = "أي شاشة خارجية موصولة";
+"Display “%@” connected" = "الشاشة «%@» موصولة";
+"No external display" = "لا توجد شاشة خارجية";
+"On battery" = "على البطارية";
+"On power adapter" = "على محوّل الطاقة";
+"Use" = "استخدام";
+"Active" = "نشط";
+"Profile" = "الملف الشخصي";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "تعدّل القائمة أدناه الملف الشخصي النشط. يختار Coulisse الملف الذي تناسبه قاعدته أكثر؛ وإن لم يوجد، فآخر ملف اخترته يدويًا.";

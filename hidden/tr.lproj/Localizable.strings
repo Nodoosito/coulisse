@@ -326,3 +326,21 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "Hidden icons" = "Gizli simgeler";
 "Click an icon to open its menu." = "Menüsünü açmak için bir simgeye tıklayın.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS, menü çubuğunda %@ için yer bulamadı. Çubuğu genişletin veya az kullandığınız bir simgeyi Her zaman gizli bölümüne taşıyın.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profiller";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Birden fazla simge düzeni kaydedin ve Coulisse aralarında geçiş yapsın; örneğin harici ekran bağlandığında veya Mac pilde çalıştığında.";
+"Create Profiles" = "Profil oluştur";
+"Add a Profile" = "Profil ekle";
+"Default" = "Varsayılan";
+"Profile %d" = "Profil %d";
+"Manual" = "Elle";
+"Any external display connected" = "Herhangi bir harici ekran bağlı";
+"Display “%@” connected" = "“%@” ekranı bağlı";
+"No external display" = "Harici ekran yok";
+"On battery" = "Pilde";
+"On power adapter" = "Güç adaptöründe";
+"Use" = "Kullan";
+"Active" = "Etkin";
+"Profile" = "Profil";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Aşağıdaki liste etkin profili düzenler. Coulisse kuralı en iyi uyan profili seçer; hiçbiri uymazsa en son elle seçtiğinizi.";

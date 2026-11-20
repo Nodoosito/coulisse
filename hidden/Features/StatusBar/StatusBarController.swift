@@ -705,6 +705,9 @@ class StatusBarController: MenuBarItemProvider {
         if let findItem = makeFindHiddenIconMenuItem() {
             menu.addItem(findItem)
         }
+        if let profilesItem = makeProfilesMenuItem() {
+            menu.addItem(profilesItem)
+        }
         #endif
 
         let prefItem = NSMenuItem(title: "Preferences...".localized, action: #selector(openPreferenceViewControllerIfNeeded), keyEquivalent: "P")
@@ -878,6 +881,28 @@ extension StatusBarController {
         let window = IconWindowController(host: host)
         iconWindowStorage = window
         return window
+    }
+
+    // Coulisse: the profiles, the active one checked. Only while profiles are on.
+    fileprivate func makeProfilesMenuItem() -> NSMenuItem? {
+        let manager = IconProfileManager.shared
+        guard MenuBarEngineFactory.usesNativeEngine(), manager.isOn else { return nil }
+        let submenu = NSMenu()
+        for profile in manager.profiles {
+            let item = NSMenuItem(title: profile.name, action: #selector(profilePicked(_:)), keyEquivalent: "")
+            item.target = self
+            item.representedObject = profile.id
+            item.state = profile.id == manager.activeID ? .on : .off
+            submenu.addItem(item)
+        }
+        let item = NSMenuItem(title: "Profile".localized, action: nil, keyEquivalent: "")
+        item.submenu = submenu
+        return item
+    }
+
+    @objc fileprivate func profilePicked(_ sender: NSMenuItem) {
+        guard let id = sender.representedObject as? String else { return }
+        IconProfileManager.shared.choose(id)
     }
 
     @objc fileprivate func showIconWindow() {

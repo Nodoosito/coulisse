@@ -43,6 +43,10 @@ class AppDelegate: NSObject, NSApplicationDelegate{
         // A test host never starts Sparkle or takes the move and migration
         // offers: they act on the machine's real install.
         guard AppDefaults.allowsHostSideEffects else { return }
+        #if HIDDENBAR_NATIVE_VISIBILITY
+        // Coulisse: switch icon profiles when displays or power change.
+        if MenuBarEngineFactory.usesNativeEngine() { IconProfileManager.shared.start() }
+        #endif
         #if HIDDENBAR_SPARKLE
         _ = UpdateController.shared // starts the updater and its scheduled checks
         #endif

@@ -325,3 +325,21 @@
 "Hidden icons" = "Skrivene ikone";
 "Click an icon to open its menu." = "Kliknite ikonu da biste otvorili njezin izbornik.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS nije pronašao mjesta za %@ na traci izbornika. Proširite traku ili premjestite rijetko korištenu ikonu u Uvijek skriveno.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profili";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Spremite više rasporeda ikona i neka Coulisse prelazi između njih, primjerice kad je spojen vanjski zaslon ili Mac radi na bateriji.";
+"Create Profiles" = "Izradi profile";
+"Add a Profile" = "Dodaj profil";
+"Default" = "Zadano";
+"Profile %d" = "Profil %d";
+"Manual" = "Ručno";
+"Any external display connected" = "Spojen bilo koji vanjski zaslon";
+"Display “%@” connected" = "Spojen zaslon „%@”";
+"No external display" = "Bez vanjskog zaslona";
+"On battery" = "Na bateriji";
+"On power adapter" = "Na punjaču";
+"Use" = "Koristi";
+"Active" = "Aktivan";
+"Profile" = "Profil";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Popis ispod uređuje aktivni profil. Coulisse bira profil čije pravilo najbolje odgovara; ako nijedno, onaj koji ste zadnji odabrali ručno.";

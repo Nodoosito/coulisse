@@ -327,3 +327,21 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Hidden icons" = "Icônes masquées";
 "Click an icon to open its menu." = "Cliquez sur une icône pour ouvrir son menu.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS n’a pas trouvé de place pour %@ dans la barre des menus. Dépliez la barre, ou passez une icône peu utilisée en Toujours masquée.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profils";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Enregistrez plusieurs dispositions d’icônes et laissez Coulisse passer de l’une à l’autre, par exemple quand un écran externe est branché ou que le Mac est sur batterie.";
+"Create Profiles" = "Créer des profils";
+"Add a Profile" = "Ajouter un profil";
+"Default" = "Par défaut";
+"Profile %d" = "Profil %d";
+"Manual" = "Manuel";
+"Any external display connected" = "N’importe quel écran externe branché";
+"Display “%@” connected" = "Écran « %@ » branché";
+"No external display" = "Aucun écran externe";
+"On battery" = "Sur batterie";
+"On power adapter" = "Sur secteur";
+"Use" = "Utiliser";
+"Active" = "Actif";
+"Profile" = "Profil";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "La liste ci-dessous modifie le profil actif. Coulisse choisit le profil dont la règle correspond le mieux ; sinon, celui que vous avez choisi en dernier à la main.";

@@ -324,3 +324,21 @@
 "Hidden icons" = "隠したアイコン";
 "Click an icon to open its menu." = "アイコンをクリックするとそのメニューが開きます。";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOSはメニューバーに%@を置く余地を見つけられませんでした。バーを展開するか、あまり使わないアイコンを「常に非表示」に移動してください。";
+
+/* Coulisse: profiles */
+"Profiles" = "プロファイル";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "アイコンの配置を複数保存し、外部ディスプレイの接続時やバッテリー駆動時などにCoulisseが自動で切り替えます。";
+"Create Profiles" = "プロファイルを作成";
+"Add a Profile" = "プロファイルを追加";
+"Default" = "デフォルト";
+"Profile %d" = "プロファイル%d";
+"Manual" = "手動";
+"Any external display connected" = "いずれかの外部ディスプレイが接続済み";
+"Display “%@” connected" = "ディスプレイ「%@」が接続済み";
+"No external display" = "外部ディスプレイなし";
+"On battery" = "バッテリー駆動";
+"On power adapter" = "電源アダプタ使用";
+"Use" = "使用";
+"Active" = "使用中";
+"Profile" = "プロファイル";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "下のリストは使用中のプロファイルを編集します。Coulisseはルールが最も合うプロファイルを選び、合うものがなければ最後に手動で選んだものを使います。";

@@ -124,6 +124,10 @@ final class MenuBarAppsSettingsViewController: SettingsPaneController {
     required init?(coder: NSCoder) { fatalError("init(coder:) is not used") }
 
     override func buildForm() {
+        #if HIDDENBAR_NATIVE_VISIBILITY
+        // Coulisse: profiles keep one copy of this list each.
+        addFullWidth(IconProfilesSettingsView())
+        #endif
         addNewAppDefaultRow()
         content.orientation = .vertical
         content.alignment = .leading

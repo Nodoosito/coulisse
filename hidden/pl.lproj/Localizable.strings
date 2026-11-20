@@ -325,3 +325,21 @@ Jak wyświetlić ikony „Zawsze ukryte”:
 "Hidden icons" = "Ukryte ikony";
 "Click an icon to open its menu." = "Kliknij ikonę, aby otworzyć jej menu.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS nie znalazł miejsca dla %@ na pasku menu. Rozwiń pasek lub przenieś rzadko używaną ikonę do Zawsze ukryte.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profile";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Zapisz kilka układów ikon i pozwól Coulisse przełączać się między nimi, na przykład po podłączeniu zewnętrznego monitora lub przy zasilaniu z baterii.";
+"Create Profiles" = "Utwórz profile";
+"Add a Profile" = "Dodaj profil";
+"Default" = "Domyślny";
+"Profile %d" = "Profil %d";
+"Manual" = "Ręcznie";
+"Any external display connected" = "Podłączony dowolny monitor zewnętrzny";
+"Display “%@” connected" = "Podłączony monitor „%@”";
+"No external display" = "Brak monitora zewnętrznego";
+"On battery" = "Na baterii";
+"On power adapter" = "Na zasilaczu";
+"Use" = "Użyj";
+"Active" = "Aktywny";
+"Profile" = "Profil";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Lista poniżej zmienia aktywny profil. Coulisse wybiera profil, którego reguła pasuje najlepiej; jeśli żadna, ostatnio wybrany ręcznie.";

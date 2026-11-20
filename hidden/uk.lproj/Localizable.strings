@@ -325,3 +325,21 @@
 "Hidden icons" = "Приховані значки";
 "Click an icon to open its menu." = "Клацніть значок, щоб відкрити його меню.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS не знайшла місця для %@ на смузі меню. Розгорніть смугу або перенесіть рідко вживаний значок до «Завжди приховані».";
+
+/* Coulisse: profiles */
+"Profiles" = "Профілі";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Збережіть кілька розкладок значків, і Coulisse перемикатиметься між ними, наприклад коли під’єднано зовнішній дисплей або Mac працює від батареї.";
+"Create Profiles" = "Створити профілі";
+"Add a Profile" = "Додати профіль";
+"Default" = "Типовий";
+"Profile %d" = "Профіль %d";
+"Manual" = "Вручну";
+"Any external display connected" = "Під’єднано будь-який зовнішній дисплей";
+"Display “%@” connected" = "Під’єднано дисплей «%@»";
+"No external display" = "Немає зовнішнього дисплея";
+"On battery" = "Від батареї";
+"On power adapter" = "Від адаптера живлення";
+"Use" = "Використати";
+"Active" = "Активний";
+"Profile" = "Профіль";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Список нижче змінює активний профіль. Coulisse вибирає профіль, правило якого підходить найкраще; якщо жодне, — той, що ви вибрали вручну останнім.";

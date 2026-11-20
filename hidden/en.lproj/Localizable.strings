@@ -324,3 +324,21 @@ Steps to view always hidden icons:
 "Hidden icons" = "Hidden icons";
 "Click an icon to open its menu." = "Click an icon to open its menu.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profiles";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery.";
+"Create Profiles" = "Create Profiles";
+"Add a Profile" = "Add a Profile";
+"Default" = "Default";
+"Profile %d" = "Profile %d";
+"Manual" = "Manual";
+"Any external display connected" = "Any external display connected";
+"Display “%@” connected" = "Display “%@” connected";
+"No external display" = "No external display";
+"On battery" = "On battery";
+"On power adapter" = "On power adapter";
+"Use" = "Use";
+"Active" = "Active";
+"Profile" = "Profile";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand.";

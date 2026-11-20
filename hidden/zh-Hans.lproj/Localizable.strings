@@ -327,3 +327,21 @@
 "Hidden icons" = "隐藏的图标";
 "Click an icon to open its menu." = "点按图标以打开其菜单。";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS 在菜单栏中找不到放置 %@ 的空间。请展开菜单栏，或将不常用的图标移到“始终隐藏”。";
+
+/* Coulisse: profiles */
+"Profiles" = "描述文件";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "保存多种图标布局，让 Coulisse 在它们之间切换，例如连接外部显示器或 Mac 使用电池时。";
+"Create Profiles" = "创建描述文件";
+"Add a Profile" = "添加描述文件";
+"Default" = "默认";
+"Profile %d" = "描述文件 %d";
+"Manual" = "手动";
+"Any external display connected" = "连接了任意外部显示器";
+"Display “%@” connected" = "连接了显示器“%@”";
+"No external display" = "无外部显示器";
+"On battery" = "使用电池";
+"On power adapter" = "使用电源适配器";
+"Use" = "使用";
+"Active" = "使用中";
+"Profile" = "描述文件";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "下方列表编辑当前使用的描述文件。Coulisse 会选择规则最匹配的描述文件；若无匹配，则使用你最后手动选择的。";

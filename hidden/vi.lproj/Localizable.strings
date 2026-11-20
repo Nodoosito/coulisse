@@ -325,3 +325,21 @@ Các bước xem biểu tượng luôn ẩn:
 "Hidden icons" = "Biểu tượng ẩn";
 "Click an icon to open its menu." = "Nhấp vào một biểu tượng để mở menu của nó.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS không tìm được chỗ cho %@ trên thanh menu. Hãy mở rộng thanh, hoặc chuyển một biểu tượng ít dùng sang Luôn ẩn.";
+
+/* Coulisse: profiles */
+"Profiles" = "Hồ sơ";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Lưu nhiều cách sắp xếp biểu tượng và để Coulisse chuyển đổi giữa chúng, ví dụ khi cắm màn hình ngoài hoặc khi Mac chạy bằng pin.";
+"Create Profiles" = "Tạo hồ sơ";
+"Add a Profile" = "Thêm hồ sơ";
+"Default" = "Mặc định";
+"Profile %d" = "Hồ sơ %d";
+"Manual" = "Thủ công";
+"Any external display connected" = "Cắm bất kỳ màn hình ngoài nào";
+"Display “%@” connected" = "Đã cắm màn hình “%@”";
+"No external display" = "Không có màn hình ngoài";
+"On battery" = "Dùng pin";
+"On power adapter" = "Dùng bộ sạc";
+"Use" = "Dùng";
+"Active" = "Đang dùng";
+"Profile" = "Hồ sơ";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Danh sách bên dưới chỉnh hồ sơ đang dùng. Coulisse chọn hồ sơ có quy tắc phù hợp nhất; nếu không có, chọn hồ sơ bạn chọn tay gần nhất.";

@@ -325,3 +325,21 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "Hidden icons" = "Ausgeblendete Symbole";
 "Click an icon to open its menu." = "Klicke auf ein Symbol, um sein Menü zu öffnen.";
 "macOS found no room for %@ in the menu bar. Expand the bar, or move an icon you rarely use to Always hidden." = "macOS hat in der Menüleiste keinen Platz für %@ gefunden. Klappe die Leiste aus oder verschiebe ein selten genutztes Symbol nach „Immer ausgeblendet“.";
+
+/* Coulisse: profiles */
+"Profiles" = "Profile";
+"Save several icon layouts and let Coulisse switch between them, for example when an external display is connected or the Mac runs on battery." = "Speichere mehrere Symbolanordnungen und lass Coulisse zwischen ihnen wechseln, etwa wenn ein externer Bildschirm angeschlossen ist oder der Mac mit Batterie läuft.";
+"Create Profiles" = "Profile erstellen";
+"Add a Profile" = "Profil hinzufügen";
+"Default" = "Standard";
+"Profile %d" = "Profil %d";
+"Manual" = "Manuell";
+"Any external display connected" = "Beliebiger externer Bildschirm angeschlossen";
+"Display “%@” connected" = "Bildschirm „%@“ angeschlossen";
+"No external display" = "Kein externer Bildschirm";
+"On battery" = "Mit Batterie";
+"On power adapter" = "Mit Netzteil";
+"Use" = "Verwenden";
+"Active" = "Aktiv";
+"Profile" = "Profil";
+"The list below edits the active profile. Coulisse picks the profile whose rule fits best; with none, the one you used last by hand." = "Die Liste unten bearbeitet das aktive Profil. Coulisse wählt das Profil, dessen Regel am besten passt; sonst das zuletzt von Hand gewählte.";
