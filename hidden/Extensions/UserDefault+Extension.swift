@@ -37,6 +37,7 @@ extension UserDefaults {
         static let arrowClickMode = "arrowClickMode"
         static let autoHideCountsFromPointer = "autoHideCountsFromPointer"
         static let autoHideOnAppSwitch = "autoHideOnAppSwitch"
+        static let displayShowAll = "displayShowAll"
         // Internal: not user-facing, so not in the App Store import whitelist.
         static let menuBarCatalogFirstSeen = "menuBarCatalogFirstSeen"
         static let arrivalsPending = "arrivalsPending"

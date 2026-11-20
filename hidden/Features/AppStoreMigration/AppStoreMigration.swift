@@ -67,6 +67,7 @@ enum AppStoreSettingsImport {
         UserDefaults.Key.arrowClickMode: .string,
         UserDefaults.Key.autoHideCountsFromPointer: .number,
         UserDefaults.Key.autoHideOnAppSwitch: .number,
+        UserDefaults.Key.displayShowAll: .string,
     ]
 
     /// Importable keys the direct build writes by itself on its first collapse:

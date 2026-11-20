@@ -358,3 +358,9 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "The delay starts again each time you move the pointer through the menu bar." = "Die Wartezeit beginnt neu, sobald der Zeiger durch die Menüleiste fährt.";
 "Also when you switch apps" = "Auch beim App-Wechsel";
 "Hides the icons again as soon as another app comes to the front." = "Blendet die Symbole wieder aus, sobald eine andere App in den Vordergrund kommt.";
+
+/* Coulisse: displays */
+"Show every icon" = "Alle Symbole zeigen";
+"When an external display is connected" = "Wenn ein externer Bildschirm angeschlossen ist";
+"When the Mac is closed on an external display" = "Wenn der Mac zugeklappt an einem externen Bildschirm läuft";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS blendet ein Symbol auf allen Bildschirmen zugleich aus. Ein großer Bildschirm hat Platz für alle, daher kann Coulisse sie zeigen und wieder ausblenden, wenn er getrennt wird.";

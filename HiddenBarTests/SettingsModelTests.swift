@@ -131,3 +131,30 @@ final class SettingsModelTests: XCTestCase {
         }
     }
 }
+
+// Coulisse: "Show every icon" follows the displays, and a collapse by hand is the
+// controller's to keep (it stops asking for an expand).
+final class DisplayShowAllPolicyTests: XCTestCase {
+    func testModes() {
+        let laptopOnly = DisplayCounts(builtIn: 1, external: 0)
+        let laptopAndMonitor = DisplayCounts(builtIn: 1, external: 1)
+        let closedOnMonitor = DisplayCounts(builtIn: 0, external: 1)
+        for displays in [laptopOnly, laptopAndMonitor, closedOnMonitor] {
+            XCTAssertFalse(DisplayShowAllPolicy.showsAll(.never, displays: displays))
+        }
+        XCTAssertFalse(DisplayShowAllPolicy.showsAll(.externalConnected, displays: laptopOnly))
+        XCTAssertTrue(DisplayShowAllPolicy.showsAll(.externalConnected, displays: laptopAndMonitor))
+        XCTAssertFalse(DisplayShowAllPolicy.showsAll(.externalOnly, displays: laptopAndMonitor))
+        XCTAssertTrue(DisplayShowAllPolicy.showsAll(.externalOnly, displays: closedOnMonitor))
+        XCTAssertEqual(DisplayShowAllMode(storedValue: "bogus"), .never)
+    }
+
+    func testSteps() {
+        XCTAssertEqual(DisplayShowAllPolicy.step(showsAll: true, isCollapsed: true, expandedForDisplays: false), .expand)
+        XCTAssertEqual(DisplayShowAllPolicy.step(showsAll: true, isCollapsed: false, expandedForDisplays: false), .none,
+                       "a bar the user expanded is not taken over")
+        XCTAssertEqual(DisplayShowAllPolicy.step(showsAll: false, isCollapsed: false, expandedForDisplays: true), .collapse)
+        XCTAssertEqual(DisplayShowAllPolicy.step(showsAll: false, isCollapsed: false, expandedForDisplays: false), .none,
+                       "a bar the user expanded stays when a display goes")
+    }
+}

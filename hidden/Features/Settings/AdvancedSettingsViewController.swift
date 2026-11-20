@@ -38,7 +38,8 @@ final class AdvancedSettingsViewController: SettingsPaneController {
                     SettingsForm.row("Make room for icons while they are shown".localized,
                                           caption: "Hides the menus of the app you are using while hidden icons are shown, so more icons fit.".localized,
                                           control: fullBar),
-                    rightClickRow()]
+                    rightClickRow(),
+                    displayShowAllRow()]
         // The notch row only where a notch exists and macOS can put icons behind it.
         if context.showsNotchOverflow {
             let notch = boundSwitch(UserDefaults.Key.notchOverflowEnabled, read: { Preferences.notchOverflowEnabled },
@@ -77,6 +78,33 @@ final class AdvancedSettingsViewController: SettingsPaneController {
         // One group: every row here is set once, if ever.
         addSection(nil, rows: rows)
         refreshAll()
+    }
+
+    static let displayShowAllChoices: [(DisplayShowAllMode, String)] = [
+        (.never, "Never"),
+        (.externalConnected, "When an external display is connected"),
+        (.externalOnly, "When the Mac is closed on an external display"),
+    ]
+
+    // Coulisse: keep every icon shown while the displays have room for them.
+    private func displayShowAllRow() -> NSView {
+        let popup = NSPopUpButton(frame: .zero, pullsDown: false)
+        popup.controlSize = .small
+        for (_, title) in Self.displayShowAllChoices { popup.addItem(withTitle: title.localized) }
+        popup.identifier = NSUserInterfaceItemIdentifier(UserDefaults.Key.displayShowAll)
+        popup.target = self
+        popup.action = #selector(displayShowAllPicked(_:))
+        onRefresh { [weak popup] in
+            popup?.selectItem(at: Self.displayShowAllChoices.firstIndex { $0.0 == Preferences.displayShowAll } ?? 0)
+        }
+        return SettingsForm.row("Show every icon".localized,
+                                caption: "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone.".localized,
+                                control: popup)
+    }
+
+    @objc private func displayShowAllPicked(_ sender: NSPopUpButton) {
+        guard Self.displayShowAllChoices.indices.contains(sender.indexOfSelectedItem) else { return }
+        Preferences.displayShowAll = Self.displayShowAllChoices[sender.indexOfSelectedItem].0
     }
 
     // A popup, not a switch: it names both choices, like the menu it replaces.

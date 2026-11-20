@@ -360,3 +360,9 @@ Passi per mostrare le icone sempre nascoste:
 "The delay starts again each time you move the pointer through the menu bar." = "Il ritardo riparte ogni volta che il puntatore passa nella barra dei menu.";
 "Also when you switch apps" = "Anche quando cambi app";
 "Hides the icons again as soon as another app comes to the front." = "Nasconde di nuovo le icone appena un’altra app passa in primo piano.";
+
+/* Coulisse: displays */
+"Show every icon" = "Mostra tutte le icone";
+"When an external display is connected" = "Quando è collegato un monitor esterno";
+"When the Mac is closed on an external display" = "Quando il Mac è chiuso su un monitor esterno";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS nasconde un’icona su tutti i monitor insieme. Un monitor grande ha spazio per tutte, quindi Coulisse può mostrarle e nasconderle di nuovo quando viene scollegato.";

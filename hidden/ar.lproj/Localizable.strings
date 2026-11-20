@@ -359,3 +359,9 @@
 "The delay starts again each time you move the pointer through the menu bar." = "يبدأ التأخير من جديد كلما مرّ المؤشر عبر شريط القوائم.";
 "Also when you switch apps" = "وأيضًا عند تبديل التطبيقات";
 "Hides the icons again as soon as another app comes to the front." = "يخفي الأيقونات مجددًا بمجرد انتقال تطبيق آخر إلى المقدمة.";
+
+/* Coulisse: displays */
+"Show every icon" = "إظهار كل الأيقونات";
+"When an external display is connected" = "عند توصيل شاشة خارجية";
+"When the Mac is closed on an external display" = "عند إغلاق الـ Mac واستخدام شاشة خارجية";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "يخفي macOS الأيقونة على كل الشاشات معًا. الشاشة الكبيرة تتسع لها كلها، لذا يستطيع Coulisse إظهارها ثم إخفاءها مجددًا عند فصل الشاشة.";

@@ -358,3 +358,9 @@ Các bước xem biểu tượng luôn ẩn:
 "The delay starts again each time you move the pointer through the menu bar." = "Thời gian chờ bắt đầu lại mỗi khi con trỏ đi qua thanh menu.";
 "Also when you switch apps" = "Cả khi bạn chuyển ứng dụng";
 "Hides the icons again as soon as another app comes to the front." = "Ẩn lại các biểu tượng ngay khi một ứng dụng khác ra phía trước.";
+
+/* Coulisse: displays */
+"Show every icon" = "Hiện mọi biểu tượng";
+"When an external display is connected" = "Khi cắm màn hình ngoài";
+"When the Mac is closed on an external display" = "Khi Mac gập lại và dùng màn hình ngoài";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS ẩn một biểu tượng trên mọi màn hình cùng lúc. Màn hình lớn đủ chỗ cho tất cả, nên Coulisse có thể hiện chúng và ẩn lại khi màn hình được rút ra.";

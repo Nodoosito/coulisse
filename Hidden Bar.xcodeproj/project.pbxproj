@@ -273,6 +273,9 @@
 		C3D81FD47A7813888864871A /* AppRulesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */; };
 		594A9B0DD52BEAE14476595E /* AppRulesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */; };
 		4DE9B95CFAD2C9139854CA08 /* AppRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9122826261F0994769B3F28A /* AppRuleTests.swift */; };
+		DFA0D689793E3D069C59794F /* DisplayShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */; };
+		81E594ACBD60EA9FED719E35 /* DisplayShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */; };
+		695E303BF75673F851F61FEA /* DisplayShowAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -464,6 +467,7 @@
 		0939322BCA5D12B7860B08A4 /* AppRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRule.swift; sourceTree = "<group>"; };
 		1B26222FDA3152A54657CF58 /* AppRulesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRulesSettingsView.swift; sourceTree = "<group>"; };
 		9122826261F0994769B3F28A /* AppRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRuleTests.swift; sourceTree = "<group>"; };
+		02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayShowAll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,6 +539,7 @@
 				CF69FAC7D4BC32410FDD18D3 /* IconWindow */,
 				AD53B3E18CA60C627D907979 /* Profiles */,
 				A0BB68C0B1F5461F38F52853 /* AppRules */,
+				09F90C616741B2205B1A526B /* Displays */,
 				B7E40DE0000000000000F006 /* Presentation */,
 			);
 			path = Features;
@@ -903,6 +908,14 @@
 			path = AppRules;
 			sourceTree = "<group>";
 		};
+		09F90C616741B2205B1A526B /* Displays */ = {
+			isa = PBXGroup;
+			children = (
+				02824A799DEA6D35DF655FB3 /* DisplayShowAll.swift */,
+			);
+			path = Displays;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1084,6 +1097,7 @@
 				4D17E02F0721705433D85B2A /* Preferences.swift in Sources */,
 				EC07CF0F0A4B2AA2A420B7B9 /* StatusBarController.swift in Sources */,
 				121C4AE8ED80A49E75101000 /* ExpandCollapseAction.swift in Sources */,
+				DFA0D689793E3D069C59794F /* DisplayShowAll.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E2011 /* AutoCollapsePopupGuard.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E3011 /* NoHideNotice.swift in Sources */,
 				36A203B556E81ED914E4CDCC /* HBNativeVisibilityShim.m in Sources */,
@@ -1209,6 +1223,7 @@
 				08A5F86123AA085B00981CA5 /* Preferences.swift in Sources */,
 				92C97B9122018C1F0007559C /* StatusBarController.swift in Sources */,
 				62C8B44F0D264D96B75FF0FC /* ExpandCollapseAction.swift in Sources */,
+				81E594ACBD60EA9FED719E35 /* DisplayShowAll.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E2012 /* AutoCollapsePopupGuard.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E3012 /* NoHideNotice.swift in Sources */,
 				51977397CC1141721E72D40E /* HBNativeVisibilityShim.m in Sources */,
@@ -1304,6 +1319,7 @@
 				A778421DAF4C2939BBFE33D6 /* MenuBarClock.swift in Sources */,
 				A6BC2D15D7C6BDBC5F894D62 /* HBNativeVisibilityShim.m in Sources */,
 				B5435023F0224141B232FCC9 /* ExpandCollapseAction.swift in Sources */,
+				695E303BF75673F851F61FEA /* DisplayShowAll.swift in Sources */,
 				A0C0F1E5D3B2470A9C1E2013 /* AutoCollapsePopupGuard.swift in Sources */,
 				160B7980C8A44829A864BBA6 /* AutoStart.swift in Sources */,
 				A9D0DE00000000000000D002 /* AppDefaults.swift in Sources */,

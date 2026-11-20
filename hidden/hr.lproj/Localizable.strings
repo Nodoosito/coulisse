@@ -358,3 +358,9 @@
 "The delay starts again each time you move the pointer through the menu bar." = "Odgoda kreće ispočetka svaki put kad pokazivač prijeđe preko trake izbornika.";
 "Also when you switch apps" = "I kad promijenite aplikaciju";
 "Hides the icons again as soon as another app comes to the front." = "Ponovno skriva ikone čim druga aplikacija dođe u prvi plan.";
+
+/* Coulisse: displays */
+"Show every icon" = "Prikaži sve ikone";
+"When an external display is connected" = "Kad je spojen vanjski zaslon";
+"When the Mac is closed on an external display" = "Kad je Mac zatvoren i radi s vanjskim zaslonom";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS skriva ikonu na svim zaslonima odjednom. Velik zaslon ima mjesta za sve, pa ih Coulisse može prikazati i ponovno sakriti kad se odspoji.";

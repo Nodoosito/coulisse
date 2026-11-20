@@ -129,6 +129,10 @@ class StatusBarController: MenuBarItemProvider {
     private var pointerLastInMenuBar: TimeInterval?
     private var pointerSampler: [Any] = []
     private var appSwitchObserver: NSObjectProtocol?
+    // Coulisse: the bar is expanded because the displays have room for every icon.
+    private var expandedForDisplays = false
+    // The user collapsed it by hand meanwhile: left alone until the displays change.
+    private var showAllDismissed = false
 
     private var hoverMonitor: Any?
     private var pinnedSectionsObserver: NSObjectProtocol?
@@ -181,6 +185,7 @@ class StatusBarController: MenuBarItemProvider {
         NotificationCenter.default.addObserver(self, selector: #selector(syncReveal), name: .prefsChanged, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleScreenParametersChanged), name: NSApplication.didChangeScreenParametersNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(updateAutoHide), name: .prefsChanged, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(syncShowAllForDisplays), name: .prefsChanged, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(syncActivationPolicyWithFullStatusBar), name: .useFullStatusBarToggle, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(refreshArrow), name: .stealthExpandIconToggle, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(refreshArrow), name: .arrowStyleChanged, object: nil)
@@ -195,6 +200,8 @@ class StatusBarController: MenuBarItemProvider {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in
             self?.collapseAtLaunch(retriesLeft: 16)
         }
+        // Coulisse: after the launch collapse, a display with room expands the bar again.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6) { [weak self] in self?.syncShowAllForDisplays() }
 
         autoCollapseIfNeeded()
     }
@@ -257,6 +264,32 @@ class StatusBarController: MenuBarItemProvider {
         #endif
         if wasCollapsed && Preferences.areSeparatorsHidden {
             menuBarEngine.updateAlwaysHiddenSection(enabled: Preferences.alwaysHiddenSectionEnabled, separatorHidden: true)
+        }
+        // Coulisse: a display hot-plug settles over a moment before it is counted.
+        showAllDismissed = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [weak self] in self?.syncShowAllForDisplays() }
+    }
+
+    // Coulisse: expand while the displays have room for every icon, give the bar
+    // back when they no longer do. A collapse by hand meanwhile is respected
+    // until the displays change again.
+    @objc private func syncShowAllForDisplays() {
+        let shows = DisplayShowAllPolicy.showsAll(Preferences.displayShowAll, displays: DisplayCounts.live())
+        if shows && showAllDismissed { return }
+        switch DisplayShowAllPolicy.step(showsAll: shows, isCollapsed: isCollapsed, expandedForDisplays: expandedForDisplays) {
+        case .expand:
+            AppLog.publicLine("Displays: every icon shows while the displays have room")
+            expandedForDisplays = true
+            menuBarEngine.userChangedBar()
+            expandMenubar()
+        case .collapse:
+            expandedForDisplays = false
+            if !isCollapsed {
+                menuBarEngine.userChangedBar()
+                collapseMenuBar()
+            }
+        case .none:
+            if !shows { expandedForDisplays = false }
         }
     }
     
@@ -461,6 +494,10 @@ class StatusBarController: MenuBarItemProvider {
         if AccessibilityPermission.shared.arrowClickOpensPreferences(isCollapsed: isCollapsed) {
             Util.showPrefWindow()
         }
+        if !isCollapsed && expandedForDisplays {
+            expandedForDisplays = false
+            showAllDismissed = true
+        }
         self.isCollapsed ? self.expandMenubar(userInitiated: true) : self.collapseMenuBar(userInitiated: true)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
             self?.isToggle = false
@@ -641,6 +678,7 @@ class StatusBarController: MenuBarItemProvider {
             || holdsCollapse("AutoCollapse: holding for the new-apps prompt", if: arrivalsPromptIsShown)
             || holdsCollapse("AutoCollapse: holding for Notification Center", if: menuBarEngine.defersAutoCollapse)
             || holdsCollapse("AutoCollapse: holding for the palette", if: isRevealingForPalette)
+            || holdsCollapse("AutoCollapse: holding while the displays show every icon", if: expandedForDisplays)
             || popupGuard.defersCollapse()
     }
 

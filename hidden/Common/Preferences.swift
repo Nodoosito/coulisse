@@ -291,6 +291,15 @@ enum Preferences {
         set { AppDefaults.store.set(newValue, forKey: UserDefaults.Key.autoHideOnAppSwitch) }
     }
 
+    // Coulisse: keep every icon shown while the displays have room for them.
+    static var displayShowAll: DisplayShowAllMode {
+        get { DisplayShowAllMode(storedValue: AppDefaults.store.string(forKey: UserDefaults.Key.displayShowAll)) }
+        set {
+            AppDefaults.store.set(newValue.rawValue, forKey: UserDefaults.Key.displayShowAll)
+            NotificationCenter.default.post(Notification(name: .prefsChanged))
+        }
+    }
+
     static var notchOverflowEnabled: Bool {
         get {
             AppDefaults.store.bool(forKey: UserDefaults.Key.notchOverflowEnabled)

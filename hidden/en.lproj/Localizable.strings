@@ -357,3 +357,9 @@ Steps to view always hidden icons:
 "The delay starts again each time you move the pointer through the menu bar." = "The delay starts again each time you move the pointer through the menu bar.";
 "Also when you switch apps" = "Also when you switch apps";
 "Hides the icons again as soon as another app comes to the front." = "Hides the icons again as soon as another app comes to the front.";
+
+/* Coulisse: displays */
+"Show every icon" = "Show every icon";
+"When an external display is connected" = "When an external display is connected";
+"When the Mac is closed on an external display" = "When the Mac is closed on an external display";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone.";

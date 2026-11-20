@@ -360,3 +360,9 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "The delay starts again each time you move the pointer through the menu bar." = "Le délai repart chaque fois que la souris passe dans la barre des menus.";
 "Also when you switch apps" = "Aussi quand vous changez d’app";
 "Hides the icons again as soon as another app comes to the front." = "Masque à nouveau les icônes dès qu’une autre app passe au premier plan.";
+
+/* Coulisse: displays */
+"Show every icon" = "Tout afficher";
+"When an external display is connected" = "Quand un écran externe est branché";
+"When the Mac is closed on an external display" = "Quand le Mac est fermé sur un écran externe";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOS masque une icône sur tous les écrans à la fois. Un grand écran a la place pour toutes : Coulisse peut donc toutes les afficher, puis les masquer à nouveau quand il est débranché.";

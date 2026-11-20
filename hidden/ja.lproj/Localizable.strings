@@ -357,3 +357,9 @@
 "The delay starts again each time you move the pointer through the menu bar." = "ポインタがメニューバーを通るたびに待ち時間がリセットされます。";
 "Also when you switch apps" = "アプリを切り替えたときも";
 "Hides the icons again as soon as another app comes to the front." = "別のアプリが前面に来るとすぐにアイコンを再び隠します。";
+
+/* Coulisse: displays */
+"Show every icon" = "すべてのアイコンを表示";
+"When an external display is connected" = "外部ディスプレイが接続されているとき";
+"When the Mac is closed on an external display" = "Macを閉じて外部ディスプレイで使っているとき";
+"macOS hides an icon on every display at once. A large display has room for all of them, so Coulisse can keep them shown and hide them again when it is gone." = "macOSはアイコンをすべてのディスプレイで同時に隠します。大きなディスプレイにはすべて表示する余地があるので、Coulisseはそれらを表示し、取り外されたら再び隠せます。";
