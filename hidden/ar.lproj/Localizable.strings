@@ -352,3 +352,10 @@
 "Add a Rule" = "إضافة قاعدة";
 "when it is in front" = "عندما يكون في المقدمة";
 "when %@ is in front" = "عندما يكون %@ في المقدمة";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "بعد %d دقائق";
+"Count from when the pointer leaves the menu bar" = "العدّ من لحظة مغادرة المؤشر شريط القوائم";
+"The delay starts again each time you move the pointer through the menu bar." = "يبدأ التأخير من جديد كلما مرّ المؤشر عبر شريط القوائم.";
+"Also when you switch apps" = "وأيضًا عند تبديل التطبيقات";
+"Hides the icons again as soon as another app comes to the front." = "يخفي الأيقونات مجددًا بمجرد انتقال تطبيق آخر إلى المقدمة.";

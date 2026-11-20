@@ -351,3 +351,10 @@ Các bước xem biểu tượng luôn ẩn:
 "Add a Rule" = "Thêm quy tắc";
 "when it is in front" = "khi nó ở phía trước";
 "when %@ is in front" = "khi %@ ở phía trước";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Sau %d phút";
+"Count from when the pointer leaves the menu bar" = "Tính từ khi con trỏ rời thanh menu";
+"The delay starts again each time you move the pointer through the menu bar." = "Thời gian chờ bắt đầu lại mỗi khi con trỏ đi qua thanh menu.";
+"Also when you switch apps" = "Cả khi bạn chuyển ứng dụng";
+"Hides the icons again as soon as another app comes to the front." = "Ẩn lại các biểu tượng ngay khi một ứng dụng khác ra phía trước.";

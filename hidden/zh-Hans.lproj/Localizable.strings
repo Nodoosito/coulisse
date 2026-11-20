@@ -353,3 +353,10 @@
 "Add a Rule" = "添加规则";
 "when it is in front" = "当它在最前面时";
 "when %@ is in front" = "当 %@ 在最前面时";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "%d 分钟后";
+"Count from when the pointer leaves the menu bar" = "从指针离开菜单栏时开始计时";
+"The delay starts again each time you move the pointer through the menu bar." = "每次指针经过菜单栏时，延迟会重新开始。";
+"Also when you switch apps" = "切换应用时也隐藏";
+"Hides the icons again as soon as another app comes to the front." = "另一个应用来到最前面时，立即再次隐藏图标。";

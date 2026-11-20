@@ -351,3 +351,10 @@
 "Add a Rule" = "Dodaj pravilo";
 "when it is in front" = "kad je u prvom planu";
 "when %@ is in front" = "kad je %@ u prvom planu";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Nakon %d minuta";
+"Count from when the pointer leaves the menu bar" = "Brojati od trenutka kad pokazivač napusti traku";
+"The delay starts again each time you move the pointer through the menu bar." = "Odgoda kreće ispočetka svaki put kad pokazivač prijeđe preko trake izbornika.";
+"Also when you switch apps" = "I kad promijenite aplikaciju";
+"Hides the icons again as soon as another app comes to the front." = "Ponovno skriva ikone čim druga aplikacija dođe u prvi plan.";

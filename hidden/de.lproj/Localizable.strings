@@ -351,3 +351,10 @@ Zum Anzeigen der permanent ausgeblendeten Symbole:
 "Add a Rule" = "Regel hinzufügen";
 "when it is in front" = "wenn sie im Vordergrund ist";
 "when %@ is in front" = "wenn %@ im Vordergrund ist";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Nach %d Minuten";
+"Count from when the pointer leaves the menu bar" = "Ab dem Verlassen der Menüleiste zählen";
+"The delay starts again each time you move the pointer through the menu bar." = "Die Wartezeit beginnt neu, sobald der Zeiger durch die Menüleiste fährt.";
+"Also when you switch apps" = "Auch beim App-Wechsel";
+"Hides the icons again as soon as another app comes to the front." = "Blendet die Symbole wieder aus, sobald eine andere App in den Vordergrund kommt.";

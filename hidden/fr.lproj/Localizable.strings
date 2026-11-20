@@ -353,3 +353,10 @@ Utilisez la fonction de section toujours cachée pour garder vos icônes bien ra
 "Add a Rule" = "Ajouter une règle";
 "when it is in front" = "quand elle est au premier plan";
 "when %@ is in front" = "quand %@ est au premier plan";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Après %d minutes";
+"Count from when the pointer leaves the menu bar" = "Compter à partir du moment où la souris quitte la barre";
+"The delay starts again each time you move the pointer through the menu bar." = "Le délai repart chaque fois que la souris passe dans la barre des menus.";
+"Also when you switch apps" = "Aussi quand vous changez d’app";
+"Hides the icons again as soon as another app comes to the front." = "Masque à nouveau les icônes dès qu’une autre app passe au premier plan.";

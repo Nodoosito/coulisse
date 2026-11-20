@@ -350,3 +350,10 @@
 "Add a Rule" = "ルールを追加";
 "when it is in front" = "そのアプリが前面のとき";
 "when %@ is in front" = "%@が前面のとき";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "%d分後";
+"Count from when the pointer leaves the menu bar" = "ポインタがメニューバーを離れてから数える";
+"The delay starts again each time you move the pointer through the menu bar." = "ポインタがメニューバーを通るたびに待ち時間がリセットされます。";
+"Also when you switch apps" = "アプリを切り替えたときも";
+"Hides the icons again as soon as another app comes to the front." = "別のアプリが前面に来るとすぐにアイコンを再び隠します。";

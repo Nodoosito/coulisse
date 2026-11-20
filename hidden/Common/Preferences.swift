@@ -279,6 +279,18 @@ enum Preferences {
         }
     }
 
+    // Coulisse: auto-collapse waits its delay after the pointer last left the menu bar.
+    static var autoHideCountsFromPointer: Bool {
+        get { AppDefaults.store.bool(forKey: UserDefaults.Key.autoHideCountsFromPointer) }
+        set { AppDefaults.store.set(newValue, forKey: UserDefaults.Key.autoHideCountsFromPointer) }
+    }
+
+    // Coulisse: an expanded bar collapses when another app comes to the front.
+    static var autoHideOnAppSwitch: Bool {
+        get { AppDefaults.store.bool(forKey: UserDefaults.Key.autoHideOnAppSwitch) }
+        set { AppDefaults.store.set(newValue, forKey: UserDefaults.Key.autoHideOnAppSwitch) }
+    }
+
     static var notchOverflowEnabled: Bool {
         get {
             AppDefaults.store.bool(forKey: UserDefaults.Key.notchOverflowEnabled)

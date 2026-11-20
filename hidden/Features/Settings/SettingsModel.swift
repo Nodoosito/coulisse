@@ -110,17 +110,27 @@ enum PreviewBoundary: Equatable {
 /// One popup for the old "Automatically hide icon after" checkbox and its
 /// delay popup. "Never" turns isAutoHide off and keeps the stored delay, so the
 /// menu's "Enable Auto Collapse" still comes back with the delay the user had.
+/// Coulisse: how long auto-collapse still waits when "count from when the pointer
+/// leaves the menu bar" is on. 0: collapse now.
+enum AutoHideTiming {
+    static func remaining(delay: Double, now: TimeInterval, pointerLastInMenuBar: TimeInterval?, countsFromPointer: Bool) -> Double {
+        guard countsFromPointer, let last = pointerLastInMenuBar else { return 0 }
+        return max(0, delay - (now - last))
+    }
+}
+
 enum AutoHideChoice: Equatable {
     case never
     case after(seconds: Double)
 
-    static let delays: [Double] = [5, 10, 15, 30, 60]
+    // Coulisse adds 2 s, 3 s, 2 min and 5 min.
+    static let delays: [Double] = [2, 3, 5, 10, 15, 30, 60, 120, 300]
     static let all: [AutoHideChoice] = [.never] + delays.map { .after(seconds: $0) }
 
     init(isAutoHide: Bool, seconds: Double) {
         guard isAutoHide else { self = .never; return }
         // Same fallback as the old popup: an unknown delay reads as 5 seconds.
-        self = .after(seconds: Self.delays.contains(seconds) ? seconds : Self.delays[0])
+        self = .after(seconds: Self.delays.contains(seconds) ? seconds : 5)
     }
 
     var index: Int { Self.all.firstIndex(of: self) ?? 0 }
@@ -128,6 +138,7 @@ enum AutoHideChoice: Equatable {
     var titleKey: String {
         switch self {
         case .never: return "Never"
+        case .after(let seconds) where seconds > 60: return "After %d minutes"
         case .after(let seconds) where seconds >= 60: return "After 1 minute"
         case .after: return "After %d seconds"
         }

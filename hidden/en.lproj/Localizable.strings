@@ -350,3 +350,10 @@ Steps to view always hidden icons:
 "Add a Rule" = "Add a Rule";
 "when it is in front" = "when it is in front";
 "when %@ is in front" = "when %@ is in front";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "After %d minutes";
+"Count from when the pointer leaves the menu bar" = "Count from when the pointer leaves the menu bar";
+"The delay starts again each time you move the pointer through the menu bar." = "The delay starts again each time you move the pointer through the menu bar.";
+"Also when you switch apps" = "Also when you switch apps";
+"Hides the icons again as soon as another app comes to the front." = "Hides the icons again as soon as another app comes to the front.";

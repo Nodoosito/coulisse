@@ -103,7 +103,17 @@ final class SettingsModelTests: XCTestCase {
             XCTAssertEqual(AutoHideChoice(isAutoHide: true, seconds: delay), .after(seconds: delay))
         }
         XCTAssertEqual(AutoHideChoice(isAutoHide: true, seconds: 7), .after(seconds: 5))
-        XCTAssertEqual(AutoHideChoice.all.count, 6)
+        XCTAssertEqual(AutoHideChoice.all.count, 10)
+        XCTAssertEqual(AutoHideChoice.after(seconds: 120).titleKey, "After %d minutes")
+        XCTAssertEqual(AutoHideChoice.after(seconds: 60).titleKey, "After 1 minute")
+    }
+
+    // Coulisse: counting from the pointer waits the rest of the delay after it left the bar.
+    func testAutoHideTimingCountsFromThePointer() {
+        XCTAssertEqual(AutoHideTiming.remaining(delay: 5, now: 100, pointerLastInMenuBar: 98, countsFromPointer: true), 3)
+        XCTAssertEqual(AutoHideTiming.remaining(delay: 5, now: 100, pointerLastInMenuBar: 90, countsFromPointer: true), 0)
+        XCTAssertEqual(AutoHideTiming.remaining(delay: 5, now: 100, pointerLastInMenuBar: 98, countsFromPointer: false), 0)
+        XCTAssertEqual(AutoHideTiming.remaining(delay: 5, now: 100, pointerLastInMenuBar: nil, countsFromPointer: true), 0)
         XCTAssertEqual(AutoHideChoice.all.first, .never)
     }
 

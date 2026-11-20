@@ -351,3 +351,10 @@
 "Add a Rule" = "Додати правило";
 "when it is in front" = "коли вона на передньому плані";
 "when %@ is in front" = "коли %@ на передньому плані";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Через %d хв";
+"Count from when the pointer leaves the menu bar" = "Відлічувати з моменту, коли вказівник покидає смугу";
+"The delay starts again each time you move the pointer through the menu bar." = "Затримка починається знову щоразу, коли вказівник проходить смугою меню.";
+"Also when you switch apps" = "Також під час зміни програми";
+"Hides the icons again as soon as another app comes to the front." = "Знову приховує значки, щойно інша програма виходить на передній план.";

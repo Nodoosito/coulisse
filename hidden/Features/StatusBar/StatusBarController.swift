@@ -124,6 +124,11 @@ class StatusBarController: MenuBarItemProvider {
     // The expand now running came from a click on the arrow: automatic mode may
     // fold it into the icon window when the icons do not fit.
     private var expandFromArrowClick = false
+    // Coulisse, finer auto-collapse: when the pointer was last in the menu bar
+    // (system uptime), sampled while the bar is expanded, and the app-switch watch.
+    private var pointerLastInMenuBar: TimeInterval?
+    private var pointerSampler: [Any] = []
+    private var appSwitchObserver: NSObjectProtocol?
 
     private var hoverMonitor: Any?
     private var pinnedSectionsObserver: NSObjectProtocol?
@@ -464,6 +469,7 @@ class StatusBarController: MenuBarItemProvider {
     
     private func collapseMenuBar(userInitiated: Bool = false, automatic: Bool = false) {
         guard !isCollapsed else { return }
+        defer { if isCollapsed { stopPointerSampling() } }
         guard menuBarEngine.isArrangementValid && menuBarEngine.state != .calibrating else {
             if automatic { autoCollapseIfNeeded() }
             return
@@ -559,6 +565,8 @@ class StatusBarController: MenuBarItemProvider {
         #endif
         menuBarEngine.expand()
         autoCollapseAttempts = 0
+        startPointerSampling()
+        watchAppSwitches()
         if let button = btnExpandCollapse.button {
             button.image = Assets.collapseImage
         }
@@ -676,10 +684,75 @@ class StatusBarController: MenuBarItemProvider {
                     || self.defersCollapseApartFromPointer)
             if shouldDefer {
                 self.startTimerToAutoHide()
+                return
+            }
+            // Coulisse: counted from the pointer, wait what is left of the delay.
+            let wait = AutoHideTiming.remaining(delay: Preferences.numberOfSecondForAutoHide,
+                                                now: ProcessInfo.processInfo.systemUptime,
+                                                pointerLastInMenuBar: self.pointerLastInMenuBar,
+                                                countsFromPointer: Preferences.autoHideCountsFromPointer)
+            if wait > 0.05 {
+                self.timer?.invalidate()
+                self.timer = self.scheduleAutoHide(wait) { [weak self] in self?.startTimerToAutoHideFired() }
             } else {
                 self.collapseMenuBar(automatic: true)
             }
         }
+    }
+
+    // A re-armed wait ended: run the same checks as a full timer.
+    private func startTimerToAutoHideFired() {
+        guard Preferences.isAutoHide, !isCollapsed else { return }
+        let wait = AutoHideTiming.remaining(delay: Preferences.numberOfSecondForAutoHide,
+                                            now: ProcessInfo.processInfo.systemUptime,
+                                            pointerLastInMenuBar: pointerLastInMenuBar,
+                                            countsFromPointer: Preferences.autoHideCountsFromPointer)
+        if isMouseInMenuBar || defersCollapseApartFromPointer || wait > 0.05 {
+            startTimerToAutoHide()
+        } else {
+            collapseMenuBar(automatic: true)
+        }
+    }
+
+    // Coulisse: while expanded, note when the pointer is in the menu bar.
+    private func startPointerSampling() {
+        // Each expand starts the count again, also while a sampler from an
+        // earlier expand still runs (a collapse can finish later).
+        pointerLastInMenuBar = ProcessInfo.processInfo.systemUptime
+        guard pointerSampler.isEmpty, Preferences.autoHideCountsFromPointer else { return }
+        let note: (NSEvent) -> Void = { [weak self] _ in
+            guard let self = self, self.isMouseInMenuBar else { return }
+            self.pointerLastInMenuBar = ProcessInfo.processInfo.systemUptime
+        }
+        if let global = NSEvent.addGlobalMonitorForEvents(matching: .mouseMoved, handler: note) { pointerSampler.append(global) }
+        if let local = NSEvent.addLocalMonitorForEvents(matching: .mouseMoved, handler: { note($0); return $0 }) { pointerSampler.append(local) }
+    }
+
+    private func stopPointerSampling() {
+        pointerSampler.forEach(NSEvent.removeMonitor)
+        pointerSampler.removeAll()
+        pointerLastInMenuBar = nil
+    }
+
+    // Coulisse: "Also when you switch apps". Another app coming to the front
+    // collapses an expanded bar, unless something it shows still needs it.
+    private func watchAppSwitches() {
+        guard appSwitchObserver == nil else { return }
+        appSwitchObserver = NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didActivateApplicationNotification, object: nil, queue: .main) { [weak self] note in
+                guard Preferences.autoHideOnAppSwitch, let self = self, !self.isCollapsed,
+                      let app = note.userInfo?[NSWorkspace.applicationUserInfoKey] as? NSRunningApplication,
+                      app.bundleIdentifier != Bundle.main.bundleIdentifier else { return }
+                // A panel opened from a revealed icon may bring its app forward; give
+                // it a moment to show, so the popup guard can hold the bar.
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) { [weak self] in
+                    guard let self = self, !self.isCollapsed, !self.isMouseInMenuBar,
+                          !self.defersCollapseApartFromPointer else { return }
+                    AppLog.publicLine("AutoCollapse: another app came to the front")
+                    self.menuBarEngine.userChangedBar()
+                    self.collapseMenuBar()
+                }
+            }
     }
     
     // Built fresh on every call (see showContextMenu(from:)), so every field

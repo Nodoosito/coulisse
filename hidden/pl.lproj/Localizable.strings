@@ -351,3 +351,10 @@ Jak wyświetlić ikony „Zawsze ukryte”:
 "Add a Rule" = "Dodaj regułę";
 "when it is in front" = "gdy jest na pierwszym planie";
 "when %@ is in front" = "gdy %@ jest na pierwszym planie";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Po %d minutach";
+"Count from when the pointer leaves the menu bar" = "Licz od chwili opuszczenia paska przez wskaźnik";
+"The delay starts again each time you move the pointer through the menu bar." = "Odliczanie zaczyna się od nowa za każdym razem, gdy wskaźnik przejdzie przez pasek menu.";
+"Also when you switch apps" = "Także przy zmianie aplikacji";
+"Hides the icons again as soon as another app comes to the front." = "Ukrywa ikony ponownie, gdy tylko inna aplikacja przejdzie na pierwszy plan.";

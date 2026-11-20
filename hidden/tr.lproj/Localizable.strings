@@ -352,3 +352,10 @@ Her zaman gizli simgeleri görüntüleme adımları:
 "Add a Rule" = "Kural ekle";
 "when it is in front" = "öndeyken";
 "when %@ is in front" = "%@ öndeyken";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "%d dakika sonra";
+"Count from when the pointer leaves the menu bar" = "İmleç menü çubuğundan çıktığında saymaya başla";
+"The delay starts again each time you move the pointer through the menu bar." = "İmleç menü çubuğundan her geçtiğinde süre yeniden başlar.";
+"Also when you switch apps" = "Uygulama değiştirdiğinizde de";
+"Hides the icons again as soon as another app comes to the front." = "Başka bir uygulama öne geçer geçmez simgeleri yeniden gizler.";

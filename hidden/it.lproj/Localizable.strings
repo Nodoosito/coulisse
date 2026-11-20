@@ -353,3 +353,10 @@ Passi per mostrare le icone sempre nascoste:
 "Add a Rule" = "Aggiungi una regola";
 "when it is in front" = "quando è in primo piano";
 "when %@ is in front" = "quando %@ è in primo piano";
+
+/* Coulisse: finer auto-hide */
+"After %d minutes" = "Dopo %d minuti";
+"Count from when the pointer leaves the menu bar" = "Conta da quando il puntatore lascia la barra";
+"The delay starts again each time you move the pointer through the menu bar." = "Il ritardo riparte ogni volta che il puntatore passa nella barra dei menu.";
+"Also when you switch apps" = "Anche quando cambi app";
+"Hides the icons again as soon as another app comes to the front." = "Nasconde di nuovo le icone appena un’altra app passa in primo piano.";

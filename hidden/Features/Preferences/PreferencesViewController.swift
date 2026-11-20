@@ -44,6 +44,8 @@ class PreferencesViewController: SettingsPaneController {
             let title: String
             if case .after(let seconds) = choice, seconds < 60 {
                 title = String(format: choice.titleKey.localized, Int(seconds))
+            } else if case .after(let seconds) = choice, seconds > 60 {
+                title = String(format: choice.titleKey.localized, Int(seconds / 60))
             } else {
                 title = choice.titleKey.localized
             }
@@ -74,6 +76,16 @@ class PreferencesViewController: SettingsPaneController {
         var everydayRows = [
             SettingsForm.row("Open Coulisse at login".localized, control: login),
             SettingsForm.row("Hide icons again".localized, control: autoHidePopup),
+            SettingsForm.row("Count from when the pointer leaves the menu bar".localized,
+                             caption: "The delay starts again each time you move the pointer through the menu bar.".localized,
+                             control: boundSwitch(UserDefaults.Key.autoHideCountsFromPointer,
+                                                  read: { Preferences.autoHideCountsFromPointer },
+                                                  write: { Preferences.autoHideCountsFromPointer = $0 })),
+            SettingsForm.row("Also when you switch apps".localized,
+                             caption: "Hides the icons again as soon as another app comes to the front.".localized,
+                             control: boundSwitch(UserDefaults.Key.autoHideOnAppSwitch,
+                                                  read: { Preferences.autoHideOnAppSwitch },
+                                                  write: { Preferences.autoHideOnAppSwitch = $0 })),
         ]
         everydayRows.append(contentsOf: arrowClickRows())
         everydayRows += [
